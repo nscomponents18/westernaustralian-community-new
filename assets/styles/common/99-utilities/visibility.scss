@@ -1,0 +1,41 @@
+/*/*------------------------------------*\
+  UTILITIES > VISIBILITY
+\*------------------------------------*/
+/**
+ * Hide visually and from screen readers.
+ */
+
+.u-hidden {
+    display: none;
+}
+
+.u-tablet-hidden {
+  @media only screen and (max-width: $bp-tablet-portrait) {
+    display: none;
+  }
+}
+
+.u-tablet-block{
+  display: none;
+  @media only screen and (max-width: $bp-tablet-portrait) {
+    display: block;
+  }
+}
+
+.u-mobile-hidden {
+  @media only screen and (max-width: $bp-mobile-portrait) {
+    display: none;
+  }
+}
+
+.u-mobile-block{
+  display: none;
+  @media only screen and (max-width: $bp-mobile-portrait) {
+    display: block;
+  }
+}
+
+
+.u-opacity-0 {
+    opacity: 0;
+}

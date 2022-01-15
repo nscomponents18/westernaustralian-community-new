@@ -1,0 +1,48 @@
+/*------------------------------------*\
+  ELEMENTS > DIVIDER
+\*------------------------------------*/
+
+footer{
+    .footer__divider{
+        max-width: 1370px;
+        margin: 0px auto 32px;
+        height: 1.5px;
+        background: $color-neutrals-grey2;
+        opacity: 1;
+        @media only screen and (max-width: $bp-mobile-landscape) {
+          display: none;
+       }
+    }
+}
+
+// Tabs(Modal) Footer Divider
+.full-screen-modal{
+  .divider{
+    opacity: 0.25;
+    border: none;
+    height: 1px;
+  }
+}
+
+.understand-your-community{
+  .divider{
+      background-color: $color-neutrals-grey4;
+  }
+}
+
+.learn-from-others{
+  .divider{
+      background-color: $white;
+  }
+}
+.plan-your-project{
+  .divider{
+      background-color: $white;
+  }
+}
+
+.search-modal{
+  .divider{
+    background-color: $white;
+  }
+}

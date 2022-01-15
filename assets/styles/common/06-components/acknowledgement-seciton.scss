@@ -1,0 +1,43 @@
+/*------------------------------------*\
+  COMPONENTS > ACKNOWLEDGEMENT SECTION
+\*------------------------------------*/
+
+.acknowledgement-section{
+    padding: 57px 0 59px;
+    background-color: $color-neutrals-grey4;
+    @media only screen and (max-width: $bp-tablet-portrait) {
+      padding: 50px 0;
+    }   
+}
+
+.line-texts {
+  padding: 0 0 0 24px;
+  border-left: 3px solid $color-primary-ocean;
+  max-width: 1040px;
+  @media only screen and (max-width: $bp-tablet-portrait) {
+      padding: 0;
+      border: none;
+  }
+}
+
+.acknowledgement-section__heading {
+  font-family: $PrimaryFont;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-headings;
+  font-size: $font-size-body;
+  margin: 0 0 18px;
+  color: $color-neutrals-dark;
+}
+
+.acknowledgement-section__para {
+  margin: 0px;
+  color: $color-neutrals-dark;
+  font-size: $font-size-body;
+  line-height: 1.6;
+  @media only screen and (max-width: $bp-tablet-portrait) {
+    font-size: $font-size-small;
+    &:last-child{
+      padding-top: 25px;
+    }
+  }
+}

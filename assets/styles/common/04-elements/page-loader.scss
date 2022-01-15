@@ -1,0 +1,43 @@
+.loader{
+    &.hidden {
+        display: none;
+        transition: all 0.3s;
+    }
+}
+.loader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary-sandDune;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 200;
+        animation: fadeIn 1s ease;
+        .loader__circle {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:relative;
+            border-radius: 50%;
+            border: 5px solid #ffff;
+            border-color: #fff transparent #fff #fff;
+            @media (max-width: $bp-tablet-landscape) {
+                width: 3rem;
+                height: 3rem;
+                border: 3px solid #ffff;
+            }
+        }
+    }
+.circle_big {
+    width: 8rem;
+    height: 8rem;
+    animation: bigcircle 1.2s linear infinite;
+}
+.circle_small {
+    width: 5rem;
+    height: 5rem;
+}

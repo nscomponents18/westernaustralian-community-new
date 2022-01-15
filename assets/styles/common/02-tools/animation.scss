@@ -1,0 +1,621 @@
+/*------------------------------------*\
+  ELEMENTS > ANIMATIONS
+\*------------------------------------*/
+
+.underline-animation {
+    position: relative;
+    font-family: $SecondaryFont;
+    color: $color-neutrals-dark;
+    font-size: 22px;
+    padding: 0 0 8px 0;
+    overflow: hidden;
+    transition: 0.5s all;
+    display: inline-block;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -150%;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: $color-neutrals-dark;
+        height: 4px;
+        transition: 0.5s all;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: $color-neutrals-dark;
+        height: 4px;
+        transition: 0.5s all;
+    }
+    &:hover {
+        transition: 0.5s all;
+        &::after {
+            left: 200%;
+        }
+        &::before {
+            left: 0%;
+        }
+    }
+    &:focus {
+
+    }
+}
+.main-banner {
+    &__inner {
+        background-color: $color-primary-ocean;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__left {
+        width: 50%;
+    }
+    &__right {
+        width: 50%;
+        position: relative;
+        .underline-animation {
+            color: $white;
+            &::after, &::before {
+                background: $white;
+            }
+        }
+    }
+}
+.white_text{
+    color: $white;
+}
+
+.parallax-background-section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translateY(0);
+    width: 130%;
+    height: 130%;
+    .animateImg {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        transform: translateY(0);
+        opacity: .9;
+        margin-top: -5%;
+        @media only screen and (max-width: $bp-tablet-lg-landscape) {
+            margin-top: 0%;
+        }
+    }
+}
+.parallax-background-section-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translateY(0);
+    width: 130%;
+    height: 130%;
+    .animateImg {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        transform: translateY(0);
+        opacity: .2;
+        margin-top: -5%;
+        @media only screen and (max-width: $bp-tablet-lg-landscape) {
+            margin-top: 0%;
+        }
+    }
+    @media only screen and (max-width: $bp-tablet-lg-portrait) {
+        width: 140%;
+        height: 140%;
+    }
+    @media only screen and (max-width: $bp-mobile-portrait) {
+        width: 128%;
+        height: 128%;
+    }
+    // img {
+    //     opacity: 0.2;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //     transform: translateY(0);
+    //     margin-top: -6%;
+    //     @media only screen and (max-width: $bp-tablet-lg-portrait) {
+    //         margin-top: -8%;
+    //     }
+    //     @media only screen and (max-width: $bp-tablet-portrait) {
+    //         margin-top: -19.5%;
+    //     }
+    //     @media only screen and (max-width: $bp-mobile-portrait) {
+    //         margin-top: -45%;
+    //     }
+    // }
+}
+
+.animation-fadeIn-text {
+    opacity: 0;
+}
+
+// for hero text
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.animation-fadeIn-text {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+// For Journey Section
+.journey-section{
+    &.result-hover__sand-dune{
+        background-color: $color-primary-sandDune;
+        .small-haeding_hover_text {
+            color: $black !important;
+        }
+        .title-link {
+            .title-link_hover_text {
+                color: $black !important;
+            }
+        }
+        .svgIcon_change-color{
+            fill: $black !important;
+        }
+        .title-haeding_hover_text{
+            color: $black !important;
+        }
+        .journey-box__inner_para{
+            color: $black !important;
+        }
+        .journey-box{
+            &:nth-child(2){
+                opacity: .2;
+            }
+            &:nth-child(3){
+                opacity: .2;
+            }
+        }
+    }
+}
+
+.journey-section{
+    &.result-hover__forest {
+        background-color: $color-primary-forest;
+        .journey-box{
+            &:nth-child(1){
+                opacity: .2;
+            }
+            &:nth-child(3){
+                opacity: .2;
+            }
+        }
+    }
+}
+
+.journey-section{
+    &.result-hover__rust{
+        background-color: $color-primary-rust;
+        .journey-box{
+            &:nth-child(2){
+                opacity: .2;
+            }
+            &:nth-child(1){
+                opacity: .2;
+            }
+        }
+    }
+}
+
+// Header Animation
+.site-header__right {
+    @media (max-width: $bp-tablet-landscape) {
+        animation: topToBottom 0.5s ease;
+    }
+}
+.primary-menu__list{
+    @media (max-width: $bp-tablet-landscape) {
+        animation: topToBottom 0.5s ease;
+    }
+}
+@keyframes topToBottom {
+    0%{
+        margin-top: -100%;
+        animation-duration: 0.8s;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+// Tab Animation Underline
+.content-part{
+    .content-part__heading{
+        display: inline;
+        &.dotted-underline-animation {
+            display: inline-block;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                border-bottom: 2px dotted $white;
+                transition: width .3s;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+            &.dark-line{
+                &::after {
+                    border-bottom: 2px dotted $black;
+                }
+            }
+        }
+        @media (max-width: $bp-tablet-landscape) {
+            &.dotted-underline-animation {
+                display: inline-block;
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.full-screen-modal__footer{
+    display: inline;
+    .solid-underline-animation {
+        display: inline-block;
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            border-bottom: 2px solid $white;
+            transition: width .3s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+        &.dark-line{
+            &::after {
+                border-bottom: 2px solid $black;
+            }
+        }
+    }
+}
+
+// For Menu Background Color Animation
+
+.primary-menu__items{
+    .primary-menu__list{
+        background-color: transparent;
+        position: relative;
+        .primary-menu__link{
+            position: relative;
+            z-index: 1;
+        }
+        &.RustColour::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            display: block;
+            transition: all 0.3s ease;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &.SandDuneColour{
+            &:hover ~ .primary-menu__list:nth-child(3){
+                &::after{
+                    left: -251.78%;
+                    background-color: $color-primary-sandDune;
+                    width: 146.29%;
+                    @media (max-width: $bp-tablet-landscape) {
+                        background-color: transparent;
+                    }
+                }
+           }
+        }
+        &.ForestColour{
+            &:hover ~ .primary-menu__list:nth-child(3){
+                &::after{
+                    left: -105.49%;
+                    background-color: $color-primary-forest;
+                    width: 105.49%;
+                    @media (max-width: $bp-tablet-landscape) {
+                        background-color: transparent;
+                    }
+                }
+           }
+        }
+        &.RustColour{
+            &:hover ~ .primary-menu__list:nth-child(3){
+                &::after{
+                    left: 0;
+                    background-color: $color-primary-rust;
+                    @media (max-width: $bp-tablet-landscape) {
+                        background-color: transparent;
+                    }
+                }
+           }
+            &:hover{
+                &::after{
+                    left: 0%;
+                    background-color: $color-primary-rust;
+                    @media (max-width: $bp-tablet-landscape) {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        &.active{
+            &:hover ~ .primary-menu__list:nth-child(3){
+                 &::after{
+                    background-color: transparent;
+                    @media (max-width: $bp-tablet-landscape) {
+                        background-color: transparent;
+                    }
+                 }
+            }
+        }
+    }
+}
+
+// For Close Icon Spin
+
+.animateRound{
+    animation: roundMove 6s ease infinite;
+    transform-origin: center;
+    animation-delay: 5s;
+}
+
+@keyframes roundMove {
+    0%{
+
+    }
+    12%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    38%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    63%{
+        transform: rotate(225deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    87%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+// For Page Loader
+
+@keyframes bigcircle {
+    0% {
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+// About Tabs Left Side Image Animation
+.full-screen-modal__left{
+    .full-screen-modal__left__img{
+        &.show{
+            animation: imgRightLeft 0.9s ease;
+            // animation-delay: 0.6s;
+        }
+    }
+    .img-slider{
+        &.show{
+            animation: rightLeft 0.9s ease;
+            transform: translateX(-100%);
+            opacity: 0.5;
+            animation-duration: 0.9s;
+            // animation-delay: 0.6s;
+        }
+    }
+}
+.search-modal{
+    .full-screen-modal__left__img{
+        &.show{
+            animation: imgRightLeft 0.4s ease;
+            animation-duration: 0.4s;
+            animation-delay: 0.4s;
+        }
+    }
+    .search-img-slider{
+        &.show{
+            animation: rightLeft 0.6s ease;
+            transform: translateX(-100%);
+            opacity: 0.5;
+            animation-duration: 0.6s;
+            animation-delay: 0.6s;
+        }
+    }
+}
+@keyframes imgRightLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes rightLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+// Cards Animaiton
+.para-animation{
+    position: relative;
+    animation-name: para-animation;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.svg-animation{
+    position: relative;
+    animation-name: svg-animation;
+    animation-duration: .55s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.box-animate{
+    position: relative;
+    animation-name: box-animate;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.para-animation-reverse{
+    position: relative;
+    animation-name: para-animation-reverse;
+    animation-duration: .1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.svg-animation-reverse{
+    position: relative;
+    animation-name: svg-animation-reverse;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.category-box__card-inner{
+    text-align: left;
+    .svgIcon{
+        width: auto !important;
+        height: 40px !important;
+        margin-bottom: 0px !important;
+    }
+    box-shadow: none !important;
+}
+
+@keyframes para-animation {
+  from {left: 0; margin-top: 80px}
+  to {left: 10.4%; margin-top: 8px}
+}
+
+@keyframes svg-animation {
+  from { height: 110px; width: auto; left: 0;}
+  to { height: 40.85px; width: auto; left: 8.2%;}
+}
+
+@keyframes box-animate {
+  from { max-width: 780px;}
+  to {  max-width: 881px;}
+}
+
+@keyframes para-animation-reverse {
+    from {left: 10.4%; margin-top: 8px}
+    to {left: 0; bottom: -3%}
+}
+
+@keyframes svg-animation-reverse {
+    from { height: 40px; left: 8.2%;}
+    to { height: 110px; left: 0;}
+}
+
+// Header Text Animation
+.primary-menu__items{
+    height: 100%;
+    overflow: hidden;
+}
+.primary-menu__list{
+    .text-up{
+        animation: animate 0.9s ease;
+        transition: all 0.9s;
+    }
+}
+
+// Main Banner Title Text
+.main-banner__text{
+    .text-up{
+        animation: animate 0.9s ease;
+        transition: all 0.9s;
+    }
+}
+.main-banner__para{
+    .text-up{
+        animation: animate 1.2s ease;
+        transition: all 1.2s;
+    }
+}
+.main-banner__link{
+    overflow: hidden;
+    height: 42px;
+    .link-text{
+        animation: animate 1.4s ease;
+    }
+}
+@keyframes animate {
+    0%{
+        transform: translateY(150%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.inputBox_input{
+    &::placeholder{
+        transition: all 0.5s ease;
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    &:focus{
+        &::placeholder{
+            opacity: 0;
+            transform: translateY(500%);
+        }
+    }
+}

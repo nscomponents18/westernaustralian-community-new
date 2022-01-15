@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  SETTINGS > SPACING-VARIABLES
+\*------------------------------------*/
+
+$base-spacing-unit: 12px;
+$base-spacing-sides: $base-spacing-unit * 2;
+$base-spacing-sides\@tablet: $base-spacing-unit * 2;
+$base-spacing-sides\@desktop: $base-spacing-unit * 2;
+
+$spacing-xs: $base-spacing-unit;
+$spacing-md: $base-spacing-unit * 2;
+$spacing-lg: $base-spacing-unit * 4;
+$spacing-xl: $base-spacing-unit * 8;
+
+$section-spacing-min: $base-spacing-unit * 10;
+$section-spacing-max: $base-spacing-unit * 20;
+
+$column-width: $base-spacing-unit * 12;
+$gutter-width: $base-spacing-unit * 4;
+
+$container-width: 1400px;
+$footer-container: 1390px;
+
+$column-padding: 0 12px; 
+$section-padding: 85px 0;

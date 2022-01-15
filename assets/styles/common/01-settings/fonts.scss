@@ -1,0 +1,46 @@
+/*------------------------------------*\
+  SETTINGS > FONT INCLUDES @font-face 
+\*------------------------------------*/
+
+$base-font-path: '~/assets/static/fonts';
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/static/Fonts/Montserrat/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/static/Fonts/Montserrat/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/static/Fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+/* Open Sans */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/static/Fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/static/Fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/static/Fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf');
+    font-weight: 400;
+}
+
+
+

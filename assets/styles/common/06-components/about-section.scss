@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  COMPONENTS > ABOUT SECTION
+\*------------------------------------*/
+
+.about-section {
+    padding: 73px 0 90px;
+    background-color: $color-secondary-deepBlue;
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        padding: 63px 0 74px;
+    }
+  }
+
+.about__inner {
+    margin: 0 auto;
+    max-width: 1094px;
+}
+  
+.about-section__header{
+    color: $white;
+    margin: 0 0 22px; 
+    text-align: center;
+}
+
+.about-section__para{
+    margin: 0 auto 15px;
+    max-width: 875px;
+    font-size: $font-size-body;
+    color: $white;
+    text-align: center;
+}
+
+.about-client-part{
+    margin:74px 0 45px;
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        margin: 25px 0 50px;
+        line-height: 1.6;
+    }
+}
+
+.about-section__btn{
+    margin-bottom: 0px;
+}

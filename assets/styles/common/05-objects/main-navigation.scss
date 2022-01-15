@@ -1,0 +1,22 @@
+/*------------------------------------*\
+  OBJECTS > MAIN NAVIGATION
+\*------------------------------------*/
+
+.primary-menu {
+    .primary-menu__link {
+        cursor: pointer;
+        transition: 0.3s all;
+        font-size: 0.9375vw;
+        padding: 46px 2.083vw;
+        font-weight: $font-weight-bold;
+        letter-spacing: -0.2px;
+        text-align: center;
+        display: flex;
+        min-height: 114px;
+        .primary-menu__link__svgIcon {
+            &.primary-menu__arrow__forward {
+                display: none;
+            }
+        }
+    }
+}

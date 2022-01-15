@@ -1,0 +1,58 @@
+/*------------------------------------*\
+  ELEMENTS > HEADINGS
+\*------------------------------------*/
+
+h1, h2, h3, h4 {
+    font-family: $PrimaryFont;
+    color: $color-neutrals-grey1;
+    line-height: $line-height-headings;
+    font-weight: $font-semi-bold;
+    margin: 0 0 20px;
+}
+h5 {
+    font-family: $SecondaryFont;
+    color: $color-neutrals-grey1;
+    line-height: $line-height-headings;
+    font-weight: $font-semi-bold;
+}
+
+h1 {
+    font-size: 60px;
+    @media(max-width: $bp-tablet-portrait){
+        font-size: 52px;
+    }
+    &.hero-text {
+        font-size: 100px;
+        line-height: 1;
+        @media(max-width: $bp-laptop){
+            font-size: 60px;
+        }
+        @media(max-width: $bp-tablet-portrait){
+            font-size: 52px;
+        }
+        @media only screen and (max-width: 340px) {
+            font-size: 42px;
+        }
+    }
+}
+h2 {
+    font-size: 40px;
+    @media(max-width: $bp-tablet-portrait){
+        font-size: 26px;
+    }
+}
+h3 {
+    font-size: 32px;
+    @media(max-width: $bp-tablet-portrait){
+        font-size: $font-size-large;
+    }
+}
+h4 {
+    font-size: 24px;
+    @media(max-width: $bp-tablet-portrait){
+        font-size: 18px;
+    }
+}
+h5 {
+    font-size: $font-size-large;
+}

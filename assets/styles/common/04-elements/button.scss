@@ -1,0 +1,51 @@
+/*------------------------------------*\
+  ELEMENTS > BUTTONS
+\*------------------------------------*/
+
+button, 
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-family: $SecondaryFont;
+    background-color: $color-neutrals-grey1;
+    border: 1px solid $color-neutrals-grey1;
+    color: $white;
+    width: 100%;
+    max-width: 269px;
+    padding: 15px 10px;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:hover {
+        color: $color-neutrals-grey1;
+        background-color: $offWhite;
+    }
+    &.outline-btn {
+        color: $color-neutrals-grey1;
+        background-color: $offWhite;
+        &:hover {
+            color: $white;
+            background-color: $color-neutrals-grey1;
+        }
+    }
+    &.light {
+        color: $color-neutrals-grey1;
+        background-color: $white;
+        border: 1px solid $white;
+        &:hover {
+            background-color: rgba($white, 0.05);
+            color: $white;
+        }
+    }
+    &.primary {
+        color: $white;
+        border: 1px solid $color-primary-ocean;
+        background-color: $color-primary-ocean;
+        &:hover {
+            color: $color-primary-ocean;
+            background-color: $offWhite;
+        }
+    }
+}

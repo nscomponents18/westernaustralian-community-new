@@ -1,0 +1,39 @@
+/*------------------------------------*\
+  ELEMENTS > LAYOUT
+\*------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    // outline: none !important;
+    // outline-offset: 2px;
+    // outline: 5px auto -webkit-focus-ring-color;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: $color-neutrals-dark;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: $PrimaryFont;
+    position: relative;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    &.hiddenBackScroll{
+        overflow: hidden;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            overflow: hidden;
+            position: fixed;
+        }
+    }
+    &.category-box-active{
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            overflow: hidden;
+        }
+    }
+}

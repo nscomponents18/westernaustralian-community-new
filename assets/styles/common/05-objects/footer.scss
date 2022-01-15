@@ -1,0 +1,276 @@
+/*-------*\
+  FOOTER
+\*-------*/
+
+.site-footer {
+    background-color: $white;
+    .container {
+        max-width: $footer-container;
+    }
+    .underline-animation {
+        font-size: 16px;
+        padding: 0 0 4px 0 !important;
+        &::after {
+            background: $white;
+            height: 2px !important;
+        }
+        &::before{
+            height: 2px !important;
+        }
+    }
+    .company-logo{
+        @media only screen and (max-width: $bp-mobile-portrait) {
+            display: none;
+        }   
+    }
+}
+
+.site-footer__top{
+    padding: 65px 0 42px;
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        padding: 50px 0 0;
+      }
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        padding: 41px 0 0;
+    }
+    .logo-footer {
+       margin: 0 0 37px;
+       @media only screen and (max-width: $bp-tablet-portrait) {
+         margin: 0 15px 10px 0;
+       }
+       @media only screen and (max-width: $bp-mobile-landscape) {
+        max-width: 210px;
+      }
+    }
+}
+
+.site-footer__top__heading{
+    font-size: $font-size-body;
+    font-weight: $font-weight-bold;
+    font-family: $SecondaryFont;
+    line-height: 18px;
+    display: inline-block;
+    padding: 0 0 6px;
+    margin: 0 0 14px;
+    border-bottom: 2px solid $color-primary-forest;
+
+    &.SandDune{
+        border-bottom: 2px solid $color-primary-sandDune;
+    }
+
+    &.Forest{
+        border-bottom: 2px solid $color-primary-forest;
+    }
+
+    &.Rust{
+        border-bottom: 2px solid $color-primary-rust;
+    }
+}
+
+.footer__menu{
+    padding: 0px;
+}
+
+.footer__menu__item{
+    margin: 0 0 8px;
+    display: block;
+    width: 100%;
+    .underline-animation{
+        font-family: $SecondaryFont;
+        color: $color-neutrals-grey2;
+        font-size: $font-size-body;
+        line-height: 25px;
+    }
+}
+
+.contact-widget{
+    @media only screen and (max-width: $bp-mobile-portrait) {
+        .footer__menu{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer__menu__item{
+            width: 45%;
+        }
+    } 
+    @media only screen and (max-width: 370px){
+        .footer__menu__item{
+            width: 50%;
+        }
+    }
+}
+.lfo-widget{
+    @media only screen and (max-width: $bp-mobile-portrait) {
+        .footer__menu{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer__menu__item{
+            width: 45%;
+        }
+    } 
+    @media only screen and (max-width: 370px){
+        .footer__menu__item{
+            width: 50%;
+        }
+    }
+}   
+
+.footer-widget{
+    .logo-footer{
+        vertical-align: middle;
+    }
+    .company-logo{
+        vertical-align: middle;
+    }
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        margin: 0 0 35px;
+    }
+    &:nth-child(5){
+        width: 8.33%;
+        @media only screen and (max-width: $bp-tablet-lg-portrait) {
+            width: 16.66%;
+        }
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 50%;    
+        }
+        @media only screen and (max-width: $bp-mobile-portrait) {
+            width: 100%;  
+        }
+    }
+    &:nth-child(4){
+        width: 25%;
+        @media only screen and (max-width: $bp-tablet-lg-portrait) {
+            width: 16.67%;
+        }
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 50%;  
+        }
+        @media only screen and (max-width: $bp-mobile-portrait) {
+            width: 100%;  
+        }
+    }
+    &:nth-child(3){
+        width: 16.67%;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 50%;       
+        }
+        @media only screen and (max-width: $bp-mobile-portrait) {
+            width: 100%;  
+        }
+    }
+    &:nth-child(2){
+        width: 25%;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 50%;  
+        }
+        @media only screen and (max-width: $bp-mobile-portrait) {
+            width: 100%;  
+        }
+    }
+    &:nth-child(1){
+        width: 25%;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 100%;  
+        }
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 100%;  
+        }
+    }
+}   
+
+.footer-widgets {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lfo-widget{
+  .footer__menu__item{
+    &:nth-child(1){
+        order: 1;
+    }
+    &:nth-child(2){
+        order: 3;
+    }
+    &:nth-child(3){
+        order: 2;
+    }
+    &:nth-child(4){
+        order: 4;
+    }
+  }
+}
+
+.site-footer__bottom{  
+    margin: 0 0 40px;
+    @media(max-width: $bp-tablet-portrait){
+        .u-text-right{
+            text-align: center !important;
+        }
+        .column-md-12{
+            width: 100%;
+        }
+     } 
+    .copyright-line_mobile{
+        display: none;
+        text-align: center;
+        padding: 0 0 7px 0;
+        @media(max-width: $bp-mobile-portrait){
+            display: block;
+         }
+    }
+    .copyright-line{
+        @media(max-width: $bp-mobile-portrait){
+            display: none;
+         }
+    }
+    .company-logo{
+        display: none;
+     @media(max-width: $bp-mobile-portrait){
+         display: block;
+         text-align: center;
+         margin: 0 auto 30px auto;
+         max-width: 265px;
+         width: 100%;
+      }
+    }
+}
+
+.copyright-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media(max-width: $bp-tablet-portrait){
+       justify-content: center;
+       margin: 0 0 15px;
+    }
+    .copyright-line{
+        margin: 0;
+        padding: 0 0 7px 0;
+    }
+    .copyright-menu__items{
+        display: flex;
+        margin: 0 0 0 50px;
+        padding: 0;
+        @media(max-width: $bp-mobile-portrait){
+            margin: 20px 0 15px;
+            justify-content: space-between;
+            width: 75%;
+         }
+         @media(max-width: 330px){
+            justify-content: space-between;
+            width: 100%;
+         }
+    }
+    .copyright-menu__list{
+        margin: 0 18px 0 0;
+        @media(max-width: $bp-mobile-portrait){
+            margin: 0 !important;
+         }
+        .copyright-menu__link{
+            @media(max-width: $bp-mobile-landscape){
+                font-size: 14px;
+             }
+        }
+    }
+}

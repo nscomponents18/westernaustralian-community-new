@@ -1,0 +1,197 @@
+/*------------------------------------*\
+  COMPONENTS > JOURNEY SECTION
+\*------------------------------------*/
+
+.journey-section{
+    // background-image: url("../../images/bg-style-design.png");
+    background-repeat: repeat;
+    background-color: $color-neutrals-grey1;
+    color: $white;
+    padding: $section-padding;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        padding: 60px 0 50px;
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .journey-box{
+        transition: all 0.35s ease-in-out;
+        &:nth-child(1){
+          .journey-box__inner{
+            @media only screen and (max-width: $bp-tablet-portrait) {
+                background-color: $color-primary-sandDune;
+            }
+                .text-dark{
+                    @media only screen and (max-width: $bp-tablet-portrait) {
+                        color: $black;
+                    }
+                }
+          }
+        }
+        &:nth-child(2){
+            .journey-box__inner{
+                @media only screen and (max-width: $bp-tablet-portrait) {
+                    background-color: $color-primary-forest;
+                }
+            }
+        }
+        &:nth-child(3){
+            .journey-box__inner{
+                @media only screen and (max-width: $bp-tablet-portrait) {
+                    background-color: $color-primary-rust;
+                }
+            }
+        }
+    }
+
+    .small-haeding{
+        text-transform: uppercase;
+        display: block;
+        letter-spacing: 2px;
+        font-size: 16px;
+        margin: 0 0 44px;
+        color: $white;
+        transition: all 0.3s ease-in-out;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            margin: 0 0 30px;
+        }
+    }
+
+    .title-haeding {
+        margin: 0 0 60px;
+        transition: all 0.3s ease-in-out;
+        @media only screen and (max-width: $bp-laptop) {
+            line-height: 36px;
+            font-size: 34px;
+          }
+        @media only screen and (max-width: $bp-tablet-portrait) {
+          margin: 0 0 60px;
+          font-size: 26px;
+        }
+        @media only screen and (max-width: $bp-mobile-landscape) {
+            line-height: 31.2px;
+            
+        }
+    }
+
+    .journey-box__inner{
+        max-width: 412px;
+        margin-bottom: 45px;
+        &:hover{
+            cursor: pointer;
+        }
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            padding: 0 0 5px;
+            margin-bottom: 30px;
+            height: 95%;
+            max-width: 100%;
+        }
+        @media only screen and (max-width: $bp-mobile-landscape) {
+            height: auto;
+        }
+        .image {
+            margin: 0 0 30px;
+            max-height: 287px;
+            &:hover{
+                opacity: 1;
+                // -webkit-animation: flash 1.5s;
+                // animation: flash 1.5s;
+            }
+            @media only screen and (max-width: $bp-tablet-portrait) {
+                margin: 0 0 14px;
+                width: 100%;
+            }
+            @media only screen and (max-width: $bp-mobile-landscape) {
+                max-height: 100%;
+            }
+        }
+    }
+
+    .title-link {
+        display: flex;
+        align-items: center;
+        margin: 0 0 15px;
+        transition: all 0.3s ease-in-out;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            padding: 0 12px;
+        }
+        .title-link__heading{
+            margin: 0;
+            padding: 0 10px 0 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.3s ease-in-out;
+            color: $white;
+            @media only screen and (max-width: $bp-tablet-portrait) {
+                font-size: 18px;
+            }
+        }
+        .title-link__svgIcon{
+            margin: 0px;
+            transition: all 0.3s ease-in-out;
+            fill: $white;
+        }
+    }
+    .journey-box__inner_para {
+        font-weight: $font-weight-light;
+        color: rgba(255,255,255,0.8);
+        transition: all 0.3s ease-in-out;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            padding: 0 12px;
+        }
+    }
+    .title-link__black{
+        .title-link__svgIcon{
+            fill: $white;
+           @media only screen and (max-width: $bp-tablet-portrait) {
+               fill: $black;
+           }
+        }
+   }
+}
+
+.journey-boxes{
+    .journey-box{
+        width: 33.33%;
+        @media(max-width: $bp-tablet-portrait){
+            width: 50% ;
+        }
+        @media(max-width: $bp-mobile-landscape){
+            width: 100% ;
+        }
+    }
+}
+
+.main-banner__right{
+    position: relative;
+    .scroll-top{
+        position: absolute;
+        bottom: 93px;
+        right: 102px;
+        transform: rotate(270deg);
+        @media(max-width: $bp-tablet-portrait){
+            display: none;
+        }
+        .scroll-top__text{
+            font-size: 18px;
+            font-weight: $font-weight-light;
+            line-height: 130%;
+            &::after{
+                width: 118px;
+                border-bottom: 1px solid $color-neutrals-grey4;
+                content: "";
+                position: absolute;
+                top: 12px;
+                left: -130px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,135 @@
+/*------------------------------------*\
+  COMPONENTS > CATEGORY SECTION
+\*------------------------------------*/
+
+.blocks-section-row__image-part {
+    position: relative;
+    @media only screen and (max-width: $bp-tablet-lg-landscape) {
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .u-mobile-hidden{
+        @media only screen and (max-width: $bp-tablet-portrait) {
+           width: 100%;
+        }
+    }
+}
+.blocks-section-row__image-part_chair-women {
+    position: absolute;
+    top: 88px;
+    right: 0;
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        position: unset;
+    }
+    @media only screen and (max-width: $bp-mobile-landscape) {
+        display: none;
+    }
+}
+.image-content-section__inner {
+    margin: 68px 0 0 auto;
+    max-width: 550px;
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        margin: 0;
+        max-width: 100%;
+    }
+}
+.blocks-section-row__image-section {
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        order: 2;
+    }
+    .blocks-section-row__image-part_image {
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 50%;
+            padding: 5px;
+            @media only screen and (max-width: $bp-mobile-landscape) {
+                width: 100%;
+                padding: 0px;
+            }
+        }
+    }
+}
+.image-content-section__inner__heading {
+    line-height: 1.6;
+    font-weight: $font-semi-bold;
+    @media only screen and (max-width:  $bp-mobile-landscape) {
+        line-height: 24px;
+    }
+}
+.category-section__main-heading {
+    color: $color-neutrals-grey1;
+    line-height: 78px;
+    font-weight: $font-semi-bold;
+    @media only screen and (max-width: $bp-laptop-large) {
+        line-height: 56px;
+        font-size: 50px;
+    }
+    @media only screen and (max-width: $bp-tablet-lg-landscape) {
+        line-height: 42px;
+        font-size: 38px;
+    }
+    @media only screen and (max-width:  $bp-mobile-landscape) {
+        line-height: 40px;
+        font-size: 32px;
+    }
+}
+
+.blocks-section-row {
+    margin-bottom: 168px;
+    flex-wrap: wrap;
+    width: auto;
+    @media only screen and (max-width: $bp-laptop-large) {
+        margin-bottom: 130px;
+    }
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        margin-bottom: 55px;
+    }
+    &:first-child{
+        margin-bottom: 65px;
+    }
+   
+    .blocks-section-para {
+        color: $color-neutrals-grey2;
+        max-width: 560px;
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            max-width: 100%;
+        }
+        @media only screen and (max-width: $bp-tablet-lg-landscape) {
+            font-size: 20px;
+        }
+        @media only screen and (max-width:  $bp-mobile-landscape) {
+            font-size: $font-size-medium;
+            margin-bottom: 20px;
+        }
+        &.primaryRust {
+            color: $color-primary-rust;
+            font-weight: $font-weight-light;
+            display: block;
+            line-height: 1.6;
+            margin: 0 0 12px;
+        }
+    }
+}
+
+.category-section {
+    padding: 173px 0 193px;
+    background: $color-gradient;
+    @media only screen and (max-width: $bp-laptop-large) {
+        padding: 150px 0 130px;
+    }
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        padding: 60px 0 90px;
+    }
+    &.active{
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            padding: 60px 0 90px;
+        }
+        @media only screen and (min-width: $bp-tablet-portrait) {
+            .category-boxes__inner{
+                margin-bottom: 250px;
+            }
+        }
+    }
+}

@@ -1,0 +1,199 @@
+/*------------------------------------*\
+  COMPONENTS > MAIN SECTION
+\*------------------------------------*/
+.main-banner{
+    overflow: hidden;
+    
+    @media only screen and (max-width: $bp-tablet-portrait) {
+        margin-top: 92px !important;
+    }
+
+    .main-banner__inner{
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .main-banner__left{
+        padding-right: 0px;
+        padding: 0px;
+        .main-banner__left_img {
+            height: 968px;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: -5px;
+            @media only screen and (max-width: $bp-laptop-large) {
+                height: 100%;
+            }
+            @media only screen and (max-width: $bp-mobile-portrait) {
+                height: 56.25vw;
+            }
+        }
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 100%;
+        }
+    }
+    .main-banner__right{
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            width: 100%;
+            padding: 18px;
+        }
+    }
+    .main-banner__right-inner{
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        padding: 15px;
+        margin: 0 auto;
+        max-width: 700px;
+
+        @media only screen and (max-width: $bp-laptop) {
+            max-width: 525px;
+        }
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            max-width: 540px;
+            padding: 45px 18px 45px;
+        }
+
+        @media only screen and (max-width: $bp-tablet-portrait) {
+            padding: 45px 0px 40px;
+        }
+    
+        .hero-text{
+            letter-spacing: -0.8px;
+            max-width: 610px;
+            margin: 0 0 65px;     
+            @media only screen and (max-width: $bp-laptop) {
+                margin: 0 0 50px;
+            }
+            @media only screen and (max-width: $bp-tablet-portrait) {
+                margin: 0 0 35px;
+            }
+        }
+    
+        .hero-para-text{
+            font-size: $font-size-large;
+            font-weight: $font-weight-light;
+            line-height: 35px;
+            margin: 0 0 52px;
+            max-width: 460px;
+            color: $white;
+            font-size: 22px;
+            @media only screen and (max-width: $bp-laptop-large) {
+                font-size: 20px;
+                line-height: 22px;
+            }
+            @media only screen and (max-width: $bp-tablet-portrait) {
+                font-size: 24px;
+                line-height: 26px;
+            }
+            @media only screen and (max-width: $bp-mobile-landscape) {
+                font-size: 22px;
+            }
+            @media only screen and (max-width: $bp-mobile-portrait) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+            @media only screen and (max-width: 400px) {
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: -0.1px;
+            }
+            @media only screen and (max-width: 340px) {
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: -0.2px;
+            }
+        }
+
+        .link-text{
+            margin-bottom: 10px;
+            @media only screen and (max-width: $bp-laptop-large) {
+                font-size: 20px;
+            }
+            @media only screen and (max-width: $bp-tablet-portrait) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.hero-text{
+    font-size: 100px;
+    display: inline-block;
+    line-height: 100px;
+    color: $white;
+
+    @media only screen and (max-width: $bp-laptop) {
+        font-size: 68px;
+        line-height: 71px;
+    }
+    @media only screen and (max-width: $bp-tablet-landscape) {
+        font-size: 72px;
+        line-height: 82px;
+    }
+    @media only screen and (max-width: $bp-mobile-portrait) {
+        font-size: 52px;
+        line-height: 52px;
+    }
+    @media only screen and (max-width: 340px) {
+        font-size: 42px;
+        line-height: 42px;
+    }
+}
+
+.srOnly {
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    width: 1px !important;
+    border: 0 !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    clip-path: inset(50%) !important;
+    white-space: nowrap !important;
+}
+
+.main-banner__text{
+    overflow: hidden;
+    height: 107px;
+    @media only screen and (max-width: $bp-laptop) {
+        height: 71px;
+    }
+    @media only screen and (max-width: $bp-tablet-landscape) {
+        height: 85px;
+    }
+    @media only screen and (max-width: $bp-mobile-portrait) {
+        height: 58px;
+    }
+    @media only screen and (max-width: 340px) {
+        height: 48px;
+    }
+    .text-up{
+        animation: animate 0.7s ease;
+        transition: all 0.7s;
+    }
+}
+
+.main-banner__para{
+    margin: 48px 0px;
+    @media only screen and (max-width: $bp-mobile-landscape) {
+        margin: 24px 0px;
+    }
+    .main-banner__para_text{
+        overflow: hidden;
+        height: 42px;
+        @media only screen and (max-width: $bp-tablet-lg-portrait) {
+            height: 30px;
+        }
+        @media only screen and (max-width: $bp-mobile-portrait) {
+            height: 28px;
+        }
+        @media only screen and (max-width: 340px) {
+            height: 20px;
+        }
+    }
+}
