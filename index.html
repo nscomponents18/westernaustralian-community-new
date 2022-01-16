@@ -34,8 +34,9 @@
 	<body>
 		<!-- HEADER -->
 		<header class="site-header" id="home">
+			<!-- Search bar -->
 			<div class="search-bar" tabindex="-1">
-				<div class="search-bar__closeBtn">
+				<div class="search-bar__closeBtn" tabindex="0" aria-label="Close Search for Community Impact Hub">
 					<div class="close-icon-container">
 						<svg
 							class="search-bar__closeIcon animateRound"
@@ -52,9 +53,7 @@
 						</svg>
 					</div>
 				</div>
-				<form
-					action="#"
-					method="post"
+				<div
 					class="search-bar__inputBox"
 					tabindex="-1"
 				>
@@ -66,7 +65,8 @@
 						id="search-input"
 						name="fname"
 						aria-label="Search"
-						tabindex="-1"
+						tabindex="1"
+						aria-label="Search the Community Impact Hub"
 					/>
 					<svg
 						class="search-bar__svgIcon"
@@ -85,19 +85,19 @@
 							stroke-linejoin="round"
 						/>
 					</svg>
-				</form>
+				</div>
 			</div>
 			<div class="site-header__inner">
 				<div class="site-header__left">
 					<div class="logo show">
-						<a href="#" tabindex="0"
+						<a href="#" tabindex="1"
 							><img
 								class="logo__img"
 								src="images/logo.png"
 								alt="website logo"
 						/></a>
 					</div>
-					<div class="close-icon">
+					<div name="closeMenu" class="close-icon" aria-label="Close Menu">
 						<svg
 							class="Times-Icon animateRound"
 							fill="#000000"
@@ -137,7 +137,7 @@
 				<nav class="site-header__right" role="navigation">
 					<div class="primary-menu">
 						<ul class="primary-menu__items">
-							<li class="primary-menu__list SandDuneColour">
+							<li class="primary-menu__list SandDuneColour" tabindex="2" aria-label="Understand your Community">
 								<a
 									href="#home"
 									class="primary-menu__link text-up"
@@ -157,11 +157,10 @@
 									</svg>
 								</a>
 							</li>
-							<li class="primary-menu__list ForestColour">
+							<li class="primary-menu__list ForestColour" tabindex="15" aria-label="Learn from Others">
 								<a
 									href="#home"
 									class="primary-menu__link text-up"
-									tabindex="0"
 									>Learn from Others
 									<svg
 										class="primary-menu__link__svgIcon"
@@ -178,11 +177,10 @@
 									</svg>
 								</a>
 							</li>
-							<li class="primary-menu__list RustColour">
+							<li class="primary-menu__list RustColour" tabindex="30" aria-label="Plan your Project">
 								<a
 									href="#home"
 									class="primary-menu__link text-up"
-									tabindex="0"
 									>Plan your Project
 									<svg
 										class="primary-menu__link__svgIcon"
@@ -199,7 +197,7 @@
 									</svg>
 								</a>
 							</li>
-							<li class="search search-btn" tabindex="0">
+							<li class="search search-btn" tabindex="31" aria-label="Search">
 								<svg
 									class="search__svgIcon"
 									width="24"
@@ -259,1100 +257,1092 @@
 			</div>
 		</header>
 		<main>
+			<div class="mainSec">
 			<!-- BANNER HOME -->
-			<section class="main-banner">
-				<div class="main-banner__inner">
-					<div class="main-banner__left column-md-12 column-lg-6">
-						<img
-							src="images/home-banner.jpg"
-							class="main-banner__left_img"
-							alt="home banner"
-						/>
-					</div>
-					<div class="main-banner__right column-md-12 colmn-lg-6">
-						<div class="scroll-top">
-							<p class="primary-font white_text scroll-top__text">
-								scroll
-							</p>
+				<section class="main-banner">
+					<div class="main-banner__inner">
+						<div class="main-banner__left column-md-12 column-lg-6">
+							<img
+								src="images/home-banner.jpg"
+								class="main-banner__left_img"
+								alt="home banner"
+							/>
 						</div>
-						<div class="parallax-background-section">
-							<object
-								type="image/svg+xml"
-								data="images/bg-style-design-main_ani.svg"
-								class="animateImg"
-								title="Background Image Moving Left"
-							>
-								<img
-									src="images/bg-style-design-main_ani.svg"
+						<div class="main-banner__right column-md-12 colmn-lg-6">
+							<div class="scroll-top">
+								<p class="primary-font white_text scroll-top__text">
+									scroll
+								</p>
+							</div>
+							<div class="parallax-background-section">
+								<object
+									type="image/svg+xml"
+									data="images/bg-style-design-main_ani.svg"
 									class="animateImg"
-									alt="Background Image Moving Left"
-								/>
-							</object>
-						</div>
-						<article class="main-banner__right-inner">
-							<!-- <h1 class="white_text">
-								<div class="srOnly">
-									Make a difference in your community
-								</div>
-							</h1> -->
-							<div class="main-banner__header">
-								<div class="main-banner__text">
-									<div class="text-up">
-										<div class="hero-text bold">Make a</div>
-									</div>
-								</div>
-								<div class="main-banner__text">
-									<div class="text-up">
-										<span class="hero-text bold"
-											>difference</span
-										>
-									</div>
-								</div>
-								<div class="main-banner__text">
-									<div class="text-up">
-										<span class="hero-text bold"
-											>in your</span
-										>
-									</div>
-								</div>
-								<div class="main-banner__text">
-									<div class="text-up">
-										<span class="hero-text bold"
-											>community</span
-										>
-									</div>
-								</div>
-							</div>
-							<div class="main-banner__para">
-								<div class="main-banner__para_text">
-									<div class="text-up">
-										<span class="hero-para-text"
-											>Find the information, evidence and
-											insights</span
-										>
-									</div>
-								</div>
-								<div class="main-banner__para_text">
-									<div class="text-up">
-										<span class="hero-para-text"
-											>you need to positively impact the
-											wellbeing</span
-										>
-									</div>
-								</div>
-								<div class="main-banner__para_text">
-									<div class="text-up">
-										<span class="hero-para-text"
-											>of your community.</span
-										>
-									</div>
-								</div>
-							</div>
-							<div class="w-100 main-banner__link">
-								<a
-									class="link-text bold underline-animation"
-									href="#home"
-									id="discover-now"
-									>Discover how</a
+									title="Background Image Moving Left"
 								>
+									<img
+										src="images/bg-style-design-main_ani.svg"
+										class="animateImg"
+										alt="Background Image Moving Left"
+									/>
+								</object>
 							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-			<!-- CATEGORY -->
-			<section class="category-section">
-				<div class="container">
-					<div class="flex-row blocks-section-row">
-						<div class="column column-lg-6">
-							<article class="blocks-section-row__content-part">
-								<p
-									class="primaryRust primary-font medium-text blocks-section-para"
-								>
-									What is wellbeing?
-								</p>
-								<h1 class="category-section__main-heading">
-									Wellbeing is much broader than just your
-									moment-to-moment happiness.
-								</h1>
-								<p class="xl-text blocks-section-para">
-									Wellbeing comes from belonging to a
-									connected community, being happy and
-									healthy, living in great environments and a
-									society that is able to grow and develop.
-								</p>
-							</article>
-						</div>
-						<div class="column column-lg-6">
-							<div class="blocks-section-row__image-part">
-								<img
-									src="images/sport-lady.jpg"
-									alt="sport lady"
-									class="u-mobile-hidden"
-									tabindex="0"
-								/>
-								<img
-									src="images/sports-lady-mobile.png"
-									alt="sport lady mobile"
-									class="u-mobile-block w-100"
-								/>
-							</div>
-						</div>
-					</div>
-					<div class="flex-row blocks-section-row">
-						<div
-							class="blocks-section-row__image-section column column-lg-6"
-						>
-							<div class="blocks-section-row__image-part">
-								<img
-									src="images/photograph-person.jpg"
-									alt="photograph person"
-									class="u-mobile-hidden blocks-section-row__image-part_image"
-									tabindex="0"
-								/>
-								<img
-									src="images/photograph-person-mobile.png"
-									alt="photograph person mobile"
-									class="u-mobile-block blocks-section-row__image-part_image"
-								/>
-								<img
-									class="blocks-section-row__image-part_chair-women"
-									src="images/chair-women.jpg"
-									alt="chair women"
-									tabindex="0"
-								/>
-							</div>
-						</div>
-						<div class="image-content-section column column-lg-6">
-							<article class="image-content-section__inner">
-								<h2
-									class="image-content-section__inner__heading"
-									tabindex="0"
-								>
-									How do we make a difference?
-								</h2>
-								<p class="xl-text blocks-section-para">
-									Lotterywest and Healthway exist to help
-									build better and healthier Western
-									Australian communities. To do this, we focus
-									on five wellbeing categories. These
-									categories inform our grant-making
-									priorities.
-								</p>
+							<article class="main-banner__right-inner">
+								<!-- <h1 class="white_text">
+									<div class="srOnly">
+										Make a difference in your community
+									</div>
+								</h1> -->
+								<div class="main-banner__header">
+									<div class="main-banner__text">
+										<div class="text-up">
+											<div class="hero-text bold">Make a</div>
+										</div>
+									</div>
+									<div class="main-banner__text">
+										<div class="text-up">
+											<span class="hero-text bold"
+												>difference</span
+											>
+										</div>
+									</div>
+									<div class="main-banner__text">
+										<div class="text-up">
+											<span class="hero-text bold"
+												>in your</span
+											>
+										</div>
+									</div>
+									<div class="main-banner__text">
+										<div class="text-up">
+											<span class="hero-text bold"
+												>community</span
+											>
+										</div>
+									</div>
+								</div>
+								<div class="main-banner__para">
+									<div class="main-banner__para_text">
+										<div class="text-up">
+											<span class="hero-para-text"
+												>Find the information, evidence and
+												insights</span
+											>
+										</div>
+									</div>
+									<div class="main-banner__para_text">
+										<div class="text-up">
+											<span class="hero-para-text"
+												>you need to positively impact the
+												wellbeing</span
+											>
+										</div>
+									</div>
+									<div class="main-banner__para_text">
+										<div class="text-up">
+											<span class="hero-para-text"
+												>of your community.</span
+											>
+										</div>
+									</div>
+								</div>
+								<div class="w-100 main-banner__link">
+									<a
+										class="link-text bold underline-animation"
+										href="#home"
+										id="discover-now" tabindex="55" aria-label="Discover how"
+										>Discover how</a
+									>
+								</div>
 							</article>
 						</div>
 					</div>
-					<div class="flex-row category-section__row">
-						<div class="category-section__row__inner">
-							<h3 class="category-section__row__heading">
-								Select a wellbeing category to read more about
-								it:
-							</h3>
-							<div class="category-boxes">
-								<div class="category-boxes__inner">
-									<div class="animate-box animate-box-1">
-										<div
-											class="category-box cb-1"
-											tabindex="0"
-										>
-											<div class="category-box__inner">
-												<div
-													class="category-box__header"
-												>
-													<button
-														aria-hidden="false"
-														type="button"
-														class="btn-close"
-														value="close"
-														title="Close Button"
-														aria-label="Close Button"
-														tabindex="0"
+				</section>
+				<!-- CATEGORY -->
+				<section class="category-section">
+					<div class="container">
+						<div class="flex-row blocks-section-row" tabindex="56"
+						aria-label="What is wellbeing">
+							<div class="column column-lg-6">
+								<article class="blocks-section-row__content-part">
+									<p
+										class="primaryRust primary-font medium-text blocks-section-para"
+									>
+										What is wellbeing?
+									</p>
+									<h1 class="category-section__main-heading">
+										Wellbeing is much broader than just your
+										moment-to-moment happiness.
+									</h1>
+									<p class="xl-text blocks-section-para">
+										Wellbeing comes from belonging to a
+										connected community, being happy and
+										healthy, living in great environments and a
+										society that is able to grow and develop.
+									</p>
+								</article>
+							</div>
+							<div class="column column-lg-6">
+								<div class="blocks-section-row__image-part">
+									<img
+										src="images/sport-lady.jpg"
+										alt="sport lady"
+										class="u-mobile-hidden"
+									/>
+									<img
+										src="images/sports-lady-mobile.png"
+										alt="sport lady mobile"
+										class="u-mobile-block w-100"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="flex-row blocks-section-row" tabindex="57"
+						aria-label="How do we make a difference">
+							<div
+								class="blocks-section-row__image-section column column-lg-6"
+							>
+								<div class="blocks-section-row__image-part">
+									<img
+										src="images/photograph-person.jpg"
+										alt="photograph person"
+										class="u-mobile-hidden blocks-section-row__image-part_image"
+									/>
+									<img
+										src="images/photograph-person-mobile.png"
+										alt="photograph person mobile"
+										class="u-mobile-block blocks-section-row__image-part_image"
+									/>
+									<img
+										class="blocks-section-row__image-part_chair-women"
+										src="images/chair-women.jpg"
+										alt="chair women"
+									/>
+								</div>
+							</div>
+							<div class="image-content-section column column-lg-6">
+								<article class="image-content-section__inner">
+									<h2
+										class="image-content-section__inner__heading"
+									>
+										How do we make a difference?
+									</h2>
+									<p class="xl-text blocks-section-para">
+										Lotterywest and Healthway exist to help
+										build better and healthier Western
+										Australian communities. To do this, we focus
+										on five wellbeing categories. These
+										categories inform our grant-making
+										priorities.
+									</p>
+								</article>
+							</div>
+						</div>
+						<div class="flex-row category-section__row">
+							<div class="category-section__row__inner">
+								<h3 class="category-section__row__heading" tabindex="58"
+								aria-label="Select a wellbeing category">
+									Select a wellbeing category to read more about
+									it:
+								</h3>
+								<div class="category-boxes">
+									<div class="category-boxes__inner">
+										<div class="animate-box animate-box-1" >
+											<div class="category-box cb-1" 
+											>
+												<div class="category-box__inner">
+													<div
+														class="category-box__header"
 													>
+														<button
+															aria-hidden="false"
+															type="button"
+															class="btn-close"
+															value="close"
+															title="Close Button"
+															tabindex="60"
+															aria-label="Close Inclusive Thriving Community"
+														>
+															<svg
+																class="btn-close__svg svgIcon"
+																xmlns="http://www.w3.org/2000/svg"
+																viewBox="0 0 16 16"
+																fill="#000"
+															>
+																<path
+																	class="btn-close__svg__path"
+																	d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
+																/>
+															</svg>
+														</button>
+													</div>
+													<div class="category-box__inner-main" tabindex="59"
+													aria-label="Inclusive Thriving Community">
 														<svg
-															class="btn-close__svg svgIcon"
 															xmlns="http://www.w3.org/2000/svg"
-															viewBox="0 0 16 16"
-															fill="#000"
-														>
-															<path
-																class="btn-close__svg__path"
-																d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
-															/>
-														</svg>
-													</button>
-												</div>
-												<div
-													class="category-box__inner-main"
-												>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="145"
-														height="110"
-														viewBox="0 0 145 110"
-														fill="none"
-														class="svg-main"
-													>
-														<path
-															class="svg-main_path"
-															opacity="0.2"
-															d="M8.31822 97.0994C6.48959 92.0933 3.22418 80.0514 4.79158 71.9333C6.75082 61.7856 6.75095 52.0439 8.31822 50.0144C9.8855 47.9848 13.4121 43.9258 17.7225 43.5199C19.8248 43.5199 22.7975 42.8708 25.9141 41.6693C21.5727 39.4481 16.2334 35.4533 13.4121 30.9368C9.1018 24.0364 16.1551 13.0769 24.3839 11.0474C32.6128 9.01786 40.0579 14.2946 40.8416 25.2541C41.3917 32.9469 33.2537 38.8398 25.9141 41.6693C28.2055 42.8416 30.2189 43.5199 31.4372 43.5199C34.9639 43.5199 43.5846 40.2726 46.3275 52.0439C49.0704 63.8152 56.5156 90.1991 56.5156 97.0994C56.5156 104 43.1927 99.9408 33.7883 100.347C24.3839 100.753 11.8449 100.753 8.31822 97.0994Z"
-															fill="#D99459"
-														/>
-														<path
-															class="svg-main_path"
-															opacity="0.2"
-															d="M54.7655 9.76748C55.706 2.62353 65.0842 0.566943 69.6558 0.431641C82.9787 2.46117 88.0727 11.797 85.7212 23.5683C84.0019 32.1747 73.6948 35.7906 67.511 37.7473C67.5732 37.7578 67.635 37.767 67.6966 37.775C70.8314 38.1809 85.3298 41.0222 88.0727 42.6459C90.8157 44.2695 98.6527 60.5057 99.4364 64.9707C100.22 69.4356 100.612 74.3064 101.004 79.1773L101.004 79.1774C101.396 84.0483 101.004 87.2955 101.004 90.9487C101.004 94.6018 101.004 98.255 99.4364 99.8786C97.869 101.502 97.869 103.938 95.5179 105.561C93.1668 107.185 96.3016 107.997 90.8157 108.403C85.3298 108.809 81.4113 108.403 69.6558 108.403H48.1041C44.9693 108.403 40.659 88.1073 41.0508 79.1774C41.4427 70.2475 44.1847 51.5758 46.1444 49.5463C48.1041 47.5167 51.6312 41.0222 54.7655 39.3986C57.8999 37.775 61.0347 41.0222 62.9939 39.3986C63.5207 38.9621 65.2371 38.4669 67.511 37.7473C64.4077 37.2248 60.5586 33.6043 56.3329 28.0332C52.0226 22.3506 53.59 18.6974 54.7655 9.76748Z"
-															fill="#D99459"
-														/>
-														<path
-															class="svg-main_path"
-															opacity="0.2"
-															d="M119.773 10.2363C123.692 10.7775 131.685 13.5648 132.312 20.384C133.096 28.908 131.529 36.6202 124.475 39.0557C121.529 40.0732 118.855 40.1696 116.313 40.3514C119.234 40.905 122.311 41.0577 124.475 41.897C129.178 43.7205 129.569 44.3324 132.312 44.3324C135.056 44.3324 136.231 44.3324 138.19 47.5797C140.149 50.8269 142.109 53.6683 143.676 63.0041C145.243 72.3399 143.284 69.4986 143.676 73.5577C144.068 77.6167 140.541 94.6648 139.757 97.912C138.974 101.159 132.312 101.565 126.826 101.565C121.34 101.565 100.181 108.466 93.5194 109.683C86.8576 110.901 90.7764 104.812 90.7764 101.565C90.7764 98.3179 90.3846 93.853 90.7764 87.3585C91.1683 80.864 92.3438 75.5872 93.5194 69.4986C94.6949 63.41 100.181 50.0151 106.059 44.3324C109.481 41.0239 112.77 40.6048 116.313 40.3514C112.888 39.7023 109.678 38.5019 108.41 34.9966C106.059 28.5021 106.059 28.5021 106.059 24.443C106.059 20.384 103.708 20.384 106.059 16.3249C108.41 12.2659 112.72 10.2363 117.422 10.2363H119.773Z"
-															fill="#D99459"
-														/>
-														<path
-															class="svg-main_path"
-															d="M51.3375 107.946C50.4131 107.946 49.4888 106.972 48.1947 104.828C41.9092 93.7205 42.6487 75.4027 45.052 61.7617C43.3882 54.7464 41.7244 49.29 40.4303 47.731C37.6573 44.4182 32.8507 43.8336 27.8593 43.0541C26.1955 42.8593 24.5317 42.4695 23.0528 42.2747C21.5738 42.4695 20.0949 42.6644 18.616 42.8592C13.4397 43.4439 8.44827 44.2233 6.5996 47.731C3.08712 54.1617 0.314101 88.0692 6.41472 94.3051C6.78445 94.6948 6.78445 95.2795 6.41472 95.6692C6.04498 96.059 5.49039 96.059 5.12065 95.6692C-2.08917 88.2641 1.4233 52.9925 4.93577 46.7567C7.33905 42.4695 12.7002 41.69 18.2462 40.9105H18.4311C13.2548 38.767 9.18773 34.6747 9.18773 24.7363C9.18773 20.2543 10.6667 16.3568 13.6246 13.6286C16.2127 11.2902 19.7252 9.92612 23.2376 9.92612C30.2626 9.92612 37.4724 14.9928 37.4724 24.7363C37.4724 34.8696 33.0356 39.1567 27.4896 41.1054C27.6745 41.1054 27.8593 41.1054 28.0442 41.1054C33.2205 41.8849 38.5816 42.6644 41.7244 46.5618C42.8336 47.9259 44.3125 52.0182 45.7914 57.4745C46.9006 52.4079 48.1947 48.5105 49.3039 46.3669C52.0769 41.3003 58.5473 40.3259 65.2025 39.5465C65.5722 39.5465 65.942 39.5465 66.3117 39.3516C59.8414 37.0132 54.6651 32.1414 54.6651 19.8645C54.6651 7.78255 63.3538 2.32617 71.488 2.32617C79.6221 2.32617 88.3109 7.78255 88.3109 19.8645C88.3109 32.5311 82.58 37.208 75.7399 39.5465C76.2945 39.5465 76.6643 39.7413 77.2189 39.7413C83.5043 40.7157 89.7898 41.69 93.672 46.1721C95.151 48.1208 96.8148 52.0182 98.2937 57.0848C99.5878 51.8233 100.697 47.9259 101.436 46.5618C103.84 42.2747 109.201 41.4952 114.747 40.7157H114.932C109.755 38.5721 105.688 34.4798 105.688 24.5414C105.688 14.4081 113.083 9.73123 119.738 9.73123C126.763 9.73123 133.973 14.7979 133.973 24.5414C133.973 34.6747 129.536 38.9618 123.99 40.9105C124.175 40.9105 124.36 40.9105 124.545 40.9105C129.721 41.69 135.082 42.4695 138.225 46.3669C143.032 52.213 145.065 85.9257 138.225 95.4743C137.855 95.8641 137.301 96.059 136.931 95.6692C136.561 95.2795 136.376 94.6948 136.746 94.3051C143.032 85.5359 141.183 52.9925 136.746 47.731C133.973 44.4182 129.167 43.8336 124.175 43.0541C122.511 42.8593 120.848 42.4695 119.369 42.2747C117.89 42.4695 116.411 42.6644 114.932 42.8592C109.755 43.4439 104.764 44.2233 102.915 47.731C101.991 49.4848 100.512 54.5515 99.0332 60.9822C102.176 75.2078 103.1 95.0846 96.2602 105.023C95.7056 105.802 94.0418 108.141 92.378 107.167C88.8655 104.828 93.3023 78.5206 97.1845 61.1771C95.7056 54.7464 93.8569 49.6797 92.1931 47.731C88.8655 43.8336 83.1346 42.8592 76.8491 41.8849C75.0005 41.4952 72.9669 41.3003 70.9334 40.9105C69.0847 41.3003 67.236 41.4952 65.5722 41.69C59.2867 42.4695 53.371 43.249 50.9677 47.5362C49.6737 50.0695 48.0099 55.331 46.9007 61.9566C50.7829 78.3257 54.2953 102.49 52.6315 106.777C52.4467 107.556 51.7072 107.751 51.3375 107.946ZM46.1612 66.8284C44.4974 79.3001 44.4974 94.6949 49.6737 103.854C50.4131 105.023 50.7829 105.608 50.9677 105.803C52.6315 102.685 49.6736 82.6129 46.1612 66.8284ZM98.1089 65.4643C94.7812 81.8334 91.6385 103.269 93.4872 105.413C93.4872 105.413 94.0418 105.023 94.7812 103.854C100.697 95.2795 100.512 78.5206 98.1089 65.4643ZM23.4225 11.8748C17.5067 11.8748 11.2213 15.9671 11.2213 24.7363C11.2213 35.8439 16.5824 38.767 23.0528 40.1311C29.8929 38.9618 35.8086 36.0388 35.8086 24.7363C35.8086 15.9671 29.3382 11.8748 23.4225 11.8748ZM119.923 11.8748C114.007 11.8748 107.722 15.9671 107.722 24.7363C107.722 35.8439 113.083 38.767 119.553 40.1311C126.394 38.9618 132.309 36.0388 132.309 24.7363C132.309 20.8389 131.015 17.3312 128.427 15.1876C126.209 13.044 123.066 11.8748 119.923 11.8748ZM71.6728 4.27488C64.463 4.27488 56.6986 9.14665 56.6986 19.8645C56.6986 33.3106 63.1689 36.8183 71.1182 38.5721C79.4373 37.0131 86.6471 33.7003 86.6471 19.8645C86.6471 9.14665 78.8827 4.27488 71.6728 4.27488Z"
-															fill="#D99459"
-															stroke="#D99459"
-															stroke-width="1.00994"
-														/>
-													</svg>
-													<p
-														class="medium-text primary-font"
-													>
-														Inclusive Thriving
-														Community
-													</p>
-												</div>
-												<!-- CARD -->
-												<div
-													class="category-box__card-inner"
-												>
-													<h4
-														class="category-box__card-inner__heading"
-													>
-														Supporting the diversity
-														of Western Australians
-														to actively engage in
-														community life.
-													</h4>
-													<ul>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																class="svgIcon"
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	class="svgIcon_path"
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	class="svgIcon_path"
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	class="svgIcon_path"
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>More people
-																have a stronger
-																sense of
-																belonging in
-																their
-																community</span
-															>
-														</li>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																class="svgIcon"
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	class="svgIcon_path"
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	class="svgIcon_path"
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	class="svgIcon_path"
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>Vulnerability
-																and disadvantage
-																is reduced
-																across our
-																community</span
-															>
-														</li>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																class="svgIcon"
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	class="svgIcon_path"
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	class="svgIcon_path"
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	class="svgIcon_path"
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>Raised
-																community
-																connection and
-																participation</span
-															>
-														</li>
-													</ul>
-													<a
-														class="btn light category-box__btn"
-														href="#home"
-														>explore this
-														category</a
-													>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="animate-box animate-box-2">
-										<div
-											class="category-box cb-2"
-											tabindex="0"
-										>
-											<div class="category-box__inner">
-												<div
-													class="category-box__header"
-												>
-													<button
-														aria-hidden="false"
-														type="button"
-														class="btn-close"
-														value="close"
-														title="Close Button"
-														aria-label="Close Button"
-														tabindex="0"
-													>
-														<svg
-															class="btn-close__svg"
-															xmlns="http://www.w3.org/2000/svg"
-															viewBox="0 0 16 16"
-															fill="#000"
-														>
-															<path
-																class="btn-close__svg__path"
-																d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
-															/>
-														</svg>
-													</button>
-												</div>
-												<div
-													class="category-box__inner-main"
-												>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="80"
-														height="126"
-														viewBox="0 0 80 126"
-														fill="none"
-														class="svg-main"
-													>
-														<path
-															class="svg-main_path"
-															opacity="0.2"
-															d="M32.5356 72.188C26.4643 69.9275 13.9706 61.7317 12.5661 47.0317C10.8106 28.6567 13.4439 10.2817 27.7078 6.78171C41.9717 3.28171 51.1883 2.84421 60.6244 6.78171C70.0605 10.7192 77.3022 26.688 77.3022 33.4692C77.3022 40.2505 74.0105 54.9067 65.0133 61.9067C57.8155 67.5067 44.7513 70.2192 39.1189 70.8755L35.3883 72.188C38.3142 72.6255 45.6583 73.238 51.6272 72.188C57.5961 71.138 62.0142 70.8755 63.4772 70.8755L65.0133 73.5005C62.2337 75.1775 55.665 78.5755 51.6272 78.7505C46.58 78.9692 36.9244 78.5317 35.3883 80.5005C34.9881 81.0134 34.5134 82.1351 34.0535 83.5793L32.9018 98.5038C33.7194 102.393 34.1628 110.287 34.2911 114.188L60.6244 121.188C48.7744 122.282 24.0211 124.338 19.8078 123.813C15.5944 123.288 9.71332 122.719 7.29943 122.5C6.64111 122.063 6.7728 121.188 12.5661 121.188H40.6549C41.5326 121.188 33.8524 118.563 32.5356 116.375C31.4821 114.625 32.0966 106.896 32.5356 103.25L32.9018 98.5038C32.7872 97.9582 32.6651 97.4914 32.5356 97.1255C31.5619 94.3756 32.7482 87.6784 34.0535 83.5793L34.2911 80.5005C33.6327 79.9171 32.2282 78.2254 31.8771 76.1255C31.526 74.0255 32.1698 72.6255 32.5356 72.188Z"
-															fill="#D99459"
-															stroke="#D99459"
-														/>
-														<path
-															class="svg-main_path"
-															d="M33.5313 124.171C20.7697 124.171 8.41344 123.764 7.60319 122.748C7.19806 122.342 7.40058 121.732 7.80571 121.326C8.21084 121.123 8.61591 121.123 9.02103 121.326C12.2621 122.342 48.7236 122.545 58.6492 121.732C55.6108 120.716 49.7364 119.7 45.4826 118.887C40.4185 117.871 35.9621 117.058 34.5441 116.449C33.7339 116.042 33.1264 115.229 32.7212 113.4C31.1007 106.084 31.911 83.1193 34.7469 79.6645C35.9623 78.0387 39.8108 77.8354 46.4954 77.2258C52.5723 76.8193 61.08 76.2098 62.7005 73.7711C62.9031 73.3647 63.1056 72.958 62.9031 72.3484C62.2954 71.7387 58.4467 72.5516 55.6108 72.958C50.1415 73.9742 42.4443 75.3967 34.7469 74.1774C34.3417 74.5838 34.1392 74.9903 33.7341 75.3967C32.7212 76.8193 31.7082 78.2419 29.48 78.2419C29.48 78.2419 29.48 78.2419 29.2774 78.2419C22.1877 78.2419 5.98257 62.1871 2.94411 54.6677C2.13386 52.8387 2.13386 51.4161 2.94411 50.6032C3.5518 50.1967 3.95699 49.7903 4.76725 49.9935C6.59032 49.9935 8.4133 52.229 11.2492 55.6838C15.3005 60.5613 20.9723 67.4711 29.2774 70.7227C30.6954 71.3324 32.3161 71.7387 33.9366 72.1451C35.7597 70.5193 38.3928 68.8937 43.6595 68.6905C61.4851 68.6905 75.8672 54.2613 75.8672 36.3774C75.8672 14.4291 59.2569 4.47088 43.6595 4.47088C28.2646 4.47088 11.452 14.4291 11.452 36.3774C11.452 48.3677 18.5416 57.9193 25.0236 63C28.6698 65.8451 31.5058 66.658 32.7212 66.4548C34.3417 66.0483 34.7467 65.0322 35.1518 63.8129C35.5569 62.5935 36.3674 60.7645 39.0007 61.3742C40.2161 61.5774 41.6341 60.358 43.052 59.3419C44.6725 57.9193 46.9005 56.0903 48.521 58.1225C48.9262 58.3258 50.7492 57.7161 53.3826 55.2774C57.0287 52.0258 59.0546 48.1645 58.2443 46.5387C56.6238 43.0838 60.27 39.8322 63.1058 37.3935C64.5238 36.1742 66.3469 34.5484 66.3469 33.7355C66.3469 33.7355 66.1441 33.7354 65.9415 33.5322C64.7262 33.329 62.2956 32.7195 61.2828 28.0453C60.4725 24.5905 60.6749 22.7613 60.8774 21.7451C60.8774 21.5419 60.8774 21.1355 60.8774 21.1355C60.6749 20.9322 59.6623 20.3225 58.0417 19.5096C57.0289 19.1032 56.0159 18.4935 54.3954 17.6806C52.9774 16.8677 52.1672 16.0549 51.3569 15.2419C50.1415 14.0226 49.7366 13.413 46.9007 14.0227C44.6725 14.4291 39.811 16.6645 37.7853 21.3387C36.3674 24.3871 36.1648 26.6228 36.7725 28.0453C37.5828 29.6711 40.0135 30.0774 42.0392 30.4838C43.8623 30.8903 45.4826 31.0937 46.2928 32.1098C49.3313 35.7679 47.9133 39.6292 46.698 43.2873C45.6851 46.3357 44.6723 49.1806 45.6851 52.0258C46.0903 53.0419 46.0903 54.058 45.4826 54.8709C43.4569 57.9193 35.9623 58.529 34.9494 58.7322C34.3417 58.7322 33.9366 58.3258 33.9366 57.7161C33.9366 57.1064 34.3417 56.7 34.9494 56.7C37.7853 56.4967 42.8494 55.4806 43.8623 53.8548C44.0648 53.6516 44.0648 53.2451 43.8623 52.8387C42.4443 49.3838 43.6597 45.7258 44.8751 42.6774C46.0905 39.2225 47.1033 36.1742 44.8751 33.329C44.47 32.9225 43.052 32.5161 41.8366 32.3129C39.4058 31.9064 36.3672 31.2967 35.1518 28.858C34.139 26.8258 34.3415 24.1838 36.1646 20.3226C38.5954 15.0387 44.0646 12.3969 46.698 11.7872C50.3441 10.9743 51.7623 11.9902 53.1802 13.616C53.7879 14.2257 54.3954 15.0386 55.6108 15.6483C57.0287 16.4612 58.2443 17.0709 59.2571 17.4774C62.7007 19.3064 63.3084 19.5096 63.1058 21.7451C62.9033 22.558 62.7005 24.1838 63.5108 27.2322C64.321 30.4838 65.5364 30.8905 66.5492 31.0937C67.3595 31.2969 68.5749 31.5 68.5749 33.329C68.3723 34.9548 66.7518 36.5806 64.7262 38.4096C62.2954 40.6451 59.4595 43.0838 60.4723 45.1161C62.2954 49.1806 56.421 55.6838 52.5723 58.3258C49.5339 60.358 48.1159 59.7483 47.3056 58.9354C46.9005 58.529 46.4954 58.9354 44.6723 60.358C43.0518 61.7806 41.0264 63.4064 38.7982 62.7967C37.9879 62.5935 37.9877 62.5935 37.38 63.8129C36.9749 65.0322 36.1646 67.0647 33.5313 67.6744C31.5056 68.284 27.8595 66.8612 24.0108 64.0161C17.1237 58.7322 9.62883 48.5709 9.62883 35.7677C9.62883 12.3967 27.252 1.8291 43.8623 1.8291C60.27 1.8291 78.0954 12.3967 78.0954 35.7677C78.0954 54.6677 62.7007 70.1129 43.8623 70.1129C40.4187 70.3161 38.393 70.9258 36.9751 71.9419C43.6597 72.7548 50.3441 71.3322 55.4082 70.5193C60.8774 69.5032 64.321 68.8935 64.9287 71.3322C65.3339 72.5516 65.1313 73.5677 64.5236 74.5838C62.2954 77.8354 54.3956 78.4451 46.9007 79.0548C42.6469 79.4613 37.1774 79.8677 36.5697 80.6806C34.139 83.729 33.3289 112.181 35.7597 114.213C36.9751 114.619 41.6339 115.635 46.2928 116.652C60.2697 119.497 62.9031 120.31 62.9031 121.732C62.9031 121.935 62.9033 122.545 62.093 122.952C60.27 123.561 46.698 124.171 33.5313 124.171ZM4.96975 51.6193C4.96975 51.6193 4.76725 51.6193 4.76725 51.8225C4.76725 51.8225 4.56458 52.4322 5.17228 53.6516C8.21074 60.9677 23.8084 76.0064 29.6828 76.0064C29.6828 76.0064 29.6828 76.0064 29.8853 76.0064C31.1007 76.0064 31.5056 75.3967 32.5185 73.9742C32.721 73.7709 32.7212 73.5677 32.9238 73.5677C31.7084 73.1612 30.2903 72.958 29.0749 72.3484C20.1621 68.8935 14.2877 61.5774 10.2364 56.7C8.00817 54.2613 5.78001 51.8225 4.96975 51.6193Z"
-															fill="#D99459"
-															stroke="#D99459"
-															stroke-width="1.2"
-														/>
-													</svg>
-													<p
-														class="medium-text primary-font"
-													>
-														Connected Cultural
-														Experiences
-													</p>
-												</div>
-												<!-- MODAL -->
-												<div
-													class="category-box__card-inner"
-												>
-													<h4
-														class="category-box__card-inner__heading"
-													>
-														Lorem Ipsum Connected
-														Cultural Experiences
-													</h4>
-													<ul>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>More people
-																have a stronger
-																sense of
-																belonging in
-																their
-																community</span
-															>
-														</li>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>Raised
-																community
-																connection and
-																participation</span
-															>
-														</li>
-													</ul>
-													<a
-														class="btn light category-box__btn"
-														href="#home"
-														>explore this
-														category</a
-													>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="animate-box animate-box-3">
-										<div
-											class="category-box cb-3"
-											tabindex="0"
-										>
-											<div class="category-box__inner">
-												<div
-													class="category-box__header"
-												>
-													<button
-														aria-hidden="false"
-														type="button"
-														class="btn-close"
-														value="close"
-														title="Close Button"
-														aria-label="Close Button"
-													>
-														<svg
-															class="btn-close__svg"
-															xmlns="http://www.w3.org/2000/svg"
-															viewBox="0 0 16 16"
-															fill="#000"
-														>
-															<path
-																class="btn-close__svg__path"
-																d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
-															/>
-														</svg>
-													</button>
-												</div>
-												<div
-													class="category-box__inner-main"
-												>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="72"
-														height="127"
-														viewBox="0 0 72 127"
-														fill="none"
-														class="svg-main"
-													>
-														<path
-															class="svg-main_path"
-															opacity="0.2"
-															d="M8.97939 78.8832C10.57 81.7212 23.4278 83.219 29.6578 83.6131L34.4294 85.9781L41.985 125C40.9246 115.803 38.6446 95.7533 38.0084 89.1314C37.3721 82.5095 36.4177 79.5401 36.0201 78.8832L44.371 83.6131L55.1078 81.6423C59.7472 79.2774 69.2646 72.0248 70.219 61.9343C71.1733 51.8438 61.3379 40.1241 56.3008 35.5255L36.0201 17H34.4294L18.9206 31.1898C13.486 35.7883 2.37821 47.1927 1.42382 56.0219C0.230836 67.0584 6.99108 75.3358 8.97939 78.8832Z"
-															fill="#D99459"
-														/>
-														<path
-															class="svg-main_path"
-															fill-rule="evenodd"
-															clip-rule="evenodd"
-															d="M41.487 124.646C41.487 124.858 41.3458 125 41.2047 125C40.993 125 40.8519 124.858 40.8519 124.717C39.864 116.86 38.8761 108.933 37.7471 102.279C36.6181 95.6258 35.348 90.1756 33.8662 87.2028C31.961 83.4514 29.5618 83.593 26.3159 83.8761C24.5519 84.0177 22.5056 84.1593 20.177 83.7346C16.5783 83.0268 12.2034 80.9033 8.60466 77.5766C5.57046 74.8161 3.03019 71.2771 1.97175 67.101C0.772183 62.7126 1.19556 57.6871 2.81851 52.6616C4.51202 47.4238 7.54622 42.186 11.4272 37.656C15.3081 33.1968 19.9653 29.5162 24.2696 26.1187C28.4328 22.792 32.2432 19.8192 34.4307 16.7756C34.5718 16.5632 34.7835 16.2801 34.9246 16.0678C35.1363 15.7139 35.348 15.2892 35.5597 14.9353C34.2895 13.3781 33.3017 11.9625 32.596 10.6176C31.2553 8.14027 30.9025 6.08761 31.1848 4.67199C31.3259 3.96418 31.6082 3.32715 31.961 2.90246C32.3138 2.47777 32.8077 2.19465 33.3017 2.05309C33.8662 1.91152 34.5012 2.05309 35.0657 2.47777L35.2069 2.54855C36.4064 3.39793 37.4649 5.3798 37.6766 7.92793C37.8883 9.98058 37.5354 12.3871 36.3359 14.8645C40.1463 19.4653 45.7913 24.8446 51.013 29.7993L53.1298 31.852C56.9402 35.4618 60.3273 38.7177 63.0086 42.0445C65.7606 45.3712 67.8775 48.7687 69.077 52.5201C70.3472 56.413 70.6294 60.7307 69.8532 64.836C69.1476 68.6582 67.5247 72.3388 64.9138 75.2408C62.3736 78.0721 58.916 80.1955 55.2467 81.6111C51.1541 83.1683 46.8497 83.8761 43.3922 83.5222C40.358 83.2391 38.0294 82.1774 36.4064 80.691C34.5718 78.9922 33.7251 76.798 33.7251 74.4622C33.7251 72.4096 34.4307 70.3569 35.5597 68.3043C35.9125 67.6672 36.3359 67.0302 36.7592 66.3932C36.0536 66.464 35.348 66.464 34.7129 66.3224C32.8783 66.0393 31.1142 64.9776 29.5618 63.6327C27.5861 61.8632 25.822 59.5982 24.6224 57.6163C23.4934 55.8468 22.7878 54.2896 22.5761 53.3694C22.5056 53.0863 22.5056 52.8032 22.5761 52.5908C22.7172 52.3077 22.9289 52.1662 23.2817 52.2369C23.564 52.3077 23.9168 52.5201 24.4107 53.0155C25.6103 54.148 27.5861 56.6254 29.5618 59.0319C31.2553 61.0846 32.9489 63.1373 34.0073 64.3405C34.8541 65.1899 35.2069 65.473 35.348 65.3315C35.6302 65.0483 35.6302 63.9158 35.7008 62.1463C35.7008 61.7216 35.7008 61.2262 35.7714 60.7307C35.9125 58.1118 36.1947 54.5727 36.7592 51.246C37.1826 48.7687 37.7471 46.3621 38.5233 44.451C38.5939 44.1679 38.735 43.9555 38.8761 43.6724C38.5939 43.6016 38.3116 43.6016 38.0294 43.5309C37.0415 43.2477 36.1242 42.6815 35.4186 41.9737C34.6424 41.1951 33.9367 40.2749 33.5839 39.2132C33.4428 38.7885 33.3017 38.3638 33.1605 38.0099C32.9489 37.3021 32.9489 36.5943 32.9489 36.0988C32.9489 35.4618 33.1605 35.0371 33.5134 34.8956H33.5839C34.3601 34.6832 35.5597 36.4527 36.7592 38.2931C36.8298 38.4346 36.8298 38.647 36.6887 38.7885C36.5476 38.8593 36.3359 38.8593 36.1948 38.7177C35.1363 37.1606 34.0779 35.5326 33.7251 35.6034C33.6545 35.6742 33.5839 35.8865 33.5839 36.2404C33.5839 36.7359 33.6545 37.3021 33.7956 37.9391C33.8662 38.2931 34.0073 38.7177 34.1484 39.0716C34.5012 39.9918 35.1363 40.8412 35.8419 41.549C36.5476 42.186 37.3237 42.6815 38.1705 42.9646C38.4528 43.0354 38.8056 43.1062 39.1584 43.177C39.7935 41.9029 40.5696 40.912 41.2753 40.2041C42.616 38.7885 44.0272 38.2931 44.8034 38.3638C45.0151 38.3638 45.1562 38.4346 45.2974 38.5762C45.5796 38.7885 45.7207 39.0716 45.7207 39.4256C45.7207 39.7087 45.6502 40.0626 45.509 40.4873C45.2268 41.1243 44.7329 41.8321 44.0978 42.3984C43.3216 43.1062 42.2632 43.5309 41.2047 43.814C40.6402 43.9555 40.0757 44.0263 39.5112 43.9555C39.3701 44.2387 39.2289 44.5926 39.0878 44.8757C38.3116 46.716 37.7471 49.1226 37.3943 51.5291C36.8298 54.8558 36.5476 58.3949 36.477 60.943C36.477 61.4385 36.4064 61.934 36.4064 62.2879C36.3359 64.199 36.2653 65.4022 35.8419 65.8977C36.3359 65.8977 36.8298 65.8977 37.2532 65.7562C38.2411 64.4821 39.3701 63.2788 40.5696 62.2171C42.1926 60.7307 44.0272 59.5274 45.5796 58.6072C47.6259 57.404 49.3194 56.6962 50.0956 56.6962C50.3073 56.6962 50.4485 56.6962 50.5896 56.7669C50.8718 56.9085 50.9424 57.1208 50.8013 57.4747C50.7307 57.6871 50.5896 57.8994 50.3779 58.1826C49.7428 59.0319 48.3316 60.2352 46.5675 61.6508C44.9445 62.9249 43.0393 64.2697 40.993 65.2607C39.864 65.7562 38.735 66.1808 37.606 66.3932C37.0415 67.1718 36.477 67.9504 36.0536 68.729C34.9952 70.6401 34.2895 72.6219 34.2895 74.533C34.2895 76.6565 35.1363 78.7091 36.7592 80.2663C38.2411 81.6819 40.4991 82.6729 43.3922 82.8852C46.7086 83.1683 50.9424 82.5313 54.9645 80.9741C58.4926 79.6293 61.8796 77.5766 64.3493 74.8161C66.8896 71.9849 68.442 68.4458 69.1476 64.7652C69.8532 60.8015 69.571 56.5546 68.3714 52.7324C67.1718 49.0518 65.1255 45.7251 62.4441 42.4691C59.7627 39.1424 56.3757 35.8865 52.5653 32.3474L50.4484 30.2948C45.2974 25.4109 39.6523 20.1731 35.9125 15.5723C35.7714 15.8554 35.5597 16.2093 35.348 16.4924C35.2069 16.7756 34.9952 16.9879 34.8541 17.2003C32.596 20.3146 28.7856 23.3582 24.5519 26.6142C20.3181 29.9409 15.5904 33.6215 11.78 38.0099C7.89903 42.4691 4.93539 47.6362 3.31245 52.8032C1.76006 57.6871 1.33669 62.6418 2.4657 66.8886C3.52414 70.8524 5.99384 74.3207 8.95748 77.0104C12.4856 80.1955 16.6488 82.3189 20.177 82.956C22.435 83.3807 24.4107 83.2391 26.1748 83.0975C29.6324 82.8144 32.2432 82.6021 34.3601 86.7782C35.9125 89.8217 37.1826 95.3427 38.3116 102.067C39.5112 108.862 40.4991 116.719 41.487 124.646ZM35.8419 14.369C36.9004 12.104 37.1826 9.9098 36.9709 8.06949C36.7592 5.73371 35.7714 3.96418 34.7129 3.18559L34.5718 3.1148C34.1484 2.83168 33.725 2.7609 33.3017 2.83168C32.9489 2.90246 32.596 3.1148 32.3138 3.46871C32.0315 3.82262 31.8198 4.31809 31.6787 4.95512C31.467 6.29996 31.7493 8.21105 33.0194 10.476C33.7956 11.6085 34.7129 12.9534 35.8419 14.369ZM41.1341 62.7126C40.1463 63.5619 39.2289 64.4821 38.3822 65.473C39.2289 65.2607 40.0051 64.9068 40.8519 64.5529C42.8277 63.6327 44.7329 62.2879 46.2852 61.0138C48.0493 59.5982 49.39 58.3949 50.0251 57.6163C50.1662 57.4748 50.2368 57.3332 50.3073 57.1916C49.6723 57.2624 48.0493 57.8994 46.0735 59.0319C44.5212 60.0937 42.7571 61.2969 41.1341 62.7126ZM30.0558 63.208C31.467 64.4113 32.9489 65.3315 34.5718 65.6854C34.2895 65.473 34.0073 65.1899 33.6545 64.836C32.5255 63.7035 30.832 61.5801 29.1385 59.5274C27.1627 57.1208 25.1869 54.6435 23.9874 53.5818C23.6346 53.2279 23.3523 53.0863 23.2112 53.0155C23.2112 53.0863 23.2112 53.1571 23.2817 53.2987C23.4934 54.148 24.1285 55.6344 25.1869 57.3332C26.3865 59.2443 28.08 61.5093 30.0558 63.208ZM41.8398 40.558C41.2047 41.1951 40.5696 42.0445 40.0051 43.1062C40.4285 43.1062 40.7813 43.0354 41.2047 42.9646C42.1926 42.7523 43.1099 42.3276 43.8155 41.6905C44.38 41.1951 44.8034 40.6288 45.0151 40.0626C45.1562 39.7795 45.1562 39.4963 45.1562 39.284C45.1562 39.1424 45.0857 39.0009 45.0151 38.9301C44.9445 38.8593 44.874 38.8593 44.8034 38.8593C44.2389 38.8593 43.0393 39.3548 41.8398 40.558Z"
-															stroke="#D99459"
-															stroke-width="2.5"
-														/>
-													</svg>
-													<p
-														class="medium-text primary-font"
-													>
-														Protected Sustainable
-														Ecosystem
-													</p>
-												</div>
-												<!-- MODAL -->
-												<div
-													class="category-box__card-inner"
-												>
-													<h4
-														class="category-box__card-inner__heading"
-													>
-														Lorem Ipsum Protected
-														Sustainable Ecosystem
-													</h4>
-													<ul>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>More people
-																have a stronger
-																sense of
-																belonging in
-																their
-																community</span
-															>
-														</li>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>Raised
-																community
-																connection and
-																participation</span
-															>
-														</li>
-													</ul>
-													<a
-														class="btn light category-box__btn"
-														href="#home"
-														>explore this
-														category</a
-													>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="animate-box animate-box-4">
-										<div
-											class="category-box cb-4"
-											tabindex="0"
-										>
-											<div class="category-box__inner">
-												<div
-													class="category-box__header"
-												>
-													<button
-														aria-hidden="false"
-														type="button"
-														class="btn-close"
-														value="close"
-														title="Close Button"
-														aria-label="Close Button"
-													>
-														<svg
-															class="btn-close__svg"
-															xmlns="http://www.w3.org/2000/svg"
-															viewBox="0 0 16 16"
-															fill="#000"
-														>
-															<path
-																class="btn-close__svg__path"
-																d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
-															/>
-														</svg>
-													</button>
-												</div>
-												<div
-													class="category-box__inner-main"
-												>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="65"
-														height="116"
-														viewBox="0 0 65 116"
-														fill="none"
-														class="svg-main"
-													>
-														<g
-															class="svg-main__g"
-															clip-path="url(#clip0_0_120514)"
+															width="145"
+															height="110"
+															viewBox="0 0 145 110"
+															fill="none"
+															class="svg-main"
 														>
 															<path
 																class="svg-main_path"
 																opacity="0.2"
-																d="M30.436 111.771L34.6624 114.188L36.4734 115.396L38.8885 110.563L42.5112 106.938C43.3162 105.528 45.047 102.346 45.53 100.896C46.0131 99.4462 42.5112 98.2781 40.6998 97.8753C42.1087 96.667 44.9263 94.1295 44.9263 93.6462C44.9263 93.1628 43.3162 91.0281 42.5112 90.0212C43.3162 89.417 44.9263 87.8462 44.9263 86.3962C44.9263 84.9462 42.9137 83.7781 41.9074 83.3753C42.7124 83.1739 44.4432 82.0462 44.9263 79.1462C45.4093 76.2462 43.5175 72.7017 42.5112 71.292L44.3225 69.4795L54.5866 59.2087L63.6432 38.0628L60.0206 17.5212L44.3225 3.62533L24.3982 2.41699L11.7187 11.4795L2.66211 30.2087C4.27217 38.8684 7.61305 56.792 8.09607 59.2087C8.57909 61.6253 19.9703 71.4934 25.6055 76.1253C24.3982 75.9239 21.9836 76.1253 21.9836 78.542C21.9836 80.9587 23.5934 83.5767 24.3982 84.5837V90.0212C23.7946 90.2225 22.4666 91.3503 21.9836 94.2503C21.3798 97.8753 26.2096 97.2712 24.3982 100.292C22.9492 102.709 27.0146 104.521 29.2284 105.125L30.436 111.771Z"
+																d="M8.31822 97.0994C6.48959 92.0933 3.22418 80.0514 4.79158 71.9333C6.75082 61.7856 6.75095 52.0439 8.31822 50.0144C9.8855 47.9848 13.4121 43.9258 17.7225 43.5199C19.8248 43.5199 22.7975 42.8708 25.9141 41.6693C21.5727 39.4481 16.2334 35.4533 13.4121 30.9368C9.1018 24.0364 16.1551 13.0769 24.3839 11.0474C32.6128 9.01786 40.0579 14.2946 40.8416 25.2541C41.3917 32.9469 33.2537 38.8398 25.9141 41.6693C28.2055 42.8416 30.2189 43.5199 31.4372 43.5199C34.9639 43.5199 43.5846 40.2726 46.3275 52.0439C49.0704 63.8152 56.5156 90.1991 56.5156 97.0994C56.5156 104 43.1927 99.9408 33.7883 100.347C24.3839 100.753 11.8449 100.753 8.31822 97.0994Z"
 																fill="#D99459"
 															/>
 															<path
 																class="svg-main_path"
-																d="M38.5594 114.788H30.9486C30.4297 114.788 30.0837 114.442 30.0837 113.923V108.729C30.0837 108.209 30.4297 107.863 30.9486 107.863C31.4675 107.863 31.8134 108.209 31.8134 108.729V113.057H37.3484C37.1754 111.845 37.0026 110.114 37.6945 108.902C38.2134 108.036 39.2513 107.517 40.4621 106.824C42.0188 106.132 43.0567 105.439 43.0567 104.747C42.3648 104.574 39.9432 104.92 38.0405 105.093C33.3702 105.785 27.6621 106.478 24.8945 104.4C23.8567 103.708 23.3378 102.669 23.1648 101.284C22.9918 100.072 23.3378 99.2064 24.0297 98.3407C25.7594 96.4362 29.5648 96.4362 33.5432 96.2631C37.0026 96.2631 40.981 96.2629 42.3648 94.7047C42.8837 94.1853 43.0567 93.6661 42.8837 92.8004C42.8837 91.9348 42.5378 91.4154 42.1918 91.0691C40.6351 89.684 37.0026 90.0301 33.5432 90.3764C29.3918 90.7226 25.5862 91.0691 23.6835 89.3377C22.8187 88.6452 22.4729 87.6064 22.4729 86.2213C22.4729 85.0094 22.8187 83.9706 23.6835 83.1049C25.7592 81.0273 30.4295 81.2004 34.7538 81.3736C38.2133 81.5467 42.0188 81.5467 43.2297 80.3348C43.4026 80.1616 43.5754 79.8152 43.5754 79.1226C43.4025 78.0838 43.0565 77.3915 42.5376 77.0452C41.1538 76.0064 38.3864 76.5258 35.2729 76.8721C31.9864 77.3915 28.3538 77.9109 25.2403 76.8721C18.1484 74.2751 10.5378 63.887 6.5594 55.2303C-0.878435 38.9557 1.1972 20.4303 11.9215 9.52282C20.7432 0.34669 33.1971 -1.73096 45.9971 3.6362C55.8565 7.79142 61.9107 16.9675 62.9486 29.6064C64.3324 45.1885 57.5864 61.9825 47.381 68.9079C44.6134 70.8124 37.6945 73.2363 34.581 69.081C32.1594 65.7915 34.4079 52.8064 36.4835 42.9377C35.2727 43.1109 34.0621 43.284 32.5053 43.1109C31.2945 43.1109 30.2567 42.9377 29.3918 42.9377C31.1215 54.5377 31.8134 68.7348 31.8134 68.9079C31.8134 69.4273 31.4675 69.7736 30.9486 69.7736C30.4297 69.7736 30.0837 69.4273 30.0837 68.9079C30.0837 66.8303 29.2188 53.3258 27.6621 42.5915C22.9918 41.2064 21.6079 38.2631 21.0889 36.1855C20.397 32.7228 21.9538 28.9139 23.6835 28.2213C24.3754 27.8751 25.2405 28.0482 25.7594 28.7407C27.1432 30.6452 28.354 35.493 29.2188 41.2064C30.2567 41.3795 31.2945 41.5527 32.6783 41.5527C34.408 41.5527 35.7918 41.3795 37.0026 41.2064C38.2134 35.8392 39.4243 31.684 39.5972 31.1646C40.6351 28.2213 42.3648 28.3945 43.0567 28.5676C44.9594 29.087 46.343 32.2034 45.9971 35.3198C45.8241 36.878 44.6134 41.2062 38.5594 42.7644C36.4837 52.6331 34.2351 65.6183 36.1378 68.2154C38.3864 71.3318 44.2675 69.2542 46.5161 67.696C56.3756 61.1168 62.7756 45.0154 61.3918 29.9527C60.6999 23.0273 57.7594 10.5616 45.4783 5.36754C33.3702 0.173512 21.6079 2.25124 13.3052 10.908C3.09977 21.4691 1.02427 39.1288 8.28913 54.7109C12.2675 63.3676 19.5324 73.2363 25.9324 75.487C28.527 76.3527 31.8134 75.8333 35.0999 75.487C38.5594 74.9676 41.6727 74.4482 43.5754 76.0064C44.4403 76.6989 45.1322 77.7377 45.3052 79.2959C45.4781 80.3348 45.1324 81.2004 44.6134 81.893C42.8837 83.6243 39.2511 83.6241 34.9268 83.451C31.1214 83.2779 26.6243 83.1049 25.0675 84.8363C24.5486 85.3557 24.3754 85.8751 24.3754 86.7407C24.3754 87.6064 24.5486 88.1258 25.0675 88.4721C26.4513 89.8571 30.0837 89.5109 33.7161 89.1646C37.8675 88.8183 41.6729 88.4721 43.7486 90.2034C44.6134 90.896 44.9592 91.9348 45.1322 93.1467C45.1322 94.3586 44.7864 95.3974 44.0945 96.2631C42.1918 98.3407 38.0403 98.3407 33.8889 98.3407C30.4295 98.3407 26.7972 98.3407 25.7594 99.7258C25.5864 99.8989 25.2403 100.418 25.4133 101.284C25.5862 102.15 25.9324 102.669 26.4513 103.188C28.6999 104.92 34.2349 104.227 38.3862 103.535C42.5376 103.015 44.9592 102.669 45.3052 104.4C45.8241 106.651 43.5754 107.69 41.6727 108.555C40.8079 108.902 39.7702 109.421 39.5972 109.941C39.0783 110.98 39.4243 113.23 39.5972 113.923C39.5972 114.269 39.5972 114.442 39.4243 114.615C39.0783 114.615 38.7324 114.788 38.5594 114.788ZM42.3648 29.9527C42.0188 29.9527 41.4999 30.4719 41.154 31.5107C40.808 32.3764 39.9432 36.0124 38.9053 40.5139C43.0567 39.1288 43.9216 36.1855 44.0945 34.8004C44.4405 32.2034 43.4026 30.1258 42.3648 29.9527C42.5378 29.9527 42.5378 29.9527 42.3648 29.9527ZM24.5484 29.6064C24.0295 29.7795 22.6457 32.0301 22.8187 34.9734C22.9916 37.5704 24.7215 39.4751 27.4891 40.5139C26.6243 35.3198 25.5862 31.1646 24.5484 29.6064Z"
+																opacity="0.2"
+																d="M54.7655 9.76748C55.706 2.62353 65.0842 0.566943 69.6558 0.431641C82.9787 2.46117 88.0727 11.797 85.7212 23.5683C84.0019 32.1747 73.6948 35.7906 67.511 37.7473C67.5732 37.7578 67.635 37.767 67.6966 37.775C70.8314 38.1809 85.3298 41.0222 88.0727 42.6459C90.8157 44.2695 98.6527 60.5057 99.4364 64.9707C100.22 69.4356 100.612 74.3064 101.004 79.1773L101.004 79.1774C101.396 84.0483 101.004 87.2955 101.004 90.9487C101.004 94.6018 101.004 98.255 99.4364 99.8786C97.869 101.502 97.869 103.938 95.5179 105.561C93.1668 107.185 96.3016 107.997 90.8157 108.403C85.3298 108.809 81.4113 108.403 69.6558 108.403H48.1041C44.9693 108.403 40.659 88.1073 41.0508 79.1774C41.4427 70.2475 44.1847 51.5758 46.1444 49.5463C48.1041 47.5167 51.6312 41.0222 54.7655 39.3986C57.8999 37.775 61.0347 41.0222 62.9939 39.3986C63.5207 38.9621 65.2371 38.4669 67.511 37.7473C64.4077 37.2248 60.5586 33.6043 56.3329 28.0332C52.0226 22.3506 53.59 18.6974 54.7655 9.76748Z"
 																fill="#D99459"
 															/>
 															<path
 																class="svg-main_path"
-																d="M42.3648 29.9527C42.0188 29.9527 41.4999 30.4719 41.154 31.5107C40.808 32.3764 39.9432 36.0124 38.9053 40.5139C43.0567 39.1288 43.9215 36.1855 44.0945 34.8004C44.4405 32.2034 43.4026 30.1258 42.3648 29.9527ZM42.3648 29.9527C42.5378 29.9527 42.5378 29.9527 42.3648 29.9527ZM38.5594 114.788H30.9486C30.4297 114.788 30.0837 114.442 30.0837 113.923V108.729C30.0837 108.209 30.4297 107.863 30.9486 107.863C31.4675 107.863 31.8134 108.209 31.8134 108.729V113.057H37.3484C37.1754 111.845 37.0026 110.114 37.6945 108.902C38.2134 108.036 39.2513 107.517 40.4621 106.824C42.0188 106.132 43.0567 105.439 43.0567 104.747C42.3648 104.574 39.9432 104.92 38.0405 105.093C33.3702 105.785 27.6621 106.478 24.8945 104.4C23.8567 103.708 23.3378 102.669 23.1648 101.284C22.9918 100.072 23.3378 99.2064 24.0297 98.3407C25.7594 96.4362 29.5648 96.4363 33.5432 96.2631C37.0026 96.2631 40.981 96.2629 42.3648 94.7047C42.8837 94.1853 43.0567 93.6661 42.8837 92.8004C42.8837 91.9348 42.5378 91.4154 42.1918 91.0691C40.6351 89.684 37.0026 90.0301 33.5432 90.3764C29.3918 90.7226 25.5862 91.0691 23.6835 89.3377C22.8187 88.6452 22.4729 87.6064 22.4729 86.2213C22.4729 85.0094 22.8187 83.9706 23.6835 83.1049C25.7592 81.0273 30.4295 81.2004 34.7538 81.3736C38.2133 81.5467 42.0188 81.5467 43.2297 80.3348C43.4026 80.1616 43.5754 79.8152 43.5754 79.1226C43.4025 78.0838 43.0565 77.3915 42.5376 77.0452C41.1538 76.0064 38.3864 76.5258 35.2729 76.8721C31.9864 77.3915 28.3538 77.9109 25.2403 76.8721C18.1484 74.2751 10.5378 63.887 6.5594 55.2303C-0.878435 38.9557 1.1972 20.4303 11.9215 9.52282C20.7432 0.34669 33.1971 -1.73096 45.9971 3.6362C55.8565 7.79142 61.9107 16.9675 62.9486 29.6064C64.3324 45.1885 57.5864 61.9825 47.381 68.9079C44.6134 70.8124 37.6945 73.2362 34.581 69.081C32.1594 65.7915 34.4079 52.8064 36.4835 42.9377C35.2727 43.1109 34.0621 43.284 32.5053 43.1109C31.2945 43.1109 30.2567 42.9377 29.3918 42.9377C31.1215 54.5377 31.8134 68.7348 31.8134 68.9079C31.8134 69.4273 31.4675 69.7736 30.9486 69.7736C30.4297 69.7736 30.0837 69.4273 30.0837 68.9079C30.0837 66.8303 29.2188 53.3258 27.6621 42.5915C22.9918 41.2064 21.6079 38.2631 21.0889 36.1855C20.397 32.7228 21.9538 28.9139 23.6835 28.2213C24.3754 27.8751 25.2405 28.0482 25.7594 28.7407C27.1432 30.6452 28.354 35.493 29.2188 41.2064C30.2567 41.3795 31.2945 41.5527 32.6783 41.5527C34.408 41.5527 35.7918 41.3795 37.0026 41.2064C38.2134 35.8392 39.4243 31.684 39.5972 31.1646C40.6351 28.2213 42.3648 28.3945 43.0567 28.5676C44.9594 29.087 46.343 32.2034 45.9971 35.3198C45.8241 36.878 44.6134 41.2062 38.5594 42.7644C36.4837 52.6331 34.2351 65.6183 36.1378 68.2154C38.3864 71.3318 44.2675 69.2542 46.5161 67.696C56.3756 61.1168 62.7756 45.0154 61.3918 29.9527C60.6999 23.0273 57.7594 10.5616 45.4783 5.36754C33.3702 0.173512 21.6079 2.25124 13.3052 10.908C3.09977 21.4691 1.02427 39.1288 8.28913 54.7109C12.2675 63.3676 19.5324 73.2363 25.9324 75.487C28.527 76.3527 31.8134 75.8333 35.0999 75.487C38.5594 74.9676 41.6727 74.4482 43.5754 76.0064C44.4403 76.6989 45.1322 77.7377 45.3052 79.2959C45.4781 80.3348 45.1324 81.2004 44.6134 81.893C42.8837 83.6243 39.2511 83.6241 34.9268 83.451C31.1214 83.2779 26.6243 83.1049 25.0675 84.8362C24.5486 85.3556 24.3754 85.8751 24.3754 86.7407C24.3754 87.6064 24.5486 88.1258 25.0675 88.4721C26.4513 89.8571 30.0837 89.5109 33.7161 89.1646C37.8675 88.8183 41.6729 88.4721 43.7486 90.2034C44.6134 90.896 44.9592 91.9348 45.1322 93.1467C45.1322 94.3586 44.7864 95.3974 44.0945 96.2631C42.1918 98.3407 38.0403 98.3407 33.8889 98.3407C30.4295 98.3407 26.7972 98.3407 25.7594 99.7258C25.5864 99.8989 25.2403 100.418 25.4133 101.284C25.5862 102.15 25.9324 102.669 26.4513 103.188C28.6999 104.92 34.2349 104.227 38.3862 103.535C42.5376 103.015 44.9592 102.669 45.3052 104.4C45.8241 106.651 43.5754 107.69 41.6727 108.555C40.8079 108.902 39.7702 109.421 39.5972 109.941C39.0783 110.98 39.4243 113.23 39.5972 113.923C39.5972 114.269 39.5972 114.442 39.4243 114.615C39.0783 114.615 38.7324 114.788 38.5594 114.788ZM24.5484 29.6064C24.0295 29.7795 22.6457 32.0301 22.8187 34.9734C22.9916 37.5704 24.7215 39.4751 27.4891 40.5139C26.6243 35.3198 25.5862 31.1646 24.5484 29.6064Z"
+																opacity="0.2"
+																d="M119.773 10.2363C123.692 10.7775 131.685 13.5648 132.312 20.384C133.096 28.908 131.529 36.6202 124.475 39.0557C121.529 40.0732 118.855 40.1696 116.313 40.3514C119.234 40.905 122.311 41.0577 124.475 41.897C129.178 43.7205 129.569 44.3324 132.312 44.3324C135.056 44.3324 136.231 44.3324 138.19 47.5797C140.149 50.8269 142.109 53.6683 143.676 63.0041C145.243 72.3399 143.284 69.4986 143.676 73.5577C144.068 77.6167 140.541 94.6648 139.757 97.912C138.974 101.159 132.312 101.565 126.826 101.565C121.34 101.565 100.181 108.466 93.5194 109.683C86.8576 110.901 90.7764 104.812 90.7764 101.565C90.7764 98.3179 90.3846 93.853 90.7764 87.3585C91.1683 80.864 92.3438 75.5872 93.5194 69.4986C94.6949 63.41 100.181 50.0151 106.059 44.3324C109.481 41.0239 112.77 40.6048 116.313 40.3514C112.888 39.7023 109.678 38.5019 108.41 34.9966C106.059 28.5021 106.059 28.5021 106.059 24.443C106.059 20.384 103.708 20.384 106.059 16.3249C108.41 12.2659 112.72 10.2363 117.422 10.2363H119.773Z"
+																fill="#D99459"
+															/>
+															<path
+																class="svg-main_path"
+																d="M51.3375 107.946C50.4131 107.946 49.4888 106.972 48.1947 104.828C41.9092 93.7205 42.6487 75.4027 45.052 61.7617C43.3882 54.7464 41.7244 49.29 40.4303 47.731C37.6573 44.4182 32.8507 43.8336 27.8593 43.0541C26.1955 42.8593 24.5317 42.4695 23.0528 42.2747C21.5738 42.4695 20.0949 42.6644 18.616 42.8592C13.4397 43.4439 8.44827 44.2233 6.5996 47.731C3.08712 54.1617 0.314101 88.0692 6.41472 94.3051C6.78445 94.6948 6.78445 95.2795 6.41472 95.6692C6.04498 96.059 5.49039 96.059 5.12065 95.6692C-2.08917 88.2641 1.4233 52.9925 4.93577 46.7567C7.33905 42.4695 12.7002 41.69 18.2462 40.9105H18.4311C13.2548 38.767 9.18773 34.6747 9.18773 24.7363C9.18773 20.2543 10.6667 16.3568 13.6246 13.6286C16.2127 11.2902 19.7252 9.92612 23.2376 9.92612C30.2626 9.92612 37.4724 14.9928 37.4724 24.7363C37.4724 34.8696 33.0356 39.1567 27.4896 41.1054C27.6745 41.1054 27.8593 41.1054 28.0442 41.1054C33.2205 41.8849 38.5816 42.6644 41.7244 46.5618C42.8336 47.9259 44.3125 52.0182 45.7914 57.4745C46.9006 52.4079 48.1947 48.5105 49.3039 46.3669C52.0769 41.3003 58.5473 40.3259 65.2025 39.5465C65.5722 39.5465 65.942 39.5465 66.3117 39.3516C59.8414 37.0132 54.6651 32.1414 54.6651 19.8645C54.6651 7.78255 63.3538 2.32617 71.488 2.32617C79.6221 2.32617 88.3109 7.78255 88.3109 19.8645C88.3109 32.5311 82.58 37.208 75.7399 39.5465C76.2945 39.5465 76.6643 39.7413 77.2189 39.7413C83.5043 40.7157 89.7898 41.69 93.672 46.1721C95.151 48.1208 96.8148 52.0182 98.2937 57.0848C99.5878 51.8233 100.697 47.9259 101.436 46.5618C103.84 42.2747 109.201 41.4952 114.747 40.7157H114.932C109.755 38.5721 105.688 34.4798 105.688 24.5414C105.688 14.4081 113.083 9.73123 119.738 9.73123C126.763 9.73123 133.973 14.7979 133.973 24.5414C133.973 34.6747 129.536 38.9618 123.99 40.9105C124.175 40.9105 124.36 40.9105 124.545 40.9105C129.721 41.69 135.082 42.4695 138.225 46.3669C143.032 52.213 145.065 85.9257 138.225 95.4743C137.855 95.8641 137.301 96.059 136.931 95.6692C136.561 95.2795 136.376 94.6948 136.746 94.3051C143.032 85.5359 141.183 52.9925 136.746 47.731C133.973 44.4182 129.167 43.8336 124.175 43.0541C122.511 42.8593 120.848 42.4695 119.369 42.2747C117.89 42.4695 116.411 42.6644 114.932 42.8592C109.755 43.4439 104.764 44.2233 102.915 47.731C101.991 49.4848 100.512 54.5515 99.0332 60.9822C102.176 75.2078 103.1 95.0846 96.2602 105.023C95.7056 105.802 94.0418 108.141 92.378 107.167C88.8655 104.828 93.3023 78.5206 97.1845 61.1771C95.7056 54.7464 93.8569 49.6797 92.1931 47.731C88.8655 43.8336 83.1346 42.8592 76.8491 41.8849C75.0005 41.4952 72.9669 41.3003 70.9334 40.9105C69.0847 41.3003 67.236 41.4952 65.5722 41.69C59.2867 42.4695 53.371 43.249 50.9677 47.5362C49.6737 50.0695 48.0099 55.331 46.9007 61.9566C50.7829 78.3257 54.2953 102.49 52.6315 106.777C52.4467 107.556 51.7072 107.751 51.3375 107.946ZM46.1612 66.8284C44.4974 79.3001 44.4974 94.6949 49.6737 103.854C50.4131 105.023 50.7829 105.608 50.9677 105.803C52.6315 102.685 49.6736 82.6129 46.1612 66.8284ZM98.1089 65.4643C94.7812 81.8334 91.6385 103.269 93.4872 105.413C93.4872 105.413 94.0418 105.023 94.7812 103.854C100.697 95.2795 100.512 78.5206 98.1089 65.4643ZM23.4225 11.8748C17.5067 11.8748 11.2213 15.9671 11.2213 24.7363C11.2213 35.8439 16.5824 38.767 23.0528 40.1311C29.8929 38.9618 35.8086 36.0388 35.8086 24.7363C35.8086 15.9671 29.3382 11.8748 23.4225 11.8748ZM119.923 11.8748C114.007 11.8748 107.722 15.9671 107.722 24.7363C107.722 35.8439 113.083 38.767 119.553 40.1311C126.394 38.9618 132.309 36.0388 132.309 24.7363C132.309 20.8389 131.015 17.3312 128.427 15.1876C126.209 13.044 123.066 11.8748 119.923 11.8748ZM71.6728 4.27488C64.463 4.27488 56.6986 9.14665 56.6986 19.8645C56.6986 33.3106 63.1689 36.8183 71.1182 38.5721C79.4373 37.0131 86.6471 33.7003 86.6471 19.8645C86.6471 9.14665 78.8827 4.27488 71.6728 4.27488Z"
+																fill="#D99459"
 																stroke="#D99459"
-																stroke-width="1.8"
-															/>
-														</g>
-														<defs>
-															<clipPath
-																id="clip0_0_120515"
-															>
-																<rect
-																	width="64"
-																	height="116"
-																	fill="white"
-																	transform="translate(0.851074)"
-																/>
-															</clipPath>
-														</defs>
-													</svg>
-													<p
-														class="medium-text primary-font"
-													>
-														Smart Innovative Society
-													</p>
-												</div>
-												<!-- MODAL -->
-												<div
-													class="category-box__card-inner"
-												>
-													<h4
-														class="category-box__card-inner__heading"
-													>
-														Lorem Ipsum Smart
-														Innovative Society
-													</h4>
-													<ul>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>More people
-																have a stronger
-																sense of
-																belonging in
-																their
-																community</span
-															>
-														</li>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>Raised
-																community
-																connection and
-																participation</span
-															>
-														</li>
-													</ul>
-													<a
-														class="btn light category-box__btn"
-														href="#home"
-														>explore this
-														category</a
-													>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="animate-box animate-box-5">
-										<div
-											class="category-box cb-5"
-											tabindex="0"
-										>
-											<div class="category-box__inner">
-												<div
-													class="category-box__header"
-												>
-													<button
-														aria-hidden="false"
-														type="button"
-														class="btn-close"
-														value="close"
-														title="Close Button"
-														aria-label="Close Button"
-													>
-														<svg
-															class="btn-close__svg"
-															xmlns="http://www.w3.org/2000/svg"
-															viewBox="0 0 16 16"
-															fill="#000"
-														>
-															<path
-																class="btn-close__svg__path"
-																d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
+																stroke-width="1.00994"
 															/>
 														</svg>
-													</button>
-												</div>
-												<div
-													class="category-box__inner-main"
-												>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														width="90"
-														height="115"
-														viewBox="0 0 90 115"
-														fill="none"
-														class="svg-main"
+														<p
+															class="medium-text primary-font"
+														>
+															Inclusive Thriving
+															Community
+														</p>
+													</div>
+													<!-- CARD -->
+													<div class="category-box__card-inner"
 													>
-														<g
-															clip-path="url(#clip0_0_120463)"
+														<h4
+															class="category-box__card-inner__heading"
+														>
+															Supporting the diversity
+															of Western Australians
+															to actively engage in
+															community life.
+														</h4>
+														<ul>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	class="svgIcon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		class="svgIcon_path"
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		class="svgIcon_path"
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		class="svgIcon_path"
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>More people
+																	have a stronger
+																	sense of
+																	belonging in
+																	their
+																	community</span
+																>
+															</li>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	class="svgIcon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		class="svgIcon_path"
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		class="svgIcon_path"
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		class="svgIcon_path"
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>Vulnerability
+																	and disadvantage
+																	is reduced
+																	across our
+																	community</span
+																>
+															</li>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	class="svgIcon"
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		class="svgIcon_path"
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		class="svgIcon_path"
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		class="svgIcon_path"
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>Raised
+																	community
+																	connection and
+																	participation</span
+																>
+															</li>
+														</ul>
+														<a
+															class="btn light category-box__btn"
+															href="#home"
+															tabindex="61"
+															aria-label="Explore this category"
+															>explore this
+															category</a
+														>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="animate-box animate-box-2">
+											<div
+												class="category-box cb-2"
+											>
+												<div class="category-box__inner">
+													<div
+														class="category-box__header"
+													>
+														<button
+															aria-hidden="false"
+															type="button"
+															class="btn-close"
+															value="close"
+															title="Close Button"
+															aria-label="Close Button"
+															tabindex="66"
+															aria-label="Close Connected Cultural Experiences"
+														>
+															<svg
+																class="btn-close__svg"
+																xmlns="http://www.w3.org/2000/svg"
+																viewBox="0 0 16 16"
+																fill="#000"
+															>
+																<path
+																	class="btn-close__svg__path"
+																	d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
+																/>
+															</svg>
+														</button>
+													</div>
+													<div class="category-box__inner-main"
+													tabindex="66" aria-label="Connected Cultural Experiences"
+													>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="80"
+															height="126"
+															viewBox="0 0 80 126"
+															fill="none"
+															class="svg-main"
 														>
 															<path
 																class="svg-main_path"
-																d="M24.0151 112.449C21.069 112.449 17.2024 111.521 12.0469 109.107C8.54844 107.436 5.23424 103.352 3.39296 97.7817C0.631046 89.427 1.36751 80.3296 5.41831 72.5319C9.10086 65.4767 15.7295 62.8775 20.701 61.9492C26.2248 61.0209 31.7484 61.7635 33.2214 63.0631C33.5897 63.4345 33.5897 63.9914 33.2214 64.3628C32.8532 64.7341 32.301 64.7341 31.9327 64.3628C31.1962 63.6201 26.593 62.6918 20.8851 63.6201C16.466 64.3628 10.3898 66.7764 7.07551 73.2745C3.20883 80.5153 2.65645 89.2413 5.23424 97.0391C6.89139 102.052 9.83737 105.765 12.7834 107.25C26.4089 113.563 29.5389 108.736 31.3802 105.951C32.1167 105.023 32.6692 104.094 33.5899 104.094C34.3264 104.094 35.0627 104.651 35.9834 105.394C37.6405 106.879 40.4024 109.478 46.2945 109.478C50.5294 109.664 58.2628 104.466 62.866 96.6678C65.4438 92.2119 68.9424 83.4858 63.4185 74.0171C56.0534 61.5779 43.3485 63.6201 38.0088 64.5484C35.9834 64.9198 35.247 65.1054 34.6946 64.1771C34.5105 63.9914 34.3264 63.4345 34.8788 62.8775C35.4312 62.3205 35.7992 61.5779 36.1675 60.8352C35.0627 60.4639 34.5103 59.5356 34.3262 58.4216C33.4056 45.7967 27.8817 41.8978 24.9357 39.6699C23.6468 38.7416 22.7264 37.9989 22.7264 37.0706C22.7264 36.5136 22.9105 35.9566 23.4629 35.3997C24.0152 34.657 24.9357 33.9144 25.8563 33.3574L26.2248 32.9861C26.9613 32.4291 28.9867 31.1294 31.7486 33.9144C35.9835 38.1846 40.5865 50.8095 38.7453 59.3499C44.8215 58.4216 60.2884 48.0246 70.4154 23.5174C73.3614 16.4622 79.2533 11.2637 83.12 7.92177C84.7772 6.62215 86.6184 4.76554 86.8026 4.20855C86.2502 3.65157 82.3837 3.46589 75.3868 3.83721C59.9201 4.3942 51.6342 14.9769 47.9516 21.2894C42.6119 30.3868 40.955 41.7121 44.0852 47.8389C44.6375 48.9529 45.1899 49.5099 45.7423 49.5099C47.7677 49.5099 50.8977 42.0834 53.6596 35.3997C58.0787 25.0026 63.6027 12.0064 70.9678 8.66447C71.336 8.47881 71.8884 8.66449 72.2567 9.03581C72.4408 9.40714 72.2567 9.96403 71.8884 10.3353C65.2598 13.4916 59.9199 26.1166 55.5009 36.1423C51.4501 45.7967 48.8725 51.1808 45.9264 51.3665C43.901 51.5522 42.9802 49.3242 42.6119 48.5816C39.1135 41.7121 40.7709 30.0155 46.4788 20.1755C50.3455 13.6773 59.1836 2.53763 75.3868 1.79499C86.0662 1.42366 88.0914 1.98069 88.6438 3.46598C89.1962 4.95127 87.5393 6.4365 84.4091 9.22142C80.7265 12.5633 75.0184 17.3905 72.0723 24.0743C61.7612 48.9529 45.1897 60.8352 38.0088 61.2065C37.8246 61.7635 37.4566 62.3205 37.2724 62.8775C37.4566 62.8775 37.6405 62.8775 37.8246 62.8775C43.1643 61.9492 57.1582 59.7212 65.0757 73.2745C69.4948 80.7009 69.3104 89.427 64.5233 97.7817C60.1042 105.394 52.0026 111.706 46.4788 111.521C39.8502 111.335 36.7199 108.364 35.0627 106.879C34.6945 106.508 34.1423 106.136 33.9581 105.951C33.9581 105.951 33.5897 106.693 33.2214 107.065C31.5643 109.293 29.5389 112.449 24.0151 112.449ZM28.0661 34.2857C27.6978 34.2857 27.3295 34.4713 27.1454 34.657L26.777 35.0283C26.0405 35.5853 25.12 36.5136 24.5676 37.0706C24.3835 37.2563 24.3835 37.4419 24.3835 37.4419C24.3835 37.6276 25.304 38.1846 25.8563 38.7416C28.9865 40.9695 34.8786 45.4253 35.9834 58.7929C35.9834 59.1643 36.1677 59.5356 36.5359 59.7212C38.5613 51.9235 34.1423 39.6699 30.0915 35.771C29.3549 34.4713 28.6184 34.2857 28.0661 34.2857Z"
+																opacity="0.2"
+																d="M32.5356 72.188C26.4643 69.9275 13.9706 61.7317 12.5661 47.0317C10.8106 28.6567 13.4439 10.2817 27.7078 6.78171C41.9717 3.28171 51.1883 2.84421 60.6244 6.78171C70.0605 10.7192 77.3022 26.688 77.3022 33.4692C77.3022 40.2505 74.0105 54.9067 65.0133 61.9067C57.8155 67.5067 44.7513 70.2192 39.1189 70.8755L35.3883 72.188C38.3142 72.6255 45.6583 73.238 51.6272 72.188C57.5961 71.138 62.0142 70.8755 63.4772 70.8755L65.0133 73.5005C62.2337 75.1775 55.665 78.5755 51.6272 78.7505C46.58 78.9692 36.9244 78.5317 35.3883 80.5005C34.9881 81.0134 34.5134 82.1351 34.0535 83.5793L32.9018 98.5038C33.7194 102.393 34.1628 110.287 34.2911 114.188L60.6244 121.188C48.7744 122.282 24.0211 124.338 19.8078 123.813C15.5944 123.288 9.71332 122.719 7.29943 122.5C6.64111 122.063 6.7728 121.188 12.5661 121.188H40.6549C41.5326 121.188 33.8524 118.563 32.5356 116.375C31.4821 114.625 32.0966 106.896 32.5356 103.25L32.9018 98.5038C32.7872 97.9582 32.6651 97.4914 32.5356 97.1255C31.5619 94.3756 32.7482 87.6784 34.0535 83.5793L34.2911 80.5005C33.6327 79.9171 32.2282 78.2254 31.8771 76.1255C31.526 74.0255 32.1698 72.6255 32.5356 72.188Z"
 																fill="#D99459"
 																stroke="#D99459"
-																stroke-width="1.19634"
 															/>
-															<g opacity="0.2">
+															<path
+																class="svg-main_path"
+																d="M33.5313 124.171C20.7697 124.171 8.41344 123.764 7.60319 122.748C7.19806 122.342 7.40058 121.732 7.80571 121.326C8.21084 121.123 8.61591 121.123 9.02103 121.326C12.2621 122.342 48.7236 122.545 58.6492 121.732C55.6108 120.716 49.7364 119.7 45.4826 118.887C40.4185 117.871 35.9621 117.058 34.5441 116.449C33.7339 116.042 33.1264 115.229 32.7212 113.4C31.1007 106.084 31.911 83.1193 34.7469 79.6645C35.9623 78.0387 39.8108 77.8354 46.4954 77.2258C52.5723 76.8193 61.08 76.2098 62.7005 73.7711C62.9031 73.3647 63.1056 72.958 62.9031 72.3484C62.2954 71.7387 58.4467 72.5516 55.6108 72.958C50.1415 73.9742 42.4443 75.3967 34.7469 74.1774C34.3417 74.5838 34.1392 74.9903 33.7341 75.3967C32.7212 76.8193 31.7082 78.2419 29.48 78.2419C29.48 78.2419 29.48 78.2419 29.2774 78.2419C22.1877 78.2419 5.98257 62.1871 2.94411 54.6677C2.13386 52.8387 2.13386 51.4161 2.94411 50.6032C3.5518 50.1967 3.95699 49.7903 4.76725 49.9935C6.59032 49.9935 8.4133 52.229 11.2492 55.6838C15.3005 60.5613 20.9723 67.4711 29.2774 70.7227C30.6954 71.3324 32.3161 71.7387 33.9366 72.1451C35.7597 70.5193 38.3928 68.8937 43.6595 68.6905C61.4851 68.6905 75.8672 54.2613 75.8672 36.3774C75.8672 14.4291 59.2569 4.47088 43.6595 4.47088C28.2646 4.47088 11.452 14.4291 11.452 36.3774C11.452 48.3677 18.5416 57.9193 25.0236 63C28.6698 65.8451 31.5058 66.658 32.7212 66.4548C34.3417 66.0483 34.7467 65.0322 35.1518 63.8129C35.5569 62.5935 36.3674 60.7645 39.0007 61.3742C40.2161 61.5774 41.6341 60.358 43.052 59.3419C44.6725 57.9193 46.9005 56.0903 48.521 58.1225C48.9262 58.3258 50.7492 57.7161 53.3826 55.2774C57.0287 52.0258 59.0546 48.1645 58.2443 46.5387C56.6238 43.0838 60.27 39.8322 63.1058 37.3935C64.5238 36.1742 66.3469 34.5484 66.3469 33.7355C66.3469 33.7355 66.1441 33.7354 65.9415 33.5322C64.7262 33.329 62.2956 32.7195 61.2828 28.0453C60.4725 24.5905 60.6749 22.7613 60.8774 21.7451C60.8774 21.5419 60.8774 21.1355 60.8774 21.1355C60.6749 20.9322 59.6623 20.3225 58.0417 19.5096C57.0289 19.1032 56.0159 18.4935 54.3954 17.6806C52.9774 16.8677 52.1672 16.0549 51.3569 15.2419C50.1415 14.0226 49.7366 13.413 46.9007 14.0227C44.6725 14.4291 39.811 16.6645 37.7853 21.3387C36.3674 24.3871 36.1648 26.6228 36.7725 28.0453C37.5828 29.6711 40.0135 30.0774 42.0392 30.4838C43.8623 30.8903 45.4826 31.0937 46.2928 32.1098C49.3313 35.7679 47.9133 39.6292 46.698 43.2873C45.6851 46.3357 44.6723 49.1806 45.6851 52.0258C46.0903 53.0419 46.0903 54.058 45.4826 54.8709C43.4569 57.9193 35.9623 58.529 34.9494 58.7322C34.3417 58.7322 33.9366 58.3258 33.9366 57.7161C33.9366 57.1064 34.3417 56.7 34.9494 56.7C37.7853 56.4967 42.8494 55.4806 43.8623 53.8548C44.0648 53.6516 44.0648 53.2451 43.8623 52.8387C42.4443 49.3838 43.6597 45.7258 44.8751 42.6774C46.0905 39.2225 47.1033 36.1742 44.8751 33.329C44.47 32.9225 43.052 32.5161 41.8366 32.3129C39.4058 31.9064 36.3672 31.2967 35.1518 28.858C34.139 26.8258 34.3415 24.1838 36.1646 20.3226C38.5954 15.0387 44.0646 12.3969 46.698 11.7872C50.3441 10.9743 51.7623 11.9902 53.1802 13.616C53.7879 14.2257 54.3954 15.0386 55.6108 15.6483C57.0287 16.4612 58.2443 17.0709 59.2571 17.4774C62.7007 19.3064 63.3084 19.5096 63.1058 21.7451C62.9033 22.558 62.7005 24.1838 63.5108 27.2322C64.321 30.4838 65.5364 30.8905 66.5492 31.0937C67.3595 31.2969 68.5749 31.5 68.5749 33.329C68.3723 34.9548 66.7518 36.5806 64.7262 38.4096C62.2954 40.6451 59.4595 43.0838 60.4723 45.1161C62.2954 49.1806 56.421 55.6838 52.5723 58.3258C49.5339 60.358 48.1159 59.7483 47.3056 58.9354C46.9005 58.529 46.4954 58.9354 44.6723 60.358C43.0518 61.7806 41.0264 63.4064 38.7982 62.7967C37.9879 62.5935 37.9877 62.5935 37.38 63.8129C36.9749 65.0322 36.1646 67.0647 33.5313 67.6744C31.5056 68.284 27.8595 66.8612 24.0108 64.0161C17.1237 58.7322 9.62883 48.5709 9.62883 35.7677C9.62883 12.3967 27.252 1.8291 43.8623 1.8291C60.27 1.8291 78.0954 12.3967 78.0954 35.7677C78.0954 54.6677 62.7007 70.1129 43.8623 70.1129C40.4187 70.3161 38.393 70.9258 36.9751 71.9419C43.6597 72.7548 50.3441 71.3322 55.4082 70.5193C60.8774 69.5032 64.321 68.8935 64.9287 71.3322C65.3339 72.5516 65.1313 73.5677 64.5236 74.5838C62.2954 77.8354 54.3956 78.4451 46.9007 79.0548C42.6469 79.4613 37.1774 79.8677 36.5697 80.6806C34.139 83.729 33.3289 112.181 35.7597 114.213C36.9751 114.619 41.6339 115.635 46.2928 116.652C60.2697 119.497 62.9031 120.31 62.9031 121.732C62.9031 121.935 62.9033 122.545 62.093 122.952C60.27 123.561 46.698 124.171 33.5313 124.171ZM4.96975 51.6193C4.96975 51.6193 4.76725 51.6193 4.76725 51.8225C4.76725 51.8225 4.56458 52.4322 5.17228 53.6516C8.21074 60.9677 23.8084 76.0064 29.6828 76.0064C29.6828 76.0064 29.6828 76.0064 29.8853 76.0064C31.1007 76.0064 31.5056 75.3967 32.5185 73.9742C32.721 73.7709 32.7212 73.5677 32.9238 73.5677C31.7084 73.1612 30.2903 72.958 29.0749 72.3484C20.1621 68.8935 14.2877 61.5774 10.2364 56.7C8.00817 54.2613 5.78001 51.8225 4.96975 51.6193Z"
+																fill="#D99459"
+																stroke="#D99459"
+																stroke-width="1.2"
+															/>
+														</svg>
+														<p
+															class="medium-text primary-font"
+														>
+															Connected Cultural
+															Experiences
+														</p>
+													</div>
+													<!-- MODAL -->
+													<div
+														class="category-box__card-inner"
+													>
+														<h4
+															class="category-box__card-inner__heading"
+														>
+															Lorem Ipsum Connected
+															Cultural Experiences
+														</h4>
+														<ul>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>More people
+																	have a stronger
+																	sense of
+																	belonging in
+																	their
+																	community</span
+																>
+															</li>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>Raised
+																	community
+																	connection and
+																	participation</span
+																>
+															</li>
+														</ul>
+														<a
+															class="btn light category-box__btn"
+															href="#home"
+															tabindex="68" aria-label="Explore This Category"
+															>explore this
+															category</a
+														>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="animate-box animate-box-3">
+											<div
+												class="category-box cb-3"
+											>
+												<div class="category-box__inner">
+													<div
+														class="category-box__header"
+													>
+														<button
+															aria-hidden="false"
+															type="button"
+															class="btn-close"
+															value="close"
+															title="Close Button"
+															tabindex="76" aria-label="Close Protected Sustainable Ecosystem"
+														>
+															<svg
+																class="btn-close__svg"
+																xmlns="http://www.w3.org/2000/svg"
+																viewBox="0 0 16 16"
+																fill="#000"
+															>
+																<path
+																	class="btn-close__svg__path"
+																	d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
+																/>
+															</svg>
+														</button>
+													</div>
+													<div class="category-box__inner-main" tabindex="75" aria-label="Protected Sustainable Ecosystem">
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="72"
+															height="127"
+															viewBox="0 0 72 127"
+															fill="none"
+															class="svg-main"
+														>
+															<path
+																class="svg-main_path"
+																opacity="0.2"
+																d="M8.97939 78.8832C10.57 81.7212 23.4278 83.219 29.6578 83.6131L34.4294 85.9781L41.985 125C40.9246 115.803 38.6446 95.7533 38.0084 89.1314C37.3721 82.5095 36.4177 79.5401 36.0201 78.8832L44.371 83.6131L55.1078 81.6423C59.7472 79.2774 69.2646 72.0248 70.219 61.9343C71.1733 51.8438 61.3379 40.1241 56.3008 35.5255L36.0201 17H34.4294L18.9206 31.1898C13.486 35.7883 2.37821 47.1927 1.42382 56.0219C0.230836 67.0584 6.99108 75.3358 8.97939 78.8832Z"
+																fill="#D99459"
+															/>
+															<path
+																class="svg-main_path"
+																fill-rule="evenodd"
+																clip-rule="evenodd"
+																d="M41.487 124.646C41.487 124.858 41.3458 125 41.2047 125C40.993 125 40.8519 124.858 40.8519 124.717C39.864 116.86 38.8761 108.933 37.7471 102.279C36.6181 95.6258 35.348 90.1756 33.8662 87.2028C31.961 83.4514 29.5618 83.593 26.3159 83.8761C24.5519 84.0177 22.5056 84.1593 20.177 83.7346C16.5783 83.0268 12.2034 80.9033 8.60466 77.5766C5.57046 74.8161 3.03019 71.2771 1.97175 67.101C0.772183 62.7126 1.19556 57.6871 2.81851 52.6616C4.51202 47.4238 7.54622 42.186 11.4272 37.656C15.3081 33.1968 19.9653 29.5162 24.2696 26.1187C28.4328 22.792 32.2432 19.8192 34.4307 16.7756C34.5718 16.5632 34.7835 16.2801 34.9246 16.0678C35.1363 15.7139 35.348 15.2892 35.5597 14.9353C34.2895 13.3781 33.3017 11.9625 32.596 10.6176C31.2553 8.14027 30.9025 6.08761 31.1848 4.67199C31.3259 3.96418 31.6082 3.32715 31.961 2.90246C32.3138 2.47777 32.8077 2.19465 33.3017 2.05309C33.8662 1.91152 34.5012 2.05309 35.0657 2.47777L35.2069 2.54855C36.4064 3.39793 37.4649 5.3798 37.6766 7.92793C37.8883 9.98058 37.5354 12.3871 36.3359 14.8645C40.1463 19.4653 45.7913 24.8446 51.013 29.7993L53.1298 31.852C56.9402 35.4618 60.3273 38.7177 63.0086 42.0445C65.7606 45.3712 67.8775 48.7687 69.077 52.5201C70.3472 56.413 70.6294 60.7307 69.8532 64.836C69.1476 68.6582 67.5247 72.3388 64.9138 75.2408C62.3736 78.0721 58.916 80.1955 55.2467 81.6111C51.1541 83.1683 46.8497 83.8761 43.3922 83.5222C40.358 83.2391 38.0294 82.1774 36.4064 80.691C34.5718 78.9922 33.7251 76.798 33.7251 74.4622C33.7251 72.4096 34.4307 70.3569 35.5597 68.3043C35.9125 67.6672 36.3359 67.0302 36.7592 66.3932C36.0536 66.464 35.348 66.464 34.7129 66.3224C32.8783 66.0393 31.1142 64.9776 29.5618 63.6327C27.5861 61.8632 25.822 59.5982 24.6224 57.6163C23.4934 55.8468 22.7878 54.2896 22.5761 53.3694C22.5056 53.0863 22.5056 52.8032 22.5761 52.5908C22.7172 52.3077 22.9289 52.1662 23.2817 52.2369C23.564 52.3077 23.9168 52.5201 24.4107 53.0155C25.6103 54.148 27.5861 56.6254 29.5618 59.0319C31.2553 61.0846 32.9489 63.1373 34.0073 64.3405C34.8541 65.1899 35.2069 65.473 35.348 65.3315C35.6302 65.0483 35.6302 63.9158 35.7008 62.1463C35.7008 61.7216 35.7008 61.2262 35.7714 60.7307C35.9125 58.1118 36.1947 54.5727 36.7592 51.246C37.1826 48.7687 37.7471 46.3621 38.5233 44.451C38.5939 44.1679 38.735 43.9555 38.8761 43.6724C38.5939 43.6016 38.3116 43.6016 38.0294 43.5309C37.0415 43.2477 36.1242 42.6815 35.4186 41.9737C34.6424 41.1951 33.9367 40.2749 33.5839 39.2132C33.4428 38.7885 33.3017 38.3638 33.1605 38.0099C32.9489 37.3021 32.9489 36.5943 32.9489 36.0988C32.9489 35.4618 33.1605 35.0371 33.5134 34.8956H33.5839C34.3601 34.6832 35.5597 36.4527 36.7592 38.2931C36.8298 38.4346 36.8298 38.647 36.6887 38.7885C36.5476 38.8593 36.3359 38.8593 36.1948 38.7177C35.1363 37.1606 34.0779 35.5326 33.7251 35.6034C33.6545 35.6742 33.5839 35.8865 33.5839 36.2404C33.5839 36.7359 33.6545 37.3021 33.7956 37.9391C33.8662 38.2931 34.0073 38.7177 34.1484 39.0716C34.5012 39.9918 35.1363 40.8412 35.8419 41.549C36.5476 42.186 37.3237 42.6815 38.1705 42.9646C38.4528 43.0354 38.8056 43.1062 39.1584 43.177C39.7935 41.9029 40.5696 40.912 41.2753 40.2041C42.616 38.7885 44.0272 38.2931 44.8034 38.3638C45.0151 38.3638 45.1562 38.4346 45.2974 38.5762C45.5796 38.7885 45.7207 39.0716 45.7207 39.4256C45.7207 39.7087 45.6502 40.0626 45.509 40.4873C45.2268 41.1243 44.7329 41.8321 44.0978 42.3984C43.3216 43.1062 42.2632 43.5309 41.2047 43.814C40.6402 43.9555 40.0757 44.0263 39.5112 43.9555C39.3701 44.2387 39.2289 44.5926 39.0878 44.8757C38.3116 46.716 37.7471 49.1226 37.3943 51.5291C36.8298 54.8558 36.5476 58.3949 36.477 60.943C36.477 61.4385 36.4064 61.934 36.4064 62.2879C36.3359 64.199 36.2653 65.4022 35.8419 65.8977C36.3359 65.8977 36.8298 65.8977 37.2532 65.7562C38.2411 64.4821 39.3701 63.2788 40.5696 62.2171C42.1926 60.7307 44.0272 59.5274 45.5796 58.6072C47.6259 57.404 49.3194 56.6962 50.0956 56.6962C50.3073 56.6962 50.4485 56.6962 50.5896 56.7669C50.8718 56.9085 50.9424 57.1208 50.8013 57.4747C50.7307 57.6871 50.5896 57.8994 50.3779 58.1826C49.7428 59.0319 48.3316 60.2352 46.5675 61.6508C44.9445 62.9249 43.0393 64.2697 40.993 65.2607C39.864 65.7562 38.735 66.1808 37.606 66.3932C37.0415 67.1718 36.477 67.9504 36.0536 68.729C34.9952 70.6401 34.2895 72.6219 34.2895 74.533C34.2895 76.6565 35.1363 78.7091 36.7592 80.2663C38.2411 81.6819 40.4991 82.6729 43.3922 82.8852C46.7086 83.1683 50.9424 82.5313 54.9645 80.9741C58.4926 79.6293 61.8796 77.5766 64.3493 74.8161C66.8896 71.9849 68.442 68.4458 69.1476 64.7652C69.8532 60.8015 69.571 56.5546 68.3714 52.7324C67.1718 49.0518 65.1255 45.7251 62.4441 42.4691C59.7627 39.1424 56.3757 35.8865 52.5653 32.3474L50.4484 30.2948C45.2974 25.4109 39.6523 20.1731 35.9125 15.5723C35.7714 15.8554 35.5597 16.2093 35.348 16.4924C35.2069 16.7756 34.9952 16.9879 34.8541 17.2003C32.596 20.3146 28.7856 23.3582 24.5519 26.6142C20.3181 29.9409 15.5904 33.6215 11.78 38.0099C7.89903 42.4691 4.93539 47.6362 3.31245 52.8032C1.76006 57.6871 1.33669 62.6418 2.4657 66.8886C3.52414 70.8524 5.99384 74.3207 8.95748 77.0104C12.4856 80.1955 16.6488 82.3189 20.177 82.956C22.435 83.3807 24.4107 83.2391 26.1748 83.0975C29.6324 82.8144 32.2432 82.6021 34.3601 86.7782C35.9125 89.8217 37.1826 95.3427 38.3116 102.067C39.5112 108.862 40.4991 116.719 41.487 124.646ZM35.8419 14.369C36.9004 12.104 37.1826 9.9098 36.9709 8.06949C36.7592 5.73371 35.7714 3.96418 34.7129 3.18559L34.5718 3.1148C34.1484 2.83168 33.725 2.7609 33.3017 2.83168C32.9489 2.90246 32.596 3.1148 32.3138 3.46871C32.0315 3.82262 31.8198 4.31809 31.6787 4.95512C31.467 6.29996 31.7493 8.21105 33.0194 10.476C33.7956 11.6085 34.7129 12.9534 35.8419 14.369ZM41.1341 62.7126C40.1463 63.5619 39.2289 64.4821 38.3822 65.473C39.2289 65.2607 40.0051 64.9068 40.8519 64.5529C42.8277 63.6327 44.7329 62.2879 46.2852 61.0138C48.0493 59.5982 49.39 58.3949 50.0251 57.6163C50.1662 57.4748 50.2368 57.3332 50.3073 57.1916C49.6723 57.2624 48.0493 57.8994 46.0735 59.0319C44.5212 60.0937 42.7571 61.2969 41.1341 62.7126ZM30.0558 63.208C31.467 64.4113 32.9489 65.3315 34.5718 65.6854C34.2895 65.473 34.0073 65.1899 33.6545 64.836C32.5255 63.7035 30.832 61.5801 29.1385 59.5274C27.1627 57.1208 25.1869 54.6435 23.9874 53.5818C23.6346 53.2279 23.3523 53.0863 23.2112 53.0155C23.2112 53.0863 23.2112 53.1571 23.2817 53.2987C23.4934 54.148 24.1285 55.6344 25.1869 57.3332C26.3865 59.2443 28.08 61.5093 30.0558 63.208ZM41.8398 40.558C41.2047 41.1951 40.5696 42.0445 40.0051 43.1062C40.4285 43.1062 40.7813 43.0354 41.2047 42.9646C42.1926 42.7523 43.1099 42.3276 43.8155 41.6905C44.38 41.1951 44.8034 40.6288 45.0151 40.0626C45.1562 39.7795 45.1562 39.4963 45.1562 39.284C45.1562 39.1424 45.0857 39.0009 45.0151 38.9301C44.9445 38.8593 44.874 38.8593 44.8034 38.8593C44.2389 38.8593 43.0393 39.3548 41.8398 40.558Z"
+																stroke="#D99459"
+																stroke-width="2.5"
+															/>
+														</svg>
+														<p
+															class="medium-text primary-font"
+														>
+															Protected Sustainable
+															Ecosystem
+														</p>
+													</div>
+													<!-- MODAL -->
+													<div
+														class="category-box__card-inner"
+													>
+														<h4
+															class="category-box__card-inner__heading"
+														>
+															Lorem Ipsum Protected
+															Sustainable Ecosystem
+														</h4>
+														<ul>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>More people
+																	have a stronger
+																	sense of
+																	belonging in
+																	their
+																	community</span
+																>
+															</li>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>Raised
+																	community
+																	connection and
+																	participation</span
+																>
+															</li>
+														</ul>
+														<a
+															class="btn light category-box__btn"
+															href="#home"  tabindex="77" aria-label="Explore this category"
+															>explore this
+															category</a
+														>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="animate-box animate-box-4">
+											<div
+												class="category-box cb-4"
+											>
+												<div class="category-box__inner">
+													<div
+														class="category-box__header"
+													>
+														<button
+															aria-hidden="false"
+															type="button"
+															class="btn-close"
+															value="close"
+															title="Close Button"
+															tabindex="86" aria-label="Close Smart Innovative Society"
+														>
+															<svg
+																class="btn-close__svg"
+																xmlns="http://www.w3.org/2000/svg"
+																viewBox="0 0 16 16"
+																fill="#000"
+															>
+																<path
+																	class="btn-close__svg__path"
+																	d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
+																/>
+															</svg>
+														</button>
+													</div>
+													<div class="category-box__inner-main" tabindex="85" aria-label="Smart Innovative Society"
+													>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="65"
+															height="116"
+															viewBox="0 0 65 116"
+															fill="none"
+															class="svg-main"
+														>
+															<g
+																class="svg-main__g"
+																clip-path="url(#clip0_0_120514)"
+															>
 																<path
 																	class="svg-main_path"
-																	d="M6.51636 69.5178C9.23578 62.2698 23.796 61.8959 30.7362 62.615H33.2857H37.5348H49.0073C55.8059 62.615 57.0806 64.3407 60.055 66.9292C63.0294 69.5178 66.4286 79.4406 67.2785 82.892C68.1283 86.3434 60.055 102.738 52.8315 109.209C47.0528 114.386 37.3931 108.202 33.2857 104.463C32.4359 105.614 29.2915 108.605 23.5128 111.366C16.2893 114.818 10.3405 104.032 5.24163 100.149C0.142708 96.2663 3.11708 78.5778 6.51636 69.5178Z"
+																	opacity="0.2"
+																	d="M30.436 111.771L34.6624 114.188L36.4734 115.396L38.8885 110.563L42.5112 106.938C43.3162 105.528 45.047 102.346 45.53 100.896C46.0131 99.4462 42.5112 98.2781 40.6998 97.8753C42.1087 96.667 44.9263 94.1295 44.9263 93.6462C44.9263 93.1628 43.3162 91.0281 42.5112 90.0212C43.3162 89.417 44.9263 87.8462 44.9263 86.3962C44.9263 84.9462 42.9137 83.7781 41.9074 83.3753C42.7124 83.1739 44.4432 82.0462 44.9263 79.1462C45.4093 76.2462 43.5175 72.7017 42.5112 71.292L44.3225 69.4795L54.5866 59.2087L63.6432 38.0628L60.0206 17.5212L44.3225 3.62533L24.3982 2.41699L11.7187 11.4795L2.66211 30.2087C4.27217 38.8684 7.61305 56.792 8.09607 59.2087C8.57909 61.6253 19.9703 71.4934 25.6055 76.1253C24.3982 75.9239 21.9836 76.1253 21.9836 78.542C21.9836 80.9587 23.5934 83.5767 24.3982 84.5837V90.0212C23.7946 90.2225 22.4666 91.3503 21.9836 94.2503C21.3798 97.8753 26.2096 97.2712 24.3982 100.292C22.9492 102.709 27.0146 104.521 29.2284 105.125L30.436 111.771Z"
 																	fill="#D99459"
 																/>
 																<path
 																	class="svg-main_path"
-																	d="M37.5348 57.4378C37.5348 53.555 43.0586 21.6294 46.033 18.6094C49.0073 15.5894 51.9817 6.52948 57.9305 5.66663C63.8792 4.80378 71.9525 -0.373345 78.3261 -0.373345H87.9965C88.1909 -0.386363 88.3675 -0.385568 88.524 -0.373345H87.9965C85.9041 -0.233203 81.7475 1.50766 78.3261 7.82376C73.6521 16.4523 71.1027 26.8066 67.2785 31.1208C63.4543 35.4351 60.4799 42.7693 56.6557 45.3579C52.8315 47.9465 57.9305 42.7694 50.2821 50.1036C42.1238 55.971 38.3846 57.4378 37.5348 57.4378Z"
+																	d="M38.5594 114.788H30.9486C30.4297 114.788 30.0837 114.442 30.0837 113.923V108.729C30.0837 108.209 30.4297 107.863 30.9486 107.863C31.4675 107.863 31.8134 108.209 31.8134 108.729V113.057H37.3484C37.1754 111.845 37.0026 110.114 37.6945 108.902C38.2134 108.036 39.2513 107.517 40.4621 106.824C42.0188 106.132 43.0567 105.439 43.0567 104.747C42.3648 104.574 39.9432 104.92 38.0405 105.093C33.3702 105.785 27.6621 106.478 24.8945 104.4C23.8567 103.708 23.3378 102.669 23.1648 101.284C22.9918 100.072 23.3378 99.2064 24.0297 98.3407C25.7594 96.4362 29.5648 96.4362 33.5432 96.2631C37.0026 96.2631 40.981 96.2629 42.3648 94.7047C42.8837 94.1853 43.0567 93.6661 42.8837 92.8004C42.8837 91.9348 42.5378 91.4154 42.1918 91.0691C40.6351 89.684 37.0026 90.0301 33.5432 90.3764C29.3918 90.7226 25.5862 91.0691 23.6835 89.3377C22.8187 88.6452 22.4729 87.6064 22.4729 86.2213C22.4729 85.0094 22.8187 83.9706 23.6835 83.1049C25.7592 81.0273 30.4295 81.2004 34.7538 81.3736C38.2133 81.5467 42.0188 81.5467 43.2297 80.3348C43.4026 80.1616 43.5754 79.8152 43.5754 79.1226C43.4025 78.0838 43.0565 77.3915 42.5376 77.0452C41.1538 76.0064 38.3864 76.5258 35.2729 76.8721C31.9864 77.3915 28.3538 77.9109 25.2403 76.8721C18.1484 74.2751 10.5378 63.887 6.5594 55.2303C-0.878435 38.9557 1.1972 20.4303 11.9215 9.52282C20.7432 0.34669 33.1971 -1.73096 45.9971 3.6362C55.8565 7.79142 61.9107 16.9675 62.9486 29.6064C64.3324 45.1885 57.5864 61.9825 47.381 68.9079C44.6134 70.8124 37.6945 73.2363 34.581 69.081C32.1594 65.7915 34.4079 52.8064 36.4835 42.9377C35.2727 43.1109 34.0621 43.284 32.5053 43.1109C31.2945 43.1109 30.2567 42.9377 29.3918 42.9377C31.1215 54.5377 31.8134 68.7348 31.8134 68.9079C31.8134 69.4273 31.4675 69.7736 30.9486 69.7736C30.4297 69.7736 30.0837 69.4273 30.0837 68.9079C30.0837 66.8303 29.2188 53.3258 27.6621 42.5915C22.9918 41.2064 21.6079 38.2631 21.0889 36.1855C20.397 32.7228 21.9538 28.9139 23.6835 28.2213C24.3754 27.8751 25.2405 28.0482 25.7594 28.7407C27.1432 30.6452 28.354 35.493 29.2188 41.2064C30.2567 41.3795 31.2945 41.5527 32.6783 41.5527C34.408 41.5527 35.7918 41.3795 37.0026 41.2064C38.2134 35.8392 39.4243 31.684 39.5972 31.1646C40.6351 28.2213 42.3648 28.3945 43.0567 28.5676C44.9594 29.087 46.343 32.2034 45.9971 35.3198C45.8241 36.878 44.6134 41.2062 38.5594 42.7644C36.4837 52.6331 34.2351 65.6183 36.1378 68.2154C38.3864 71.3318 44.2675 69.2542 46.5161 67.696C56.3756 61.1168 62.7756 45.0154 61.3918 29.9527C60.6999 23.0273 57.7594 10.5616 45.4783 5.36754C33.3702 0.173512 21.6079 2.25124 13.3052 10.908C3.09977 21.4691 1.02427 39.1288 8.28913 54.7109C12.2675 63.3676 19.5324 73.2363 25.9324 75.487C28.527 76.3527 31.8134 75.8333 35.0999 75.487C38.5594 74.9676 41.6727 74.4482 43.5754 76.0064C44.4403 76.6989 45.1322 77.7377 45.3052 79.2959C45.4781 80.3348 45.1324 81.2004 44.6134 81.893C42.8837 83.6243 39.2511 83.6241 34.9268 83.451C31.1214 83.2779 26.6243 83.1049 25.0675 84.8363C24.5486 85.3557 24.3754 85.8751 24.3754 86.7407C24.3754 87.6064 24.5486 88.1258 25.0675 88.4721C26.4513 89.8571 30.0837 89.5109 33.7161 89.1646C37.8675 88.8183 41.6729 88.4721 43.7486 90.2034C44.6134 90.896 44.9592 91.9348 45.1322 93.1467C45.1322 94.3586 44.7864 95.3974 44.0945 96.2631C42.1918 98.3407 38.0403 98.3407 33.8889 98.3407C30.4295 98.3407 26.7972 98.3407 25.7594 99.7258C25.5864 99.8989 25.2403 100.418 25.4133 101.284C25.5862 102.15 25.9324 102.669 26.4513 103.188C28.6999 104.92 34.2349 104.227 38.3862 103.535C42.5376 103.015 44.9592 102.669 45.3052 104.4C45.8241 106.651 43.5754 107.69 41.6727 108.555C40.8079 108.902 39.7702 109.421 39.5972 109.941C39.0783 110.98 39.4243 113.23 39.5972 113.923C39.5972 114.269 39.5972 114.442 39.4243 114.615C39.0783 114.615 38.7324 114.788 38.5594 114.788ZM42.3648 29.9527C42.0188 29.9527 41.4999 30.4719 41.154 31.5107C40.808 32.3764 39.9432 36.0124 38.9053 40.5139C43.0567 39.1288 43.9216 36.1855 44.0945 34.8004C44.4405 32.2034 43.4026 30.1258 42.3648 29.9527C42.5378 29.9527 42.5378 29.9527 42.3648 29.9527ZM24.5484 29.6064C24.0295 29.7795 22.6457 32.0301 22.8187 34.9734C22.9916 37.5704 24.7215 39.4751 27.4891 40.5139C26.6243 35.3198 25.5862 31.1646 24.5484 29.6064Z"
 																	fill="#D99459"
 																/>
 																<path
 																	class="svg-main_path"
-																	d="M23.5128 33.278C24.3626 32.5589 26.3172 31.1208 27.3369 31.1208L35.4102 44.9265L34.1355 56.1436C33.8522 53.4112 32.7758 47.0836 30.7362 43.6322C28.6966 40.1808 25.0708 35.2913 23.5128 33.278Z"
-																	fill="#D99459"
+																	d="M42.3648 29.9527C42.0188 29.9527 41.4999 30.4719 41.154 31.5107C40.808 32.3764 39.9432 36.0124 38.9053 40.5139C43.0567 39.1288 43.9215 36.1855 44.0945 34.8004C44.4405 32.2034 43.4026 30.1258 42.3648 29.9527ZM42.3648 29.9527C42.5378 29.9527 42.5378 29.9527 42.3648 29.9527ZM38.5594 114.788H30.9486C30.4297 114.788 30.0837 114.442 30.0837 113.923V108.729C30.0837 108.209 30.4297 107.863 30.9486 107.863C31.4675 107.863 31.8134 108.209 31.8134 108.729V113.057H37.3484C37.1754 111.845 37.0026 110.114 37.6945 108.902C38.2134 108.036 39.2513 107.517 40.4621 106.824C42.0188 106.132 43.0567 105.439 43.0567 104.747C42.3648 104.574 39.9432 104.92 38.0405 105.093C33.3702 105.785 27.6621 106.478 24.8945 104.4C23.8567 103.708 23.3378 102.669 23.1648 101.284C22.9918 100.072 23.3378 99.2064 24.0297 98.3407C25.7594 96.4362 29.5648 96.4363 33.5432 96.2631C37.0026 96.2631 40.981 96.2629 42.3648 94.7047C42.8837 94.1853 43.0567 93.6661 42.8837 92.8004C42.8837 91.9348 42.5378 91.4154 42.1918 91.0691C40.6351 89.684 37.0026 90.0301 33.5432 90.3764C29.3918 90.7226 25.5862 91.0691 23.6835 89.3377C22.8187 88.6452 22.4729 87.6064 22.4729 86.2213C22.4729 85.0094 22.8187 83.9706 23.6835 83.1049C25.7592 81.0273 30.4295 81.2004 34.7538 81.3736C38.2133 81.5467 42.0188 81.5467 43.2297 80.3348C43.4026 80.1616 43.5754 79.8152 43.5754 79.1226C43.4025 78.0838 43.0565 77.3915 42.5376 77.0452C41.1538 76.0064 38.3864 76.5258 35.2729 76.8721C31.9864 77.3915 28.3538 77.9109 25.2403 76.8721C18.1484 74.2751 10.5378 63.887 6.5594 55.2303C-0.878435 38.9557 1.1972 20.4303 11.9215 9.52282C20.7432 0.34669 33.1971 -1.73096 45.9971 3.6362C55.8565 7.79142 61.9107 16.9675 62.9486 29.6064C64.3324 45.1885 57.5864 61.9825 47.381 68.9079C44.6134 70.8124 37.6945 73.2362 34.581 69.081C32.1594 65.7915 34.4079 52.8064 36.4835 42.9377C35.2727 43.1109 34.0621 43.284 32.5053 43.1109C31.2945 43.1109 30.2567 42.9377 29.3918 42.9377C31.1215 54.5377 31.8134 68.7348 31.8134 68.9079C31.8134 69.4273 31.4675 69.7736 30.9486 69.7736C30.4297 69.7736 30.0837 69.4273 30.0837 68.9079C30.0837 66.8303 29.2188 53.3258 27.6621 42.5915C22.9918 41.2064 21.6079 38.2631 21.0889 36.1855C20.397 32.7228 21.9538 28.9139 23.6835 28.2213C24.3754 27.8751 25.2405 28.0482 25.7594 28.7407C27.1432 30.6452 28.354 35.493 29.2188 41.2064C30.2567 41.3795 31.2945 41.5527 32.6783 41.5527C34.408 41.5527 35.7918 41.3795 37.0026 41.2064C38.2134 35.8392 39.4243 31.684 39.5972 31.1646C40.6351 28.2213 42.3648 28.3945 43.0567 28.5676C44.9594 29.087 46.343 32.2034 45.9971 35.3198C45.8241 36.878 44.6134 41.2062 38.5594 42.7644C36.4837 52.6331 34.2351 65.6183 36.1378 68.2154C38.3864 71.3318 44.2675 69.2542 46.5161 67.696C56.3756 61.1168 62.7756 45.0154 61.3918 29.9527C60.6999 23.0273 57.7594 10.5616 45.4783 5.36754C33.3702 0.173512 21.6079 2.25124 13.3052 10.908C3.09977 21.4691 1.02427 39.1288 8.28913 54.7109C12.2675 63.3676 19.5324 73.2363 25.9324 75.487C28.527 76.3527 31.8134 75.8333 35.0999 75.487C38.5594 74.9676 41.6727 74.4482 43.5754 76.0064C44.4403 76.6989 45.1322 77.7377 45.3052 79.2959C45.4781 80.3348 45.1324 81.2004 44.6134 81.893C42.8837 83.6243 39.2511 83.6241 34.9268 83.451C31.1214 83.2779 26.6243 83.1049 25.0675 84.8362C24.5486 85.3556 24.3754 85.8751 24.3754 86.7407C24.3754 87.6064 24.5486 88.1258 25.0675 88.4721C26.4513 89.8571 30.0837 89.5109 33.7161 89.1646C37.8675 88.8183 41.6729 88.4721 43.7486 90.2034C44.6134 90.896 44.9592 91.9348 45.1322 93.1467C45.1322 94.3586 44.7864 95.3974 44.0945 96.2631C42.1918 98.3407 38.0403 98.3407 33.8889 98.3407C30.4295 98.3407 26.7972 98.3407 25.7594 99.7258C25.5864 99.8989 25.2403 100.418 25.4133 101.284C25.5862 102.15 25.9324 102.669 26.4513 103.188C28.6999 104.92 34.2349 104.227 38.3862 103.535C42.5376 103.015 44.9592 102.669 45.3052 104.4C45.8241 106.651 43.5754 107.69 41.6727 108.555C40.8079 108.902 39.7702 109.421 39.5972 109.941C39.0783 110.98 39.4243 113.23 39.5972 113.923C39.5972 114.269 39.5972 114.442 39.4243 114.615C39.0783 114.615 38.7324 114.788 38.5594 114.788ZM24.5484 29.6064C24.0295 29.7795 22.6457 32.0301 22.8187 34.9734C22.9916 37.5704 24.7215 39.4751 27.4891 40.5139C26.6243 35.3198 25.5862 31.1646 24.5484 29.6064Z"
+																	stroke="#D99459"
+																	stroke-width="1.8"
 																/>
 															</g>
-														</g>
-														<defs>
-															<clipPath
-																id="clip0_0_120464"
-															>
-																<rect
-																	width="89.3265"
-																	height="113.253"
-																	fill="white"
-																	transform="translate(0.437988 0.866211)"
-																/>
-															</clipPath>
-														</defs>
-													</svg>
-													<p
-														class="medium-text primary-font"
+															<defs>
+																<clipPath
+																	id="clip0_0_120515"
+																>
+																	<rect
+																		width="64"
+																		height="116"
+																		fill="white"
+																		transform="translate(0.851074)"
+																	/>
+																</clipPath>
+															</defs>
+														</svg>
+														<p class="medium-text primary-font"
+														>
+															Smart Innovative Society
+														</p>
+													</div>
+													<!-- MODAL -->
+													<div
+														class="category-box__card-inner"
 													>
-														Active Healthy People
-													</p>
+														<h4
+															class="category-box__card-inner__heading"
+														>
+															Lorem Ipsum Smart
+															Innovative Society
+														</h4>
+														<ul>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>More people
+																	have a stronger
+																	sense of
+																	belonging in
+																	their
+																	community</span
+																>
+															</li>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>Raised
+																	community
+																	connection and
+																	participation</span
+																>
+															</li>
+														</ul>
+														<a
+															class="btn light category-box__btn"
+															href="#home" tabindex="87" aria-label="explore this category"
+															>explore this
+															category</a
+														>
+													</div>
 												</div>
-												<!-- MODAL -->
-												<div
-													class="category-box__card-inner"
-												>
-													<h4
-														class="category-box__card-inner__heading"
+											</div>
+										</div>
+
+										<div class="animate-box animate-box-5">
+											<div
+												class="category-box cb-5"
+											>
+												<div class="category-box__inner">
+													<div
+														class="category-box__header"
 													>
-														Lorem Ipsum Active
-														Healthy People
-													</h4>
-													<ul>
-														<li
-															class="category-box__card-inner__item"
+														<button
+															aria-hidden="false"
+															type="button"
+															class="btn-close"
+															value="close"
+															title="Close Button"
+															tabindex="96" aria-label="Close Active Healthy People"
 														>
 															<svg
+																class="btn-close__svg"
 																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
+																viewBox="0 0 16 16"
+																fill="#000"
 															>
 																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
+																	class="btn-close__svg__path"
+																	d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"
 																/>
 															</svg>
-															<span
-																class="category-box__span"
-																>More people
-																have a stronger
-																sense of
-																belonging in
-																their
-																community</span
-															>
-														</li>
-														<li
-															class="category-box__card-inner__item"
-														>
-															<svg
-																xmlns="http://www.w3.org/2000/svg"
-																width="39"
-																height="50"
-																viewBox="0 0 39 50"
-																fill="none"
-															>
-																<path
-																	d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-																<path
-																	opacity="0.1"
-																	d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
-																	fill="white"
-																/>
-																<path
-																	d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
-																	stroke="white"
-																	stroke-width="2"
-																	stroke-miterlimit="10"
-																/>
-															</svg>
-															<span
-																class="category-box__span"
-																>Raised
-																community
-																connection and
-																participation</span
-															>
-														</li>
-													</ul>
-													<a
-														class="btn light category-box__btn"
-														href="#home"
-														>explore this
-														category</a
+														</button>
+													</div>
+													<div class="category-box__inner-main" tabindex="95" aria-label="Active Healthy People"
 													>
+														<svg
+															xmlns="http://www.w3.org/2000/svg"
+															width="90"
+															height="115"
+															viewBox="0 0 90 115"
+															fill="none"
+															class="svg-main"
+														>
+															<g
+																clip-path="url(#clip0_0_120463)"
+															>
+																<path
+																	class="svg-main_path"
+																	d="M24.0151 112.449C21.069 112.449 17.2024 111.521 12.0469 109.107C8.54844 107.436 5.23424 103.352 3.39296 97.7817C0.631046 89.427 1.36751 80.3296 5.41831 72.5319C9.10086 65.4767 15.7295 62.8775 20.701 61.9492C26.2248 61.0209 31.7484 61.7635 33.2214 63.0631C33.5897 63.4345 33.5897 63.9914 33.2214 64.3628C32.8532 64.7341 32.301 64.7341 31.9327 64.3628C31.1962 63.6201 26.593 62.6918 20.8851 63.6201C16.466 64.3628 10.3898 66.7764 7.07551 73.2745C3.20883 80.5153 2.65645 89.2413 5.23424 97.0391C6.89139 102.052 9.83737 105.765 12.7834 107.25C26.4089 113.563 29.5389 108.736 31.3802 105.951C32.1167 105.023 32.6692 104.094 33.5899 104.094C34.3264 104.094 35.0627 104.651 35.9834 105.394C37.6405 106.879 40.4024 109.478 46.2945 109.478C50.5294 109.664 58.2628 104.466 62.866 96.6678C65.4438 92.2119 68.9424 83.4858 63.4185 74.0171C56.0534 61.5779 43.3485 63.6201 38.0088 64.5484C35.9834 64.9198 35.247 65.1054 34.6946 64.1771C34.5105 63.9914 34.3264 63.4345 34.8788 62.8775C35.4312 62.3205 35.7992 61.5779 36.1675 60.8352C35.0627 60.4639 34.5103 59.5356 34.3262 58.4216C33.4056 45.7967 27.8817 41.8978 24.9357 39.6699C23.6468 38.7416 22.7264 37.9989 22.7264 37.0706C22.7264 36.5136 22.9105 35.9566 23.4629 35.3997C24.0152 34.657 24.9357 33.9144 25.8563 33.3574L26.2248 32.9861C26.9613 32.4291 28.9867 31.1294 31.7486 33.9144C35.9835 38.1846 40.5865 50.8095 38.7453 59.3499C44.8215 58.4216 60.2884 48.0246 70.4154 23.5174C73.3614 16.4622 79.2533 11.2637 83.12 7.92177C84.7772 6.62215 86.6184 4.76554 86.8026 4.20855C86.2502 3.65157 82.3837 3.46589 75.3868 3.83721C59.9201 4.3942 51.6342 14.9769 47.9516 21.2894C42.6119 30.3868 40.955 41.7121 44.0852 47.8389C44.6375 48.9529 45.1899 49.5099 45.7423 49.5099C47.7677 49.5099 50.8977 42.0834 53.6596 35.3997C58.0787 25.0026 63.6027 12.0064 70.9678 8.66447C71.336 8.47881 71.8884 8.66449 72.2567 9.03581C72.4408 9.40714 72.2567 9.96403 71.8884 10.3353C65.2598 13.4916 59.9199 26.1166 55.5009 36.1423C51.4501 45.7967 48.8725 51.1808 45.9264 51.3665C43.901 51.5522 42.9802 49.3242 42.6119 48.5816C39.1135 41.7121 40.7709 30.0155 46.4788 20.1755C50.3455 13.6773 59.1836 2.53763 75.3868 1.79499C86.0662 1.42366 88.0914 1.98069 88.6438 3.46598C89.1962 4.95127 87.5393 6.4365 84.4091 9.22142C80.7265 12.5633 75.0184 17.3905 72.0723 24.0743C61.7612 48.9529 45.1897 60.8352 38.0088 61.2065C37.8246 61.7635 37.4566 62.3205 37.2724 62.8775C37.4566 62.8775 37.6405 62.8775 37.8246 62.8775C43.1643 61.9492 57.1582 59.7212 65.0757 73.2745C69.4948 80.7009 69.3104 89.427 64.5233 97.7817C60.1042 105.394 52.0026 111.706 46.4788 111.521C39.8502 111.335 36.7199 108.364 35.0627 106.879C34.6945 106.508 34.1423 106.136 33.9581 105.951C33.9581 105.951 33.5897 106.693 33.2214 107.065C31.5643 109.293 29.5389 112.449 24.0151 112.449ZM28.0661 34.2857C27.6978 34.2857 27.3295 34.4713 27.1454 34.657L26.777 35.0283C26.0405 35.5853 25.12 36.5136 24.5676 37.0706C24.3835 37.2563 24.3835 37.4419 24.3835 37.4419C24.3835 37.6276 25.304 38.1846 25.8563 38.7416C28.9865 40.9695 34.8786 45.4253 35.9834 58.7929C35.9834 59.1643 36.1677 59.5356 36.5359 59.7212C38.5613 51.9235 34.1423 39.6699 30.0915 35.771C29.3549 34.4713 28.6184 34.2857 28.0661 34.2857Z"
+																	fill="#D99459"
+																	stroke="#D99459"
+																	stroke-width="1.19634"
+																/>
+																<g opacity="0.2">
+																	<path
+																		class="svg-main_path"
+																		d="M6.51636 69.5178C9.23578 62.2698 23.796 61.8959 30.7362 62.615H33.2857H37.5348H49.0073C55.8059 62.615 57.0806 64.3407 60.055 66.9292C63.0294 69.5178 66.4286 79.4406 67.2785 82.892C68.1283 86.3434 60.055 102.738 52.8315 109.209C47.0528 114.386 37.3931 108.202 33.2857 104.463C32.4359 105.614 29.2915 108.605 23.5128 111.366C16.2893 114.818 10.3405 104.032 5.24163 100.149C0.142708 96.2663 3.11708 78.5778 6.51636 69.5178Z"
+																		fill="#D99459"
+																	/>
+																	<path
+																		class="svg-main_path"
+																		d="M37.5348 57.4378C37.5348 53.555 43.0586 21.6294 46.033 18.6094C49.0073 15.5894 51.9817 6.52948 57.9305 5.66663C63.8792 4.80378 71.9525 -0.373345 78.3261 -0.373345H87.9965C88.1909 -0.386363 88.3675 -0.385568 88.524 -0.373345H87.9965C85.9041 -0.233203 81.7475 1.50766 78.3261 7.82376C73.6521 16.4523 71.1027 26.8066 67.2785 31.1208C63.4543 35.4351 60.4799 42.7693 56.6557 45.3579C52.8315 47.9465 57.9305 42.7694 50.2821 50.1036C42.1238 55.971 38.3846 57.4378 37.5348 57.4378Z"
+																		fill="#D99459"
+																	/>
+																	<path
+																		class="svg-main_path"
+																		d="M23.5128 33.278C24.3626 32.5589 26.3172 31.1208 27.3369 31.1208L35.4102 44.9265L34.1355 56.1436C33.8522 53.4112 32.7758 47.0836 30.7362 43.6322C28.6966 40.1808 25.0708 35.2913 23.5128 33.278Z"
+																		fill="#D99459"
+																	/>
+																</g>
+															</g>
+															<defs>
+																<clipPath
+																	id="clip0_0_120464"
+																>
+																	<rect
+																		width="89.3265"
+																		height="113.253"
+																		fill="white"
+																		transform="translate(0.437988 0.866211)"
+																	/>
+																</clipPath>
+															</defs>
+														</svg>
+														<p
+															class="medium-text primary-font"
+														>
+															Active Healthy People
+														</p>
+													</div>
+													<!-- MODAL -->
+													<div
+														class="category-box__card-inner"
+													>
+														<h4
+															class="category-box__card-inner__heading"
+														>
+															Lorem Ipsum Active
+															Healthy People
+														</h4>
+														<ul>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>More people
+																	have a stronger
+																	sense of
+																	belonging in
+																	their
+																	community</span
+																>
+															</li>
+															<li
+																class="category-box__card-inner__item"
+															>
+																<svg
+																	xmlns="http://www.w3.org/2000/svg"
+																	width="39"
+																	height="50"
+																	viewBox="0 0 39 50"
+																	fill="none"
+																>
+																	<path
+																		d="M2.0004 27.0001C3.5004 32.0001 12.8072 33.0673 14.1061 33.1685C15.4051 33.2698 16.1143 33.1466 16.5223 33.1161C16.9303 33.0856 16.8178 33.1019 16.9302 33.0856C18.3769 32.8751 19.4686 32.1348 20.1748 30.8853C21.793 28.0216 29.8023 16.5483 29.8823 16.4305C30.1408 16.0501 30.1216 15.7255 30.0601 15.5204C29.9509 15.156 29.6257 14.8536 29.1198 14.6458C28.2013 14.2691 26.7736 14.7149 26.1101 15.3654C23.5141 17.9109 19.8519 21.557 17.4727 25.0394C16.0264 23.1977 14.5748 21.8308 12.9273 20.7561C12.1192 20.2378 11.4524 20.7093 10.962 21.1776C10.1109 21.9911 10.2891 23.0001 10.6088 23.5769C12.0727 26.218 15.5004 32.2856 15.5004 33.0856"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																	<path
+																		opacity="0.1"
+																		d="M20.4999 7L13.9999 7.5L12.4998 7L5.99976 11.5L2.49976 17.5L0.499939 23.5L0.999939 28L8.99994 32L13.9999 32.5L13.4999 31C12.9999 30.3333 11.8998 28.9 11.4998 28.5C10.9998 28 10.4998 24.5 9.99976 24.5C9.59976 24.5 9.49976 23.1667 9.49976 22.5C9.8331 22 10.6998 20.9 11.4998 20.5C12.2998 20.1 15.1664 23 16.4998 24.5L17.4998 23C19.4998 20.8333 24.0998 16.2 26.4998 15C28.8998 13.8 29.1665 15.5 28.9999 16.5L23.4998 24L18.4998 32L16.4998 33.5H13.4999L7.99994 32.5C3.49994 30.5 1.79994 27.5 2.99994 31.5C4.49994 36.5 9.49994 37 13.4999 39C17.4999 41 27.4999 40 32.4999 32C36.4999 25.6 34.4999 18 32.9999 15L28.9999 9.5L20.4999 7Z"
+																		fill="white"
+																	/>
+																	<path
+																		d="M19.4193 40.4424C29.2611 40.4424 37.2828 32.6567 37.2828 22.9998C37.2828 13.3428 29.2611 5.55713 19.4193 5.55713C9.57756 5.55713 1.55584 13.3428 1.55584 22.9998C1.55584 32.6567 9.57756 40.4424 19.4193 40.4424Z"
+																		stroke="white"
+																		stroke-width="2"
+																		stroke-miterlimit="10"
+																	/>
+																</svg>
+																<span
+																	class="category-box__span"
+																	>Raised
+																	community
+																	connection and
+																	participation</span
+																>
+															</li>
+														</ul>
+														<a
+															class="btn light category-box__btn"
+															href="#home" tabindex="98" aria-label="explore this category"
+															>explore this
+															category</a
+														>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -1361,198 +1351,197 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<!--  NEY -->
-			<section class="journey-section">
-				<div class="parallax-background-section-2">
-					<object
-						type="image/svg+xml"
-						data="images/bg-style-design-main_ani_forwards.svg"
-						class="animateImg"
-						title="Background Image Moving Right"
-					>
-						<img
-							src="images/bg-style-design-main_ani_forwards.svg"
+				</section>
+				<!--  NEY -->
+				<section class="journey-section">
+					<div class="parallax-background-section-2">
+						<object
+							type="image/svg+xml"
+							data="images/bg-style-design-main_ani_forwards.svg"
 							class="animateImg"
-							alt="Background Image Moving Right"
-						/>
-					</object>
-				</div>
-				<div class="container">
-					<p
-						class="small-haeding u-text-center small-haeding_hover_text"
-					>
-						Start your impact journey
-					</p>
-					<h2
-						class="bold u-text-center white_text title-haeding title-haeding_hover_text"
-					>
-						Every impact journey starts with a single step.
-					</h2>
-					<div class="journey-boxes row">
-						<div class="journey-box column-md-6 column-lg-4">
-							<div class="journey-box__inner go-to-uyc">
-								<div class="journey-box__image">
-									<img
-										src="images/girl-with-music.jpg"
-										class="image"
-										alt="girl with music"
-									/>
-								</div>
-								<div class="title-link title-link__black">
-									<h3
-										class="bold title-link__heading text-dark title-link_hover_text"
-										tabindex="0"
-									>
-										Understand your Community
-									</h3>
-									<svg
-										class="title-link__svgIcon svgIcon_change-color"
-										width="18"
-										height="18"
-										viewBox="0 0 18 18"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M8.76296 17.365L7.96746 16.605C7.77918 16.4251 7.77918 16.1334 7.96746 15.9535L14.2004 9.99811H0.482143C0.215879 9.99811 0 9.79185 0 9.53744V8.46253C0 8.20812 0.215879 8.00185 0.482143 8.00185H14.2004L7.96746 2.04647C7.77918 1.86658 7.77918 1.57489 7.96746 1.39496L8.76296 0.63492C8.95123 0.455027 9.25651 0.455027 9.44483 0.63492L17.8588 8.67425C18.0471 8.85414 18.0471 9.14582 17.8588 9.32576L9.44483 17.3651C9.25655 17.545 8.95127 17.545 8.76296 17.365Z"
-										/>
-									</svg>
-								</div>
-								<p class="text-dark journey-box__inner_para">
-									Explore wellbeing in your community context
-									and how your project can make an impact.
-								</p>
-							</div>
-						</div>
-						<div class="journey-box column-md-6 column-lg-4">
-							<div class="journey-box__inner go-to-lfo">
-								<div class="journey-box__image">
-									<img
-										src="images/sports-girls.jpg"
-										class="image"
-										alt="sports girls"
-									/>
-								</div>
-								<div class="title-link">
-									<h3
-										class="bold title-link__heading title-link_hover_text"
-										tabindex="0"
-										aria-errormessage=""
-									>
-										Learn from Others
-									</h3>
-									<svg
-										class="title-link__svgIcon svgIcon_change-color"
-										width="18"
-										height="18"
-										viewBox="0 0 18 18"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M8.76296 17.365L7.96746 16.605C7.77918 16.4251 7.77918 16.1334 7.96746 15.9535L14.2004 9.99811H0.482143C0.215879 9.99811 0 9.79185 0 9.53744V8.46253C0 8.20812 0.215879 8.00185 0.482143 8.00185H14.2004L7.96746 2.04647C7.77918 1.86658 7.77918 1.57489 7.96746 1.39496L8.76296 0.63492C8.95123 0.455027 9.25651 0.455027 9.44483 0.63492L17.8588 8.67425C18.0471 8.85414 18.0471 9.14582 17.8588 9.32576L9.44483 17.3651C9.25655 17.545 8.95127 17.545 8.76296 17.365Z"
-										/>
-									</svg>
-								</div>
-								<p class="journey-box__inner_para">
-									Get inspired by other projects and
-									initiatives funded by Lotterywest and
-									Healthway.
-								</p>
-							</div>
-						</div>
-						<div class="journey-box column-md-6 column-lg-4">
-							<div class="journey-box__inner go-to-pyp">
-								<div class="journey-box__image">
-									<img
-										src="images/planting-people.jpg"
-										class="image"
-										alt="planting people"
-									/>
-								</div>
-								<div class="title-link">
-									<h3
-										class="bold title-link__heading title-link_hover_text"
-										tabindex="0"
-									>
-										Plan your Project
-									</h3>
-									<svg
-										class="title-link__svgIcon svgIcon_change-color"
-										width="18"
-										height="18"
-										viewBox="0 0 18 18"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M8.76296 17.365L7.96746 16.605C7.77918 16.4251 7.77918 16.1334 7.96746 15.9535L14.2004 9.99811H0.482143C0.215879 9.99811 0 9.79185 0 9.53744V8.46253C0 8.20812 0.215879 8.00185 0.482143 8.00185H14.2004L7.96746 2.04647C7.77918 1.86658 7.77918 1.57489 7.96746 1.39496L8.76296 0.63492C8.95123 0.455027 9.25651 0.455027 9.44483 0.63492L17.8588 8.67425C18.0471 8.85414 18.0471 9.14582 17.8588 9.32576L9.44483 17.3651C9.25655 17.545 8.95127 17.545 8.76296 17.365Z"
-										/>
-									</svg>
-								</div>
-								<p class="journey-box__inner_para">
-									Access the best tools and planners to help
-									you frame and execute your projects.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- ABOUT -->
-			<section class="about-section u-text-center">
-				<div class="container">
-					<div class="about__inner">
-						<h2 class="about-section__header">About Us</h2>
-						<p class="about-section__para">
-							The Western Australian Community Impact Hub supports
-							organisations to have a positive impact in their
-							community. Lotterywest and Healthway exist to build
-							a better and healthier Western Australia through our
-							grant programs.
-						</p>
-						<div class="about-client-part">
-							<img
-								src="images/company-white-logo.png"
-								alt="company white logo"
-							/>
-						</div>
-						<a
-							href="/"
-							class="btn light about-section__btn"
-							tabindex="0"
-							>Read more about us</a
+							title="Background Image Moving Right"
 						>
+							<img
+								src="images/bg-style-design-main_ani_forwards.svg"
+								class="animateImg"
+								alt="Background Image Moving Right"
+							/>
+						</object>
 					</div>
-				</div>
-			</section>
-			<!-- ACKNOWLEDGEMENT -->
-			<section class="acknowledgement-section">
-				<div class="container">
-					<div class="line-texts">
-						<h2 class="acknowledgement-section__heading">
-							Acknowledgement of Country
+					<div class="container">
+						<p
+							class="small-haeding u-text-center small-haeding_hover_text"
+						>
+							Start your impact journey
+						</p>
+						<h2
+							class="bold u-text-center white_text title-haeding title-haeding_hover_text"
+						>
+							Every impact journey starts with a single step.
 						</h2>
-						<p class="acknowledgement-section__para">
-							We acknowledge the Aboriginal and Torres Strait
-							Islander People as the original custodians of this
-							country, recognising their connection to land,
-							waters and community. We respect their cultures and
-							Elders, past and present.
-						</p>
-						<p class="acknowledgement-section__para">
-							Ngala kaaditj Whadjuk moort keyen kaadak nidja
-							boodja – We acknowledge Whadjuk Noongar people as
-							the original custodians of the land on which we are
-							based.
-						</p>
+						<div class="journey-boxes row">
+							<div class="journey-box column-md-6 column-lg-4">
+								<div class="journey-box__inner go-to-uyc">
+									<div class="journey-box__image">
+										<img
+											src="images/girl-with-music.jpg"
+											class="image"
+											alt="girl with music"
+										/>
+									</div>
+									<div class="title-link title-link__black">
+										<h3
+											class="bold title-link__heading text-dark title-link_hover_text"
+											tabindex="105" aria-label="Understand your Community"
+										>
+											Understand your Community
+										</h3>
+										<svg
+											class="title-link__svgIcon svgIcon_change-color"
+											width="18"
+											height="18"
+											viewBox="0 0 18 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M8.76296 17.365L7.96746 16.605C7.77918 16.4251 7.77918 16.1334 7.96746 15.9535L14.2004 9.99811H0.482143C0.215879 9.99811 0 9.79185 0 9.53744V8.46253C0 8.20812 0.215879 8.00185 0.482143 8.00185H14.2004L7.96746 2.04647C7.77918 1.86658 7.77918 1.57489 7.96746 1.39496L8.76296 0.63492C8.95123 0.455027 9.25651 0.455027 9.44483 0.63492L17.8588 8.67425C18.0471 8.85414 18.0471 9.14582 17.8588 9.32576L9.44483 17.3651C9.25655 17.545 8.95127 17.545 8.76296 17.365Z"
+											/>
+										</svg>
+									</div>
+									<p class="text-dark journey-box__inner_para">
+										Explore wellbeing in your community context
+										and how your project can make an impact.
+									</p>
+								</div>
+							</div>
+							<div class="journey-box column-md-6 column-lg-4">
+								<div class="journey-box__inner go-to-lfo">
+									<div class="journey-box__image">
+										<img
+											src="images/sports-girls.jpg"
+											class="image"
+											alt="sports girls"
+										/>
+									</div>
+									<div class="title-link">
+										<h3
+											class="bold title-link__heading title-link_hover_text"
+											tabindex="110" aria-label="Learn from Others"
+										>
+											Learn from Others
+										</h3>
+										<svg
+											class="title-link__svgIcon svgIcon_change-color"
+											width="18"
+											height="18"
+											viewBox="0 0 18 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M8.76296 17.365L7.96746 16.605C7.77918 16.4251 7.77918 16.1334 7.96746 15.9535L14.2004 9.99811H0.482143C0.215879 9.99811 0 9.79185 0 9.53744V8.46253C0 8.20812 0.215879 8.00185 0.482143 8.00185H14.2004L7.96746 2.04647C7.77918 1.86658 7.77918 1.57489 7.96746 1.39496L8.76296 0.63492C8.95123 0.455027 9.25651 0.455027 9.44483 0.63492L17.8588 8.67425C18.0471 8.85414 18.0471 9.14582 17.8588 9.32576L9.44483 17.3651C9.25655 17.545 8.95127 17.545 8.76296 17.365Z"
+											/>
+										</svg>
+									</div>
+									<p class="journey-box__inner_para">
+										Get inspired by other projects and
+										initiatives funded by Lotterywest and
+										Healthway.
+									</p>
+								</div>
+							</div>
+							<div class="journey-box column-md-6 column-lg-4">
+								<div class="journey-box__inner go-to-pyp">
+									<div class="journey-box__image">
+										<img
+											src="images/planting-people.jpg"
+											class="image"
+											alt="planting people"
+										/>
+									</div>
+									<div class="title-link">
+										<h3
+											class="bold title-link__heading title-link_hover_text"
+											tabindex="115" aria-label="Plan your Project"
+										>
+											Plan your Project
+										</h3>
+										<svg
+											class="title-link__svgIcon svgIcon_change-color"
+											width="18"
+											height="18"
+											viewBox="0 0 18 18"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M8.76296 17.365L7.96746 16.605C7.77918 16.4251 7.77918 16.1334 7.96746 15.9535L14.2004 9.99811H0.482143C0.215879 9.99811 0 9.79185 0 9.53744V8.46253C0 8.20812 0.215879 8.00185 0.482143 8.00185H14.2004L7.96746 2.04647C7.77918 1.86658 7.77918 1.57489 7.96746 1.39496L8.76296 0.63492C8.95123 0.455027 9.25651 0.455027 9.44483 0.63492L17.8588 8.67425C18.0471 8.85414 18.0471 9.14582 17.8588 9.32576L9.44483 17.3651C9.25655 17.545 8.95127 17.545 8.76296 17.365Z"
+											/>
+										</svg>
+									</div>
+									<p class="journey-box__inner_para">
+										Access the best tools and planners to help
+										you frame and execute your projects.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+				<!-- ABOUT -->
+				<section class="about-section u-text-center">
+					<div class="container">
+						<div class="about__inner">
+							<h2 class="about-section__header">About Us</h2>
+							<p class="about-section__para">
+								The Western Australian Community Impact Hub supports
+								organisations to have a positive impact in their
+								community. Lotterywest and Healthway exist to build
+								a better and healthier Western Australia through our
+								grant programs.
+							</p>
+							<div class="about-client-part">
+								<img
+									src="images/company-white-logo.png"
+									alt="company white logo"
+								/>
+							</div>
+							<a
+								href="/"
+								class="btn light about-section__btn"
+								tabindex="120" aria-label="Read more about us"
+								>Read more about us</a
+							>
+						</div>
+					</div>
+				</section>
+				<!-- ACKNOWLEDGEMENT -->
+				<section class="acknowledgement-section">
+					<div class="container">
+						<div class="line-texts">
+							<h2 class="acknowledgement-section__heading">
+								Acknowledgement of Country
+							</h2>
+							<p class="acknowledgement-section__para">
+								We acknowledge the Aboriginal and Torres Strait
+								Islander People as the original custodians of this
+								country, recognising their connection to land,
+								waters and community. We respect their cultures and
+								Elders, past and present.
+							</p>
+							<p class="acknowledgement-section__para">
+								Ngala kaaditj Whadjuk moort keyen kaadak nidja
+								boodja – We acknowledge Whadjuk Noongar people as
+								the original custodians of the land on which we are
+								based.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
 			<!-- UNDERSTAND YOUR COMMUNITY ~ FULL SCREEN MODAL -->
-			<aside class="full-screen-modal understand-your-community">
+			<aside class="full-screen-modal full-screen-modal-nonsearch understand-your-community hide">
 				<div class="full-screen-modal__inner">
 					<div class="full-screen-modal__left">
 						<img
@@ -1581,7 +1570,7 @@
 							</span>
 						</div>
 						<div class="scroll-content">
-							<div class="content-part">
+							<div class="content-part" tabindex="3" aria-label="Understand your Community">
 								<h2 class="bold text-dark content-part__title">
 									Understand your Community
 								</h2>
@@ -1593,7 +1582,7 @@
 									WA.
 								</p>
 							</div>
-							<div class="content-part">
+							<div class="content-part" tabindex="4" aria-label="Understanding Wellbeing">
 								<a href="#" class="content-part__link">
 									<h3
 										class="content-part__heading dotted-underline-animation text-dark dark-line"
@@ -1621,7 +1610,7 @@
 									five categories it focuses on here.
 								</p>
 							</div>
-							<div class="content-part">
+							<div class="content-part" tabindex="5" aria-label="Wellbeing in WA">
 								<a href="#" class="content-part__link">
 									<h3
 										class="content-part__heading text-dark dotted-underline-animation dark-line"
@@ -1653,7 +1642,7 @@
 								Want to skip straight to a specific category?
 							</p>
 							<div class="category-tooltip">
-								<div class="category-tooltip__box" tabindex="0">
+								<div class="category-tooltip__box" tabindex="6" aria-label="Inclusive Thriving Community">
 									<svg
 										class="category-tooltip__svgIcon"
 										width="67"
@@ -1689,12 +1678,12 @@
 										/>
 									</svg>
 									<div class="category-tooltip__text">
-										<p class="text_heading" tabindex="0">
+										<p class="text_heading">
 											Inclusive Thriving Community
 										</p>
 									</div>
 								</div>
-								<div class="category-tooltip__box" tabindex="0">
+								<div class="category-tooltip__box" tabindex="7" aria-label="Connected Cultural Experiences">
 									<svg
 										width="28"
 										height="45"
@@ -1710,12 +1699,12 @@
 										/>
 									</svg>
 									<div class="category-tooltip__text">
-										<p class="text_heading" tabindex="0">
+										<p class="text_heading">
 											Connected Cultural Experiences
 										</p>
 									</div>
 								</div>
-								<div class="category-tooltip__box" tabindex="0">
+								<div class="category-tooltip__box" tabindex="8" aria-label="Protected Sustainable Ecosystem">
 									<svg
 										width="27"
 										height="46"
@@ -1731,12 +1720,12 @@
 										/>
 									</svg>
 									<div class="category-tooltip__text">
-										<p class="text_heading" tabindex="0">
+										<p class="text_heading">
 											Protected Sustainable Ecosystem
 										</p>
 									</div>
 								</div>
-								<div class="category-tooltip__box" tabindex="0">
+								<div class="category-tooltip__box" tabindex="9" aria-label="Smart Innovative Society">
 									<svg
 										width="24"
 										height="42"
@@ -1772,12 +1761,12 @@
 										</defs>
 									</svg>
 									<div class="category-tooltip__text">
-										<p class="text_heading" tabindex="0">
+										<p class="text_heading">
 											Smart Innovative Society
 										</p>
 									</div>
 								</div>
-								<div class="category-tooltip__box" tabindex="0">
+								<div class="category-tooltip__box" tabindex="10" aria-label="Active Healthy People">
 									<svg
 										width="32"
 										height="40"
@@ -1819,7 +1808,7 @@
 										</defs>
 									</svg>
 									<div class="category-tooltip__text">
-										<p class="text_heading" tabindex="0">
+										<p class="text_heading">
 											Active Healthy People
 										</p>
 									</div>
@@ -1829,26 +1818,22 @@
 						<div class="full-screen-modal__footer">
 							<hr class="divider" />
 							<ul class="footer__list-items">
-								<li
-									class="solid-underline-animation footer__list-item dark-line"
-								>
+								<li class="solid-underline-animation footer__list-item dark-line"
+								tabindex="11" aria-label="About">
 									<a class="footer__link" href="#">About</a>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item dark-line"
-								>
+								<li class="solid-underline-animation footer__list-item dark-line"
+								tabindex="12" aria-label="Applying for a Grant">
 									<a class="footer__link" href="#"
 										>Applying for a Grant</a
 									>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item dark-line"
-								>
+								<li class="solid-underline-animation footer__list-item dark-line"
+								tabindex="13" aria-label="Contact">
 									<a class="footer__link" href="#">Contact</a>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item dark-line"
-								>
+								<li class="solid-underline-animation footer__list-item dark-line"
+								tabindex="14" aria-label="Subscribe">
 									<a class="footer__link" href="#"
 										>Subscribe</a
 									>
@@ -1859,7 +1844,7 @@
 				</div>
 			</aside>
 			<!-- LEARN FROM OTHER ~ FULL SCREEN MODAL -->
-			<aside class="full-screen-modal learn-from-others">
+			<aside class="full-screen-modal full-screen-modal-nonsearch learn-from-others hide">
 				<div class="full-screen-modal__inner">
 					<div class="full-screen-modal__left">
 						<img
@@ -1888,7 +1873,7 @@
 							</span>
 						</div>
 						<div class="scroll-content">
-							<div class="content-part">
+							<div class="content-part" tabindex="16" aria-label="Learn from Others">
 								<h2 class="bold text-light content-part__title">
 									Learn from Others
 								</h2>
@@ -1898,7 +1883,7 @@
 									mark on wellbeing in WA.
 								</p>
 							</div>
-							<div class="content-part">
+							<div class="content-part" tabindex="17" aria-label="Case Studies">
 								<a href="#" class="content-part__link">
 									<h3
 										class="content-part__heading dotted-underline-animation text-light"
@@ -1924,7 +1909,7 @@
 									others.
 								</p>
 							</div>
-							<div class="content-part">
+							<div class="content-part" tabindex="18" aria-label="Grant Library">
 								<a href="#" class="content-part__link">
 									<h4
 										class="content-part__heading dotted-underline-animation text-light"
@@ -1950,7 +1935,7 @@
 									projects.
 								</p>
 							</div>
-							<div class="content-part">
+							<div class="content-part" tabindex="19" aria-label="Insights">
 								<a href="#" class="content-part__link">
 									<h4
 										class="content-part__heading dotted-underline-animation text-light"
@@ -1976,7 +1961,7 @@
 									learning and stay on top of sector trends.
 								</p>
 							</div>
-							<div class="content-part">
+							<div class="content-part" tabindex="20" aria-label="Reports">
 								<a href="#" class="content-part__link">
 									<h4
 										class="content-part__heading dotted-underline-animation text-light"
@@ -2006,26 +1991,22 @@
 						<div class="full-screen-modal__footer">
 							<hr class="divider" />
 							<ul class="footer__list-items">
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="21" aria-label="Reports">
 									<a class="footer__link" href="#">About</a>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="22" aria-label="Applying for a Grant">
 									<a class="footer__link" href="#"
 										>Applying for a Grant</a
 									>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="23" aria-label="Contact">
 									<a class="footer__link" href="#">Contact</a>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="24" aria-label="Subscribe">
 									<a class="footer__link" href="#"
 										>Subscribe</a
 									>
@@ -2036,7 +2017,7 @@
 				</div>
 			</aside>
 			<!-- PLAN YOUR PROJECT ~ FULL SCREEN MODAL -->
-			<aside class="full-screen-modal plan-your-project">
+			<aside class="full-screen-modal full-screen-modal-nonsearch plan-your-project hide">
 				<div class="full-screen-modal__inner">
 					<div class="full-screen-modal__left">
 						<img
@@ -2065,7 +2046,7 @@
 							</span>
 						</div>
 						<div class="scroll-content">
-							<div class="content-part">
+							<div class="content-part" tabindex="45" aria-label="Plan your Project">
 								<h2 class="bold text-light content-part__title">
 									Plan your Project
 								</h2>
@@ -2076,7 +2057,7 @@
 									project.
 								</p>
 							</div>
-							<div class="content-part">
+							<div class="content-part" tabindex="32" aria-label="Community Impact Planner">
 								<a href="#" class="content-part__link">
 									<h3
 										class="content-part__heading text-light dotted-underline-animation"
@@ -2103,7 +2084,7 @@
 								</p>
 							</div>
 							<div class="content-part">
-								<a href="#" class="content-part__link">
+								<a href="#" class="content-part__link" tabindex="33" aria-label="Additional Tool and Guides">
 									<h4
 										class="content-part__heading text-light dotted-underline-animation"
 									>
@@ -2131,26 +2112,22 @@
 						<div class="full-screen-modal__footer">
 							<hr class="divider" />
 							<ul class="footer__list-items">
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="37" aria-label="About">
 									<a class="footer__link" href="#">About</a>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="38" aria-label="Applying for a Grant">
 									<a class="footer__link" href="#"
 										>Applying for a Grant</a
 									>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="39" aria-label="Contact">
 									<a class="footer__link" href="#">Contact</a>
 								</li>
-								<li
-									class="solid-underline-animation footer__list-item"
-								>
+								<li class="solid-underline-animation footer__list-item"
+								tabindex="40" aria-label="Subscribe">
 									<a class="footer__link" href="#"
 										>Subscribe</a
 									>
@@ -2193,7 +2170,7 @@
 									<a
 										class="footer__link"
 										href="#"
-										tabindex="0"
+										tabindex="33" aria-label="About"
 										>About</a
 									>
 								</li>
@@ -2203,7 +2180,7 @@
 									<a
 										class="footer__link"
 										href="#"
-										tabindex="0"
+										tabindex="34" aria-label="Applying for a Grant"
 										>Applying for a Grant</a
 									>
 								</li>
@@ -2213,7 +2190,7 @@
 									<a
 										class="footer__link"
 										href="#"
-										tabindex="0"
+										tabindex="35" aria-label="Contact"
 										>Contact</a
 									>
 								</li>
@@ -2223,7 +2200,7 @@
 									<a
 										class="footer__link"
 										href="#"
-										tabindex="0"
+										tabindex="35" aria-label="Subscribe"
 										>Subscribe</a
 									>
 								</li>
@@ -2246,13 +2223,11 @@
 								class="logo-footer"
 								src="images/footer-logo.png"
 								alt="footer logo"
-								tabindex="0"
 							/>
 							<img
 								class="company-logo"
 								src="images/company-logo-footer.png"
 								alt="company logo footer"
-								tabindex="0"
 							/>
 						</div>
 						<div
@@ -2266,7 +2241,7 @@
 									<a
 										class="underline-animation footer__menu__link"
 										href="#"
-										tabindex="0"
+										tabindex="130" aria-label="Understanding Wellbeing"
 										>Understanding Wellbeing</a
 									>
 								</li>
@@ -2274,7 +2249,7 @@
 									<a
 										class="underline-animation footer__menu__link"
 										href="#"
-										tabindex="0"
+										tabindex="135" aria-label="Wellbeing in WA"
 										>Wellbeing in WA</a
 									>
 								</li>
@@ -2291,7 +2266,7 @@
 									<a
 										class="underline-animation"
 										href="#"
-										tabindex="0"
+										tabindex="140" aria-label="Case Studies"
 										>Case Studies</a
 									>
 								</li>
@@ -2299,7 +2274,7 @@
 									<a
 										class="underline-animation"
 										href="3"
-										tabindex="0"
+										tabindex="145" aria-label="Grant Library"
 										>Grant Library</a
 									>
 								</li>
@@ -2307,7 +2282,7 @@
 									<a
 										class="underline-animation"
 										href="#"
-										tabindex="0"
+										tabindex="150" aria-label="Insights"
 										>Insights</a
 									>
 								</li>
@@ -2315,7 +2290,7 @@
 									<a
 										class="underline-animation"
 										href="#"
-										tabindex="0"
+										tabindex="155" aria-label="Reports"
 										>Reports</a
 									>
 								</li>
@@ -2332,7 +2307,7 @@
 									<a
 										class="underline-animation"
 										href="#"
-										tabindex="0"
+										tabindex="160" aria-label="Community Impact Planner"
 										>Community Impact Planner</a
 									>
 								</li>
@@ -2340,7 +2315,7 @@
 									<a
 										class="underline-animation"
 										href="#"
-										tabindex="0"
+										tabindex="165" aria-label="Additional Tools and Guides"
 										>Additional Tools and Guides</a
 									>
 								</li>
@@ -2353,7 +2328,7 @@
 								<li class="footer__menu__item">
 									<a
 										class="underline-animation footer__menu__link"
-										tabindex="0"
+										tabindex="170" aria-label="About"
 										href="#"
 										>About</a
 									>
@@ -2361,7 +2336,7 @@
 								<li class="footer__menu__item">
 									<a
 										class="underline-animation footer__menu__link"
-										tabindex="0"
+										tabindex="175" aria-label="Applying for Grant"
 										href="#"
 										>Applying for Grant</a
 									>
@@ -2369,8 +2344,8 @@
 								<li class="footer__menu__item">
 									<a
 										class="underline-animation footer__menu__link"
-										tabindex="0"
-										href=""
+										tabindex="180" aria-label="Subscribe"
+										href="#"
 										#
 										>Subscribe</a
 									>
@@ -2378,7 +2353,7 @@
 								<li class="footer__menu__item">
 									<a
 										class="underline-animation footer__menu__link"
-										tabindex="0"
+										tabindex="185" aria-label="Contact"
 										href="#"
 										>Contact</a
 									>
@@ -2392,7 +2367,8 @@
 			<div class="site-footer__bottom">
 				<div class="container">
 					<div class="row">
-						<div class="column-md-12" tabindex="0">
+						<div class="column-md-12" tabindex="190" aria-label="Western Australian <br />
+						Community Impact Hub logo">
 							<img
 								class="company-logo"
 								src="images/company-logo-footer.png"
@@ -2413,7 +2389,7 @@
 										<a
 											class="underline-animation copyright-menu__link"
 											href="#"
-											tabindex="0"
+											tabindex="195" aria-label="Copyright 2021 Community Impact Hub"
 											>Copyright</a
 										>
 									</li>
@@ -2421,7 +2397,7 @@
 										<a
 											class="underline-animation copyright-menu__link"
 											href="#"
-											tabindex="0"
+											tabindex="200" aria-label="Privacy Policy"
 											>Privacy Policy</a
 										>
 									</li>
@@ -2429,7 +2405,7 @@
 										<a
 											class="underline-animation copyright-menu__link"
 											href="#"
-											tabindex="0"
+											tabindex="205" aria-label="Disclaimer"
 											>Disclaimer</a
 										>
 									</li>
