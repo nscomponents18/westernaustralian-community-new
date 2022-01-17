@@ -36,8 +36,8 @@
 		<header class="site-header" id="home">
 			<!-- Search bar -->
 			<div class="search-bar" tabindex="-1">
-				<div class="search-bar__closeBtn" tabindex="0" aria-label="Close Search for Community Impact Hub">
-					<div class="close-icon-container">
+				<div class="search-bar__closeBtn">
+					<div class="close-icon-container"  tabindex="3" aria-label="Close Search for Community Impact Hub">
 						<svg
 							class="search-bar__closeIcon animateRound"
 							fill="#000000"
@@ -59,14 +59,13 @@
 				>
 					<label for="search-input" aria-hidden="true">Search</label>
 					<input
-						placeholder="Search the Community Impact Hub"
 						type="text"
 						class="inputBox_input"
 						id="search-input"
 						name="fname"
 						aria-label="Search"
-						tabindex="1"
-						aria-label="Search the Community Impact Hub"
+						tabindex="2"
+						aria-label="Input for Search the Community Impact Hub"
 					/>
 					<svg
 						class="search-bar__svgIcon"
@@ -75,6 +74,8 @@
 						viewBox="0 0 27 27"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						tabindex="2"
+						aria-label="Search the Community Impact Hub"
 					>
 						<path
 							class="searchIcon_path"

@@ -1,60 +1,64 @@
 $(".SandDuneColour , .go-to-uyc, .ForestColour, .go-to-lfo, .RustColour, .go-to-pyp, #discover-now, .category-box__btn").click(function () {
     $('.RustColour').addClass('active-border');
 });
+
+$(".SandDuneColour , .go-to-uyc, .ForestColour, .go-to-lfo, .RustColour, .go-to-pyp, #discover-now, .category-box__btn").keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == 13)
+    {
+        $('.RustColour').addClass('active-border');
+    }
+  });
 // Body Scroll Off
 $(".SandDuneColour , .go-to-uyc, .ForestColour, .go-to-lfo, .RustColour, .go-to-pyp, .search-btn, #discover-now, .category-box__btn").click(function () {
     $('body').addClass('hiddenBackScroll');
 });
 
+$(".SandDuneColour , .go-to-uyc, .ForestColour, .go-to-lfo, .RustColour, .go-to-pyp, .search-btn, #discover-now, .category-box__btn").keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == 13)
+    {
+        $('body').addClass('hiddenBackScroll');
+    }
+  });
+  
+
 // understand your community Modal JS
 $(".journey-boxes .go-to-uyc, #discover-now, .category-box__btn").click(function () {
-    $('.SandDuneColour').addClass('active');
-    $('.ForestColour, .RustColour').removeClass('active');
-    $('.close-icon, .understand-your-community').addClass('show');
-    $('.learn-from-others, .plan-your-project, .logo, .lfo-img, .pyp-img').removeClass('show');
-    if ($(window).width() > 1025) {
-        $(".understand-your-community").css("margin-top", function () {
-            return $('header').outerHeight()
-        });
-    }
-    if ($(window).width() < 1025) {
-        $('.logo').addClass('show');
-    }
+    showSaneDuneColor()
 });
+
+$(".journey-boxes .go-to-uyc, #discover-now, .category-box__btn").keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == 13)
+    {
+        showSaneDuneColor();
+    }
+  });
 
 // Learn From Others Modal JS
 $(".journey-boxes .go-to-lfo").click(function () {
-    $('.ForestColour').addClass('active');
-    $('.SandDuneColour, .RustColour').removeClass('active');
-    $('.close-icon, .lfo-img, .learn-from-others').addClass('show');
-    $('.understand-your-community, .plan-your-project, .logo').removeClass('show');
-    if ($(window).width() > 1025) {
-        $(".learn-from-others").css("margin-top", function () {
-            return $('header').outerHeight()
-        });
-    }
-    if ($(window).width() < 1025) {
-        $('.logo').addClass('show');
-    }
+    showForestColour()
 });
+
+$(".journey-boxes .go-to-lfo").keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == 13)
+    {
+        showForestColour();
+    }
+  });
 
 // Plan your project Modal JS
 $(".journey-boxes .go-to-pyp").click(function () {
-    $('.RustColour').addClass('active');
-    $('.SandDuneColour, .ForestColour').removeClass('active');
-    $('.close-icon, .plan-your-project, .pyp-img').addClass('show');
-    $('.logo, .understand-your-community, .learn-from-others').removeClass('show');
-    const $elem_plan_your_project = $(".plan-your-project");
-    if ($(window).width() > 1025) {
-        $elem_plan_your_project.css("margin-top", function () {
-            return $('header').outerHeight()
-        });
-    }
-    if ($(window).width() < 1025) {
-        $elem_plan_your_project.css("margin-top", function () {
-            return $('header').outerHeight()
-        });
-        $('.logo').addClass('show');
+    showRustColour();
+});
+
+$(".journey-boxes .go-to-pyp").keypress(function () {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == 13)
+    {
+        showRustColour();
     }
 });
 

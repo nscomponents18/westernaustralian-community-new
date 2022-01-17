@@ -1,3 +1,4 @@
+
 // Header JS
 if($(window).width() < 1025) {
   $(".main-banner").css("margin-top", function() { return $('header').outerHeight() });
@@ -61,6 +62,17 @@ $(".search-btn").on("keyup", function(event) {
 // Click on Search Modal Close BTN - Search MODAL TAB
 $(".search-bar__closeIcon").click(function() {
   closeSearchBox();
+});
+
+$("#search-input, .close-icon-container, .search-bar__closeIcon, .search-bar__svgIcon").on("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+      closeSearchBox();
+  }
+});
+
+$("#search-input").on("focus", function(event) {
+  console.log("In Textbox input");
 });
 
 
